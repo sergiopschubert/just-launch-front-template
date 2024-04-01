@@ -1,5 +1,5 @@
 'use client';
-import { ISignInFormProps } from '@/app/[locale]/(auth)/domain/props/ISignInFormProps';
+import { ISignInIntl } from '@/app/[locale]/(auth)/domain/interfaces/ISignInIntl';
 import { useSignin } from '@/app/[locale]/(auth)/hooks/useSignin';
 import { Button } from '@/app/shared/components/Button';
 import { Checkbox } from '@/app/shared/components/Checkbox';
@@ -10,6 +10,9 @@ import { Popup } from '@/app/shared/components/Popup';
 import { Toast } from '@/app/shared/components/Toast';
 import { FormInput, Lock, Mail } from 'lucide-react';
 
+interface ISignInFormProps {
+  intl: ISignInIntl;
+}
 
 
 export function SignInForm({ intl }: ISignInFormProps) {
@@ -88,10 +91,10 @@ const {
           className='fixed left-1/2 top-1/2 z-50  h-auto w-2/5 -translate-x-1/2 -translate-y-1/2 overflow-y-scroll rounded-md bg-white p-8 text-gray-900 shadow'
           icon={Lock}
         >
-          <h1 className='mb-1 mt-2 text-base font-semibold text-gray/900'>
+          <h1 className='mb-1 mt-2 text-base font-semibold text-gray-900'>
             {intl?.popup.title}
           </h1>
-          <p className='pr-8 text-sm font-normal text-gray/600'>
+          <p className='pr-8 text-sm font-normal text-gray-600'>
             {intl?.popup.subtitle}
           </p>
           <form id='reset-password' onSubmit={handlerResetPassword}>
@@ -121,7 +124,7 @@ const {
         </Popup.Content>
       </Popup.Root>
       <div className='align flex flex-row items-center justify-center space-x-1'>
-        <p className='py-2 text-xs font-normal text-gray/600'>
+        <p className='py-2 text-xs font-normal text-gray-600'>
           {intl?.form.noAccount}
         </p>
         <Link href={'/signup'}>{intl?.form.register}</Link>

@@ -9,7 +9,7 @@ export const CheckboxInput = forwardRef<HTMLInputElement, CheckboxInputProps>(
         ref={ref}
         {...props}
         type='checkbox'
-        className='checked:border-1 peer relative h-4 w-4 shrink-0 appearance-none rounded border border-gray/300 bg-base/white
+        className='checked:border-1 peer relative h-4 w-4 shrink-0 appearance-none rounded border border-gray-300 bg-white
    checked:border-primary/600 checked:bg-primary/50'
       />
     );

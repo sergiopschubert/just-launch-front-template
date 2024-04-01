@@ -10,7 +10,7 @@ export const InputPlaceHolder = forwardRef<
     <input
       ref={ref}
       {...props}
-      className='flex-1 border-0 bg-transparent p-0 text-sm text-gray/900 placeholder-gray/500 focus:outline-none'
+      className='flex-1 border-0 bg-transparent p-0 text-sm text-gray-900 placeholder-gray-500 focus:outline-none'
     />
   );
 });

@@ -22,7 +22,7 @@ export function SelectOfLanguages({
   const path = usePathname();
   return (
     <Popover className='relative'>
-      <Popover.Button className='inline-flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray/400 outline-none'>
+      <Popover.Button className='inline-flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-400 outline-none'>
         <span>{principalLanguage}</span>
         <Globe className='h-5 w-5' aria-hidden='true' />
       </Popover.Button>
@@ -37,7 +37,7 @@ export function SelectOfLanguages({
         leaveTo='opacity-0 translate-y-1'
       >
         <Popover.Panel className='absolute left-1/2 z-10 mt-5 flex w-screen max-w-min -translate-x-1/2 px-2'>
-          <div className='w-36 shrink rounded-xl bg-white p-4 text-sm font-semibold leading-6 text-gray/900 shadow-md ring-1 ring-gray/900/5'>
+          <div className='w-36 shrink rounded-xl bg-white p-4 text-sm font-semibold leading-6 text-gray-900 shadow-md ring-1 ring-gray-900/5'>
             {solutions.map((item) => {
               const href = path?.replace(/^\/[a-z]{2}/, item.href) || item.href;
 

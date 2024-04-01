@@ -1,0 +1,104 @@
+{
+  "Auth": {
+    "signup": {
+      "metadata": {
+        "title": "Registration"
+      },
+      "title": "Create account",
+      "headerSubtitle": "Start your ",
+      "subtitleWithColor": "free 7-day trial ",
+      "subtitle": "and create up to 5 exercises. We don't ask for your credit card! 😉",
+      "registerSuccessMessage": "Registration successful!",
+      "errors": {
+        "register": {
+          "title": "Registration error",
+          "message": "We are experiencing technical difficulties at the moment and cannot process your registration. Please try again later. If the problem persists, please contact us at support@homeworkai.com.br"
+        }
+      },
+      "form": {
+        "labelName": "Your first name",
+        "labelEmail":"Email",
+        "labelPassword":"Password",
+        "labelConfirmPassword": "Confirm your password",
+        "placeholderEmail": "Enter your email",
+        "placeholderPassword": "Choose a strong password",
+        "placeholderName": "Enter your first name",
+        "placeholderConfirmPassword": "Confirm your password",
+        "alertWarningPassword": "Must be at least 8 characters.",
+        "messageOfPolicies": "By proceeding, you agree to the ",
+        "terms&conditions": "Terms of Use",
+        "privacy": "Privacy Policies",
+        "button": "Create account",
+        "alreadyAccountMessage": "Already registered?",
+        "alreadyAccountButton": "Log in with your account"
+      }
+    },
+    "signin": {
+      "metadata": {
+        "title": "Login"
+      },
+      "title": "Log in",
+      "subtitle": "Enter your credentials below:",
+      "errors": {
+        "auth": {
+          "title": "Authentication Error",
+          "message": "During the authentication process, we identified that the email and/or password entered may be incorrect. Please check your credentials and try again. If you forgot your password, use the recovery option."
+        },
+        "resetPassword": {
+          "title": "Password Reset Error",
+          "message": "Sorry, we can't send a password reset email at this time. Please try again later. If the problem persists, please contact us at support@homeworkai.com.br."
+        },
+        "invalidMail": "Please enter a valid email address."
+      },
+      "authSuccessMessage": "Authentication successful!",
+      "resetPasswordSuccessMessage": "A password reset email has been sent!",
+      "form": {
+        "email": "Enter your email",
+        "password": "***********",
+        "stayConnected": "Stay connected",
+        "forgotPassword": "Forgot password?",
+        "button": "Log in",
+        "noAccount": "Not registered yet?",
+        "register": "Create an account"
+      },
+      "popup": {
+        "title": "Recover password",
+        "subtitle": "Just let us know your email below and we will send the password recovery instructions to your email.",
+        "button": "Recover password"
+      }
+    },
+    "resetPassword": {
+      "metadata": {
+        "title": "Reset password"
+      },
+      "title": "Create a new password",
+      "headerSubtitle": "Enter a ",
+      "subtitleWithColor": "new password ",
+      "subtitle": "for your account. Make sure it's strong and unique to ensure the security of your information",
+      "form": {
+        "password": "Choose a strong password",
+        "confirmPassword": "Confirm your password",
+        "labelPassword": "Password",
+        "labelConfirmPassword": "Confirm your password",
+        "labelWarningPassword": "Must be at least 8 characters.",
+        "button": "Reset password",
+        "login": "Back to login"
+      },
+      "resetPasswordSuccessMessage": "Password changed!",
+      "errors": {
+        "resetPassword": {
+          "title": "Password Reset Error",
+          "message": "Sorry, we can't reset the password at this time. Please try again later. If the problem persists, please contact us at support@homeworkai.com.br."
+        }
+      }
+    },
+    "signUpSuccess": {
+      "metadata": {
+        "title": "Success - Registration"
+      },
+      "title": "Registration Successful!",
+      "description": "Access the tool and say goodbye to hours spent manually creating homework tasks.",
+      "textButton": "Log in"
+    }
+  }
+}

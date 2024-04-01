@@ -29,7 +29,7 @@ export const PopupContent = forwardRef<DialogProps, PopupContentProps>(
             {props.disabled || props.disabledIcon ? (
               <></>
             ) : (
-              <div className='flex h-10 w-10 items-center justify-center rounded-md border border-gray/200 shadow'>
+              <div className='flex h-10 w-10 items-center justify-center rounded-md border border-gray-200 shadow'>
                 <props.icon
                   data-error={props.error}
                   className='h-8 w-6 data-[error=true]:text-error/500'
@@ -41,7 +41,7 @@ export const PopupContent = forwardRef<DialogProps, PopupContentProps>(
             <></>
           ) : (
             <Dialog.Close
-              className='m-2 h-8 w-8 text-gray/500 underline outline-none hover:text-gray/600'
+              className='m-2 h-8 w-8 text-gray-500 underline outline-none hover:text-gray-600'
               onClick={props.onClose}
             >
               <XCircle className='h-6 w-6'></XCircle>

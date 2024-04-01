@@ -16,10 +16,10 @@ export function ErrorAlert({ title, message, onClose }: ErrorAlertProps) {
         error={true}
         onClose={onClose}
       >
-        <h1 className='mb-1 mt-2 text-base font-semibold text-gray/900'>
+        <h1 className='mb-1 mt-2 text-base font-semibold text-gray-900'>
           {title}
         </h1>
-        <p className='pr-8 text-sm font-normal text-gray/600'>{message}</p>
+        <p className='pr-8 text-sm font-normal text-gray-600'>{message}</p>
       </Popup.Content>
     </Popup.Root>
   );

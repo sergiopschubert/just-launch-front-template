@@ -1,5 +1,4 @@
 'use client';
-import { IResetPasswordProps } from '@/app/[locale]/(auth)/domain/props/IResetPasswordFormProps';
 import { Button } from '@/app/shared/components/Button';
 import { ErrorAlert } from '@/app/shared/components/ErrorAlert';
 import { Input } from '@/app/shared/components/Input';
@@ -8,6 +7,11 @@ import { Toast } from '@/app/shared/components/Toast';
 import { ArrowLeft, FormInput } from 'lucide-react';
 import { useEffect } from 'react';
 import { useResetPassword } from '../../../hooks/useResetPassword';
+import { IResetPasswordIntl } from '@/app/[locale]/(auth)/domain/interfaces/IResetPasswordIntl';
+
+interface IResetPasswordProps {
+  intl: IResetPasswordIntl;
+}
 
 export function ResetPasswordForm({ intl }: IResetPasswordProps ) {
   const {

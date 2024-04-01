@@ -1,5 +1,5 @@
 "use client";
-import { ISignUpFormProps } from "@/app/[locale]/(auth)/domain/props/ISignUpFormProps";
+import { ISignUpIntl } from "@/app/[locale]/(auth)/domain/interfaces/ISignupIntl";
 import { useSignup } from "@/app/[locale]/(auth)/hooks/useSignup";
 import { Button } from "@/app/shared/components/Button";
 import { ErrorAlert } from "@/app/shared/components/ErrorAlert";
@@ -7,6 +7,10 @@ import { Input } from "@/app/shared/components/Input";
 import { Link } from "@/app/shared/components/Link";
 import { Toast } from "@/app/shared/components/Toast";
 import { FormInput, Mail, User2 } from "lucide-react";
+
+interface ISignUpFormProps {
+  intl: ISignUpIntl;
+}
 
 
 export function SignUpForm({ intl }: ISignUpFormProps) {
@@ -74,7 +78,7 @@ export function SignUpForm({ intl }: ISignUpFormProps) {
             </Input.Wrapper>
           </Input.Root>
 
-          <p className="w-80 text-xs  font-normal text-gray/500">
+          <p className="w-80 text-xs  font-normal text-gray-500">
             {intl?.form.messageOfPolicies}
             <Link href="terms&conditions">{intl?.form.termsAndConditions}</Link>
             {' '} & {' '}
@@ -92,7 +96,7 @@ export function SignUpForm({ intl }: ISignUpFormProps) {
             {intl?.form.button}
           </Button>
           <div className="align flex flex-row items-center justify-center space-x-1">
-            <p className="py-2 text-xs font-normal text-gray/600">
+            <p className="py-2 text-xs font-normal text-gray-600">
               {intl?.form.alreadyAccountMessage}
             </p>
             <Link href={"/signin"}>{intl?.form.alreadyAccountButton}</Link>

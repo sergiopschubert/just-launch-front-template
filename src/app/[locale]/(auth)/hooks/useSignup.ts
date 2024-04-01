@@ -30,7 +30,7 @@ const onSubmit = async (body: SignUpSchema) => {
 
   setLoading(true);
   try {
-    const response = await fetch("/api/users/createUsers", {
+    const response = await fetch("/api/users/create-users", {
       method: "POST",
       body: JSON.stringify({ email, password, name }),
     });

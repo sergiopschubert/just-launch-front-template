@@ -11,10 +11,10 @@ export default async function SignIn() {
 
   return (
     <>
-      <h1 className='pt-5 text-xl font-semibold text-gray/900'>
+      <h1 className='pt-5 text-xl font-semibold text-gray-900'>
         {intlSignin.title}
       </h1>
-      <p className='mb-6 mt-2 text-sm font-normal text-gray/600'>
+      <p className='mb-6 mt-2 text-sm font-normal text-gray-600'>
         {intlSignin.subtitle}
       </p>
       <SignInForm intl={intlSignin} />

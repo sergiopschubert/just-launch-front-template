@@ -5,5 +5,5 @@ interface InputHintTextProps extends ComponentProps<'p'> {
 }
 
 export function InputHintText({ children }: InputHintTextProps) {
-  return <p className='ml-1 mt-1 text-xs text-gray/600'>{children}</p>;
+  return <p className='ml-1 mt-1 text-xs text-gray-600'>{children}</p>;
 }
