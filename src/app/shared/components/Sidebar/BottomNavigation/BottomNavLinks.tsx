@@ -18,7 +18,7 @@ export function BottomNavLinks({
         <Nav.IconRight icon={Cog} />
         <Nav.Content content={item1} />
       </Nav.Root>
-      <Nav.Root href='https://homeworkai.canny.io/sugestoes'>
+      <Nav.Root href={process.env.NEXT_PUBLIC_FEEDBACK_URL as string}>
         <Nav.IconRight icon={MessagesSquare} />
         <Nav.Content content={item2} />
       </Nav.Root>

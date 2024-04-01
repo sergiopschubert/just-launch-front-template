@@ -11,29 +11,6 @@ export const useInternationalizationShared = async () => {
   // #### Main Navigation ####
   const mainNavItem1 = internationalization('sidebar.mainNavigation.item1');
 
-  // #### User Space Widget ####
-  const userSpaceBeforeTitle = internationalization(
-    'sidebar.userSpaceWidget.beforeTitle'
-  );
-  const userSpaceAfterTitle = internationalization(
-    'sidebar.userSpaceWidget.afterTitle'
-  );
-  const userSpaceBeforeSubtitle = internationalization(
-    'sidebar.userSpaceWidget.beforeSubtitle'
-  );
-  const userSpaceMiddleSubtitle = internationalization(
-    'sidebar.userSpaceWidget.middleSubtitle'
-  );
-  const userSpaceAfterSubtitle = internationalization(
-    'sidebar.userSpaceWidget.afterSubtitle'
-  );
-  const userSpaceWarningMessage = internationalization(
-    'sidebar.userSpaceWidget.warningMessage'
-  );
-  const userSpaceUpdateButton = internationalization(
-    'sidebar.userSpaceWidget.updateButton'
-  );
-
   // #### Confirmation Email ####
   const confirmationEmailSubject = internationalization(
     'confirmationEmail.subject'
@@ -95,16 +72,6 @@ export const useInternationalizationShared = async () => {
     textTerms: confirmationEmailTextTerms,
   };
 
-  const intlUserSpaceWidget = {
-    beforeTitle: userSpaceBeforeTitle,
-    afterTitle: userSpaceAfterTitle,
-    beforeSubtitle: userSpaceBeforeSubtitle,
-    middleSubtitle: userSpaceMiddleSubtitle,
-    afterSubtitle: userSpaceAfterSubtitle,
-    warningMessage: userSpaceWarningMessage,
-    updateButton: userSpaceUpdateButton,
-  };
-
   const intlMainNavigation = {
     item1: mainNavItem1,
   };
@@ -116,7 +83,6 @@ export const useInternationalizationShared = async () => {
 
   return {
     language,
-    intlUserSpaceWidget,
     intlMainNavigation,
     intlBottomNavigation,
     intlConfirmationEmail,

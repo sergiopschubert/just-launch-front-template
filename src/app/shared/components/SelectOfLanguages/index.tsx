@@ -5,13 +5,9 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { Fragment } from 'react';
 
-const solutions = [
+const languages = [
   { name: 'English', href: '/en', locale: 'en' },
   { name: 'Português', href: '/pt', locale: 'pt' },
-  { name: 'Español', href: '/es', locale: 'es' },
-  { name: 'Français', href: '/fr', locale: 'fr' },
-  { name: 'Italiano', href: '/it', locale: 'it' },
-  { name: 'Deutsch', href: '/de', locale: 'de' },
 ];
 
 export function SelectOfLanguages({
@@ -38,7 +34,7 @@ export function SelectOfLanguages({
       >
         <Popover.Panel className='absolute left-1/2 z-10 mt-5 flex w-screen max-w-min -translate-x-1/2 px-2'>
           <div className='w-36 shrink rounded-xl bg-white p-4 text-sm font-semibold leading-6 text-gray-900 shadow-md ring-1 ring-gray-900/5'>
-            {solutions.map((item) => {
+            {languages.map((item) => {
               const href = path?.replace(/^\/[a-z]{2}/, item.href) || item.href;
 
               return (
