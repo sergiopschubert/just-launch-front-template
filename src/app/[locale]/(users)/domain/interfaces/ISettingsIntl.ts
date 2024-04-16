@@ -1,7 +1,6 @@
 export interface ISettingsIntl {
   menu: {
     item1: string;
-    item2: string;
   };
   profile: {
     title: string;

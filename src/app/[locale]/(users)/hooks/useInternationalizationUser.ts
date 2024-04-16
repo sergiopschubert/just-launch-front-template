@@ -6,7 +6,6 @@ export const useInternationalizationUser = async () => {
   //### SETTINGS ###
   const settingsTitle = internationalization('user.settings.title');
   const settingsMenuItem1 = internationalization('user.settings.menu.item1');
-  const settingsMenuItem2 = internationalization('user.settings.menu.item2');
 
   const settingsProfileTitle = internationalization(
     'user.settings.profile.title'
@@ -45,8 +44,7 @@ export const useInternationalizationUser = async () => {
   const intlSettings = {
     title: settingsTitle,
     menu: {
-      item1: settingsMenuItem1,
-      item2: settingsMenuItem2,
+      item1: settingsMenuItem1
     },
     profile: {
       title: settingsProfileTitle,

@@ -3,7 +3,7 @@ import { SelectOfLanguages } from '@/app/shared/components/SelectOfLanguages';
 import { Sidebar } from '@/app/shared/components/Sidebar';
 import { BottomNavigation } from '@/app/shared/components/Sidebar/BottomNavigation';
 import { MainNavigation } from '@/app/shared/components/Sidebar/MainNavigation';
-import { useInternationalizationShared } from '@/app/shared/hooks/useInternationalizationShared';
+import { useSharedInternationalization } from '@/app/shared/hooks/useSharedInternationalization';
 import Providers from '@/providers/Providers';
 import { getServerSession } from 'next-auth';
 import { Inter } from 'next/font/google';
@@ -28,7 +28,7 @@ export default async function PrivateLayout({ children }: PrivateLayoutProps) {
     redirect('/signin');
   }
 
-  const { language } = await useInternationalizationShared();
+  const { language } = await useSharedInternationalization();
   const { email, name } = session.user;
 
   return (
@@ -41,8 +41,7 @@ export default async function PrivateLayout({ children }: PrivateLayoutProps) {
               bottomNavigation={<BottomNavigation />}
               name={name}
               email={email}
-            >
-            </Sidebar>
+            ></Sidebar>
 
             <main className='max-w-screen rounded-tl-3xl bg-gray-50 pb-12 pt-24 lg:col-start-2 lg:mt-5 lg:w-auto lg:px-8 lg:pt-8'>
               <div className='max-w-screen flex flex-row items-center justify-end pr-12 md:pr-5'>

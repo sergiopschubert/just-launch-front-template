@@ -1,8 +1,8 @@
-import { getTranslations } from "next-intl/server";
-import { ISignInIntl } from "../../domain/interfaces/ISignInIntl";
+import { getTranslations } from 'next-intl/server';
+import { ISignInIntl } from '../../domain/interfaces/ISignInIntl';
 
-export const useInternationalizationSignin = async () => {
-  const internationalization = await getTranslations("Auth");
+export const useSigninInternationalization = async () => {
+  const internationalization = await getTranslations('Auth');
 
   //### SIGNIN ###
   const signinMetadataTitle = internationalization('signin.metadata.title');
@@ -42,7 +42,7 @@ export const useInternationalizationSignin = async () => {
   const signinPopupSubtitle = internationalization('signin.popup.subtitle');
   const signinPopupButton = internationalization('signin.popup.button');
 
-  const intlSignin: ISignInIntl = {
+  const signinIntl: ISignInIntl = {
     metadata: {
       title: signinMetadataTitle,
     },
@@ -78,6 +78,6 @@ export const useInternationalizationSignin = async () => {
   };
 
   return {
-    intlSignin
+    signinIntl,
   };
 };

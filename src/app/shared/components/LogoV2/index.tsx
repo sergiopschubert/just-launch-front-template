@@ -1,7 +1,7 @@
-import Image from "next/image";
+import Image from 'next/image';
 import { ComponentProps } from 'react';
 import { twMerge } from 'tailwind-merge';
-
+import { LogoV1 } from '../LogoV1';
 
 interface LogoV2Props extends ComponentProps<'strong'> {}
 
@@ -13,9 +13,11 @@ export function LogoV2({ ...props }: LogoV2Props) {
         props.className
       )}
     >
-      <Image width='50' height='49' src={'/logo.svg'} alt="Logo do Just Launch"/>
+      <LogoV1 width={50} height={49} />
 
-      <span className='text-lg'>Just<strong>Launch</strong></span>
+      <span className='text-lg'>
+        Just<strong>Launch</strong>
+      </span>
     </strong>
   );
 }

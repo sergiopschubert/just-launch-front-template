@@ -1,4 +1,4 @@
-import { useInternationalizationShared } from '@/app/shared/hooks/useInternationalizationShared';
+import { useInternationalizationShared } from '@/app/shared/hooks/useSharedInternationalization';
 import { MainNavLinks } from './MainNavLinks';
 
 export async function MainNavigation() {

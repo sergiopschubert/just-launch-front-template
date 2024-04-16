@@ -1,4 +1,310 @@
 {
+  "LandingPage": {
+    "header": {
+      "menu": {
+        "option1": "Funcionalidades",
+        "option2": "Depoimentos",
+        "option3": "Dúvidas?",
+        "option4": "Planos"
+      },
+      "buttons": {
+        "option1": "Entrar",
+        "option2": "Experimente grátis",
+        "option3": "Acessar o Painel"
+      }
+    },
+    "hero": {
+      "title": "Título do",
+      "titleWithEffect": "Hero!",
+      "subtitle": "Esta é uma descrição detalhada do que o seu site ou aplicativo faz, escrita em algumas linhas. Ela deve ser persuasiva e direta ao ponto.",
+      "callToActionButton": "Experimente grátis",
+      "testimonials": {
+        "text": "Clientes Satisfeitos",
+        "numberOfClients": "100"
+      }
+    },
+    "problems": {
+      "headerTitle": "O problema",
+      "title": "XX% Titulo impactante do problema",
+      "subtitle": "Descrição do problema que o seu produto resolve. Deve ser uma descrição curta e direta ao ponto.",
+      "problems": {
+        "option1": {
+          "emoji": "🧑🏻‍💻",
+          "text": "Problema 1"
+        },
+        "option2": {
+          "emoji": "😓",
+          "text": "Problema 2"
+        },
+        "option3": {
+          "emoji": "😔",
+          "text": "Problema 3"
+        }
+      }
+    },
+    "banner": {
+      "content": "Estamos com descontos de lançamento em todos os planos!",
+      "leftText": "LANÇAMENTO",
+      "rightText": "LANÇAMENTO"
+    },
+    "cookies": {
+      "content": "A HomeworkAI usa 🍪, ao clicar em 'Aceitar', concorda com o armazenamento de cookies no seu dispositivo para melhorar a navegação no site,",
+      "acceptButton": "Aceitar",
+      "refuseButton": "Recusar",
+      "moreInfo": " saiba mais clicando aqui."
+    },
+    "features": {
+      "headerTitle": "Funcionalidades",
+      "beforeTitle": "Titulo",
+      "titleWithEffect": "impactante",
+      "afterTitle": "das funcionalidade",
+      "subtitle": "Descrição dos problemas que o seu produto resolve. Deve ser uma descrição curta e direta ao ponto.",
+      "feature1": {
+        "title": "Funcionalidade 1",
+        "description": "Descrição da funcionalidade",
+        "icon": "💰",
+        "image": "https://via.placeholder.com/400x400"
+      },
+      "feature2": {
+        "title": "Funcionalidade 2",
+        "description": "Descrição da funcionalidade",
+        "icon": "👋",
+        "image": "https://via.placeholder.com/400x400/000"
+      },
+      "feature3": {
+        "title": "Funcionalidade 3",
+        "description": "Descrição da funcionalidade",
+        "icon": "🪄",
+        "image": "https://via.placeholder.com/400x400"
+      },
+      "feature4": {
+        "title": "Funcionalidade 4",
+        "description": "Descrição da funcionalidade",
+        "icon": "🚀",
+        "image": "https://via.placeholder.com/400x400/000"
+      },
+      "feature5": {
+        "title": "Funcionalidade 5",
+        "description": "Descrição da funcionalidade",
+        "icon": "🎉",
+        "image": "https://via.placeholder.com/400x400/f4f4f4"
+      }
+    },
+    "callToAction": {
+      "title": "CONTINUA COM DÚVIDAS?",
+      "description": "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed sit amet. n faucibus orci luctus et ultrices posuere cubilia curae.",
+      "firstButton": "Acesse a documentação",
+      "secondButton": "Experimente grátis",
+      "imageUrl": "https://via.placeholder.com/1920x1800"
+    },
+    "stats": {
+      "headerTitle": "Estatísticas",
+      "title": "Impacto em Números",
+      "subtitle": "Descrição do impacto em números.",
+      "stats1": {
+        "title": "Estatística 1",
+        "value": "100+"
+      },
+      "stats2": {
+        "title": "Estatística 2",
+        "value": "1000+"
+      },
+      "stats3": {
+        "title": "Estatística 3",
+        "value": "20000+"
+      },
+      "stats4": {
+        "title": "Estatística 4",
+        "value": "400H+"
+      }
+    },
+    "testimonials": {
+      "headerTitle": "Depoimentos",
+      "title": "Qualidade e simplicidade aprovada por quem valoriza",
+      "testimonial1": {
+        "body": "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed sit amet.",
+        "author": {
+          "name": "Mauris euismod",
+          "handle": "Nullam vitae",
+          "imageUrl": "https://via.placeholder.com/48x48"
+        }
+      },
+      "testimonial2": {
+        "body": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.",
+        "author": {
+          "name": "Vivamus fermentum",
+          "handle": "Curabitur aliquet",
+          "imageUrl": "https://via.placeholder.com/48x48"
+        }
+      },
+      "testimonial3": {
+        "body": "Suspendisse potenti. In eleifend massa nec odio eleifend, a pellentesque felis aliquet.",
+        "author": {
+          "name": "Fusce vehicula",
+          "handle": "Etiam ultricies",
+          "imageUrl": "https://via.placeholder.com/48x48"
+        }
+      },
+      "testimonial4": {
+        "body": "Quisque id diam vel quam elementum pulvinar. Etiam non quam lacus.",
+        "author": {
+          "name": "Vestibulum lacinia",
+          "handle": "Praesent sapien",
+          "imageUrl": "https://via.placeholder.com/48x48"
+        }
+      },
+      "testimonial5": {
+        "body": "Donec sollicitudin molestie malesuada. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.",
+        "author": {
+          "name": "Nulla quis",
+          "handle": "Donec rutrum",
+          "imageUrl": "https://via.placeholder.com/48x48"
+        }
+      }
+    },
+    "faq": {
+      "headerTitle": "FAQ",
+      "title": "Tem alguma dúvida?",
+      "subtitle": "Encontre respostas para as dúvidas mais frequentes e esclareça as suas.",
+      "questions&Answers": {
+        "faq1": {
+          "question": "Lorem ipsum dolor sit amet?",
+          "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor."
+        },
+        "faq2": {
+          "question": "Consectetur adipiscing elit?",
+          "answer": "Curabitur vel urna. In tristique orci porttitor ipsum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque cursus luctus mauris."
+        },
+        "faq3": {
+          "question": "Nec sagittis sem nibh id elit?",
+          "answer": "Duis semper. Donec vel libero ullamcorper, faucibus aliquet magna. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum."
+        },
+        "faq4": {
+          "question": "Curabitur mollis pretium?",
+          "answer": "Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus. Phasellus ultrices nulla quis nibh. Quisque a lectus. Donec consectetuer ligula vulputate sem tristique cursus."
+        },
+        "faq5": {
+          "question": "Maecenas tempus tellus eget?",
+          "answer": "Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum."
+        },
+        "faq6": {
+          "question": "Sem quam semper libero?",
+          "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum."
+        },
+        "faq7": {
+          "question": "Praesent mauris fusce nec tellus?",
+          "answer": "Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos."
+        }
+      }
+    },
+    "footer": {
+      "description": "Lorem ipsum dolor sit amet, Lorem ipsum dolor",
+      "menuTitle1": "Suporte",
+      "menuTitle2": "Institucional",
+      "menuTitle3": "Just Launch",
+      "navigation": {
+        "support": {
+          "item1": {
+            "name": "Duvidas?",
+            "href": "#doubts"
+          },
+          "item2": {
+            "name": "Documentação",
+            "href": "https://homeworkai.com.br/contents/view/0cadab9d-7d31-4fff-b6d6-34ad9c7a7f8d/0f13930e-86c2-45b9-b69d-d3b780563f4b"
+          },
+          "item3": {
+            "name": "Envie sua sugestão",
+            "href": "https://homeworkai.canny.io/sugestoes"
+          }
+        },
+        "company": {
+          "item1": {
+            "name": "Funcionalidades",
+            "href": "#features"
+          },
+          "item2": {
+            "name": "Depoimentos",
+            "href": "#testimonials"
+          },
+          "item3": {
+            "name": "Planos",
+            "href": "#pricing"
+          },
+          "item4": {
+            "name": "Acessar o Painel",
+            "href": "/home"
+          },
+          "item5": {
+            "name": "Criar uma conta",
+            "href": "/signup"
+          }
+        },
+        "legal": {
+          "item1": {
+            "name": "Políticas de Cookies",
+            "href": "/cookie"
+          },
+          "item2": {
+            "name": "Políticas de Privacidade",
+            "href": "/privacy"
+          },
+          "item3": {
+            "name": "Termos e condições",
+            "href": "/terms&conditions"
+          }
+        },
+        "social": {
+          "item1": {
+            "name": "Facebook",
+            "href": "#"
+          },
+          "item2": {
+            "name": "Instagram",
+            "href": "#"
+          },
+          "item3": {
+            "name": "Youtube",
+            "href": "#"
+          }
+        }
+      },
+      "copyright": " Todos os direitos reservados."
+    },
+    "pricing": {
+      "headerTitle": "Preços",
+      "title": "Escolha o preço que melhor se adapta a você",
+      "subtitle": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit numquam eligendi quos odit doloribus molestiae voluptatum.",
+      "textOfMostPopular": "Mais popular",
+      "callToAction": "Experimente grátis",
+      "footerDescription": "Modi dolorem. expedita deleniti!",
+      "price1": {
+        "name": "Starter",
+        "description": "Modi dolorem expedita deleniti. Corporis iste qui inventore pariatur adipisci vitae.",
+        "nextPrice": "R$69,90",
+        "price": "R$49,90",
+        "moreInfoOfPrice": "/Mês",
+        "feature1": "5 lorem ipsum",
+        "feature2": "Up 1000 Modi dolorem ",
+        "feature3": "expedita deleniti",
+        "feature4": "Corporis iste qui",
+        "feature5": "inventore pariatur adipisci",
+        "mostPopular": "false"
+      },
+      "price2": {
+        "name": "Starter",
+        "description": "Modi dolorem expedita deleniti. Corporis iste qui inventore pariatur adipisci vitae.",
+        "nextPrice": "R$99,90",
+        "price": "R$69,90",
+        "moreInfoOfPrice": "/Mês",
+        "feature1": "5 lorem ipsum",
+        "feature2": "Up 1000 Modi dolorem ",
+        "feature3": "expedita deleniti",
+        "feature4": "Corporis iste qui",
+        "feature5": "inventore pariatur adipisci",
+        "mostPopular": "true"
+      }
+    }
+  },
   "Auth": {
     "signup": {
       "metadata": {
@@ -17,8 +323,8 @@
       },
       "form": {
         "labelName": "O seu primeiro nome",
-        "labelEmail":"Email",
-        "labelPassword":"Senha",
+        "labelEmail": "Email",
+        "labelPassword": "Senha",
         "labelConfirmPassword": "Confirme sua senha",
         "placeholderEmail": "Insira seu email",
         "placeholderPassword": "Escolha uma senha forte",
@@ -106,8 +412,7 @@
       "settings": {
         "title": "Configurações",
         "menu": {
-          "item1": "Meu Plano",
-          "item2": "Perfil"
+          "item1": "Perfil"
         },
         "profile": {
           "title": "Informações pessoais",
@@ -122,7 +427,7 @@
           "title": "Confirmação de email"
         },
         "title": "Email Confirmado!",
-        "description": "Acesse agora ferramenta e diga adeus às horas gastas criando tarefas de casa de forma manual.",
+        "description": "Acesse agora ferramenta",
         "textButton": "Ir para a dashboard"
       }
     }
@@ -148,7 +453,7 @@
       "warningMessage": "Se você tiver qualquer problema, entre em contato com nossa equipe ",
       "textWarningMessageLink": "enviando um email para o suporte.",
       "beforeFooter": "Este email foi enviado para ",
-      "afterFooter": "ao se cadastrar na HomeworkAI. Caso não queira mais receber estes emails, entre em contato ",
+      "afterFooter": "ao se cadastrar na Just Launch. Caso não queira mais receber estes emails, entre em contato ",
       "textFooterLink": "enviando um email para Suporte.",
       "textLogin": "Para fazer o login, acesse ",
       "textPrivacy": "Política de Privacidade",

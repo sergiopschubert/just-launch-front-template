@@ -1,27 +1,27 @@
 import { SignUpForm } from '@/app/[locale]/(auth)/components/Forms/SignUpForm';
 import { Metadata } from 'next/types';
-import { useInternationalizationSignup } from '@/app/[locale]/(auth)/hooks/intl/useInternationalizationSignup';
+import { useSignupInternationalization } from '@/app/[locale]/(auth)/hooks/contents/useSignupInternationalization';
 
 export let metadata: Metadata = {};
 
 export default async function SignUp() {
-  const { intlSignup } = await useInternationalizationSignup();
+  const { signupIntl } = await useSignupInternationalization();
 
-  metadata.title = intlSignup.metadata.title;
+  metadata.title = signupIntl.metadata.title;
 
   return (
     <>
       <h1 className='pt-5 text-xl font-semibold text-gray-900'>
-        {intlSignup.title}
+        {signupIntl.title}
       </h1>
       <p className='mx-10 mb-6 mt-2 text-center text-sm font-normal text-gray-600'>
-        {intlSignup.headerSubtitle}
+        {signupIntl.headerSubtitle}
         <span className='font-semibold text-primary/700'>
-          {intlSignup.subtitleWithColor}
+          {signupIntl.subtitleWithColor}
         </span>
-        {intlSignup.subtitle}
+        {signupIntl.subtitle}
       </p>
-      <SignUpForm intl={intlSignup}></SignUpForm>
+      <SignUpForm intl={signupIntl}></SignUpForm>
     </>
   );
 }

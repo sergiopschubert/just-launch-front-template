@@ -1,6 +1,6 @@
 import { getTranslations } from 'next-intl/server';
 
-export const useInternationalizationResetPassword = async () => {
+export const useResetPasswordInternationalization = async () => {
   const internationalization = await getTranslations('Auth');
 
   //### RESET PASSWORD ###
@@ -46,7 +46,7 @@ export const useInternationalizationResetPassword = async () => {
     'resetPassword.errors.resetPassword.message'
   );
 
-  const intlResetPassword = {
+  const resetPasswordIntl = {
     metadata: {
       title: resetPasswordMetadataTitle,
     },
@@ -72,10 +72,7 @@ export const useInternationalizationResetPassword = async () => {
     },
   };
 
-
-
-
   return {
-    intlResetPassword,
+    resetPasswordIntl,
   };
 };

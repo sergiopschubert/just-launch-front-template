@@ -1,5 +1,5 @@
 import { BottomNavLinks } from './BottomNavLinks';
-import { useInternationalizationShared } from '@/app/shared/hooks/useInternationalizationShared';
+import { useInternationalizationShared } from '@/app/shared/hooks/useSharedInternationalization';
 
 export async function BottomNavigation() {
   const { intlBottomNavigation } = await useInternationalizationShared();

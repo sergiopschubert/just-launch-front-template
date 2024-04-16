@@ -1,6 +1,6 @@
 import { getTranslations } from 'next-intl/server';
 
-export const useInternationalizationShared = async () => {
+export const useSharedInternationalization = async () => {
   const internationalization = await getTranslations('Shared');
 
   const language = internationalization('language');

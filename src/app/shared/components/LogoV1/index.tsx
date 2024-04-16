@@ -1,7 +1,17 @@
-import Image from "next/image";
+import Image from 'next/image';
 
-export function LogoV1() {
+interface LogoV1Props {
+  width?: number;
+  height?: number;
+}
+
+export function LogoV1({ width = 60, height = 59 }: LogoV1Props) {
   return (
-    <Image width='60' height='59' src={'/logo.svg'} alt="Logo do Just Launch"/>
+    <Image
+      width={width}
+      height={height}
+      src={'/logo.svg'}
+      alt='Logo do Just Launch'
+    />
   );
 }

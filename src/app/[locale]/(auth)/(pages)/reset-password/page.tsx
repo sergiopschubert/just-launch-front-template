@@ -1,27 +1,27 @@
 import { ResetPasswordForm } from '@/app/[locale]/(auth)/components/Forms/ResetPasswordForm';
+import { useResetPasswordInternationalization } from '@/app/[locale]/(auth)/hooks/contents/useResetPasswordInternationalization';
 import { Metadata } from 'next';
-import { useInternationalizationResetPassword } from '@/app/[locale]/(auth)/hooks/intl/useInternationalizationResetPassword';
 
 export let metadata: Metadata = {};
 
 export default async function Password() {
-  const { intlResetPassword } = await useInternationalizationResetPassword();
+  const { resetPasswordIntl } = await useResetPasswordInternationalization();
 
-  metadata.title = intlResetPassword.metadata.title;
+  metadata.title = resetPasswordIntl.metadata.title;
 
   return (
     <>
       <h1 className='pt-5 text-xl font-semibold text-gray-900'>
-        {intlResetPassword.title}
+        {resetPasswordIntl.title}
       </h1>
       <p className='mx-10 mb-6 mt-2 text-center text-sm font-normal text-gray-600'>
-        {intlResetPassword.headerSubtitle}
+        {resetPasswordIntl.headerSubtitle}
         <span className='font-semibold text-primary/700'>
-          {intlResetPassword.subtitleWithColor}
+          {resetPasswordIntl.subtitleWithColor}
         </span>
-        {intlResetPassword.subtitle}
+        {resetPasswordIntl.subtitle}
       </p>
-      <ResetPasswordForm intl={intlResetPassword}></ResetPasswordForm>
+      <ResetPasswordForm intl={resetPasswordIntl}></ResetPasswordForm>
     </>
   );
 }

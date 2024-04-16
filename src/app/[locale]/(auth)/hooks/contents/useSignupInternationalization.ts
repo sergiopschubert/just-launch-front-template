@@ -1,69 +1,79 @@
-import { getTranslations } from "next-intl/server";
-import { ISignUpIntl } from "../../domain/interfaces/ISignupIntl";
+import { getTranslations } from 'next-intl/server';
+import { ISignUpIntl } from '../../domain/interfaces/ISignupIntl';
 
-export const useInternationalizationSignup = async () => {
-  const internationalization = await getTranslations("Auth");
+export const useSignupInternationalization = async () => {
+  const internationalization = await getTranslations('Auth');
 
   //### SIGNUP ###
-  const signupMetadataTitle = internationalization("signup.metadata.title");
-  const signupTitle = internationalization("signup.title");
-  const signupHeaderSubtitle = internationalization("signup.headerSubtitle");
+  const signupMetadataTitle = internationalization('signup.metadata.title');
+  const signupTitle = internationalization('signup.title');
+  const signupHeaderSubtitle = internationalization('signup.headerSubtitle');
   const signupSubtitleWithColor = internationalization(
-    "signup.subtitleWithColor"
+    'signup.subtitleWithColor'
   );
-  const signupSubtitle = internationalization("signup.subtitle");
+  const signupSubtitle = internationalization('signup.subtitle');
   const signupRegisterSuccessMessage = internationalization(
-    "signup.registerSuccessMessage"
+    'signup.registerSuccessMessage'
   );
   const signupErrorRegisterTitle = internationalization(
-    "signup.errors.register.title"
+    'signup.errors.register.title'
   );
   const signupErrorRegisterMessage = internationalization(
-    "signup.errors.register.message"
+    'signup.errors.register.message'
   );
-  const signupFormPlaceholderEmail = internationalization("signup.form.placeholderEmail");
-  const signupFormPlaceholderPassword = internationalization("signup.form.placeholderPassword");
-  const signupFormPlaceholderName = internationalization("signup.form.placeholderName");
-  const signupFormPlaceholderConfirmPassword = internationalization("signup.form.placeholderConfirmPassword");
-
+  const signupFormPlaceholderEmail = internationalization(
+    'signup.form.placeholderEmail'
+  );
+  const signupFormPlaceholderPassword = internationalization(
+    'signup.form.placeholderPassword'
+  );
+  const signupFormPlaceholderName = internationalization(
+    'signup.form.placeholderName'
+  );
+  const signupFormPlaceholderConfirmPassword = internationalization(
+    'signup.form.placeholderConfirmPassword'
+  );
 
   const signupFormAlertWarningPassword = internationalization(
-    "signup.form.alertWarningPassword"
+    'signup.form.alertWarningPassword'
   );
   const signupFormMessageOfPolicies = internationalization(
-    "signup.form.messageOfPolicies"
+    'signup.form.messageOfPolicies'
   );
   const signupFormTermAndConditions = internationalization(
-    "signup.form.terms&conditions"
+    'signup.form.terms&conditions'
   );
-  const signupFormPrivacy = internationalization("signup.form.privacy");
-  const signupFormButton = internationalization("signup.form.button");
+  const signupFormPrivacy = internationalization('signup.form.privacy');
+  const signupFormButton = internationalization('signup.form.button');
   const signupFormAlreadyAccountMessage = internationalization(
-    "signup.form.alreadyAccountMessage"
+    'signup.form.alreadyAccountMessage'
   );
   const signupFormAlreadyAccountButton = internationalization(
-    "signup.form.alreadyAccountButton"
+    'signup.form.alreadyAccountButton'
   );
 
-  const signupFormLabelName = internationalization("signup.form.labelName");
-  const signupFormLabelPassword = internationalization("signup.form.labelPassword");
-  const signupFormLabelEmail = internationalization("signup.form.labelEmail");
-  const signupFormLabelConfirmPassword = internationalization("signup.form.labelConfirmPassword");
-
+  const signupFormLabelName = internationalization('signup.form.labelName');
+  const signupFormLabelPassword = internationalization(
+    'signup.form.labelPassword'
+  );
+  const signupFormLabelEmail = internationalization('signup.form.labelEmail');
+  const signupFormLabelConfirmPassword = internationalization(
+    'signup.form.labelConfirmPassword'
+  );
 
   //### SIGNUP SUCCESS ###
   const signUpSuccessMetadataTitle = internationalization(
-    "signUpSuccess.metadata.title"
+    'signUpSuccess.metadata.title'
   );
-  const signUpSuccessTitle = internationalization("signUpSuccess.title");
+  const signUpSuccessTitle = internationalization('signUpSuccess.title');
   const signUpSuccessDescription = internationalization(
-    "signUpSuccess.description"
+    'signUpSuccess.description'
   );
   const signUpSuccessTextButton = internationalization(
-    "signUpSuccess.textButton"
+    'signUpSuccess.textButton'
   );
 
-  const intlSignUpSuccess = {
+  const signUpSuccessIntl = {
     metadata: {
       title: signUpSuccessMetadataTitle,
     },
@@ -72,7 +82,7 @@ export const useInternationalizationSignup = async () => {
     textButton: signUpSuccessTextButton,
   };
 
-  const intlSignup:ISignUpIntl = {
+  const signupIntl: ISignUpIntl = {
     metadata: {
       title: signupMetadataTitle,
     },
@@ -107,7 +117,7 @@ export const useInternationalizationSignup = async () => {
   };
 
   return {
-    intlSignup,
-    intlSignUpSuccess,
+    signupIntl,
+    signUpSuccessIntl,
   };
 };
