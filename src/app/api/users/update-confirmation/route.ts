@@ -13,7 +13,7 @@ export async function PUT() {
     }
 
     const body = JSON.stringify({ is_confirmed: true });
-    const url = `${process.env.API_BASE_URL}/justlaunch-users/production/users`;
+    const url = `${process.env.API_USERS_URL}/production/users`;
 
     const signedReq = await signAwsRequest({
       url: url,

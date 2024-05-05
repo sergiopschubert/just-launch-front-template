@@ -8,7 +8,7 @@ const handler = async (req: NextApiRequest, res: NextApiResponse) => {
 
   if (session?.user && session.user.id) {
     try {
-      const url = `${process.env.API_BASE_URL}/justlaunch-users/production/users/${session.user.id}`;
+      const url = `${process.env.API_USERS_URL}/production/users/${session.user.id}`;
       const signedReq = await signAwsRequest({
         url: url,
         method: 'GET',
