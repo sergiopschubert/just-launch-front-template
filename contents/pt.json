@@ -47,12 +47,6 @@
       "leftText": "LANÇAMENTO",
       "rightText": "LANÇAMENTO"
     },
-    "cookies": {
-      "content": "A HomeworkAI usa 🍪, ao clicar em 'Aceitar', concorda com o armazenamento de cookies no seu dispositivo para melhorar a navegação no site,",
-      "acceptButton": "Aceitar",
-      "refuseButton": "Recusar",
-      "moreInfo": " saiba mais clicando aqui."
-    },
     "features": {
       "headerTitle": "Funcionalidades",
       "beforeTitle": "Titulo",
@@ -210,11 +204,11 @@
           },
           "item2": {
             "name": "Documentação",
-            "href": "https://homeworkai.com.br/contents/view/0cadab9d-7d31-4fff-b6d6-34ad9c7a7f8d/0f13930e-86c2-45b9-b69d-d3b780563f4b"
+            "href": "docs.justlaunch.com.br"
           },
           "item3": {
             "name": "Envie sua sugestão",
-            "href": "https://homeworkai.canny.io/sugestoes"
+            "href": "#"
           }
         },
         "company": {
