@@ -1,5 +1,5 @@
-import { Dispatch, ReactNode, SetStateAction } from 'react';
 import * as Dialog from '@radix-ui/react-dialog';
+import { Dispatch, ReactNode, SetStateAction } from 'react';
 import { twMerge } from 'tailwind-merge';
 
 export interface PopupRootProps {

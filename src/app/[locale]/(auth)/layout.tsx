@@ -1,9 +1,9 @@
-import { Inter } from 'next/font/google';
-import { ReactNode } from 'react';
 import { nextAuthOptions } from '@/app/api/auth/[...nextauth]/auth';
-import { getServerSession } from 'next-auth';
-import { redirect } from 'next/navigation';
 import { LogoV1 } from '@/app/shared/components/LogoV1';
+import { getServerSession } from 'next-auth';
+import { Inter } from 'next/font/google';
+import { redirect } from 'next/navigation';
+import { ReactNode } from 'react';
 
 const inter = Inter({ subsets: ['latin'] });
 

@@ -14,22 +14,21 @@ interface ISignInFormProps {
   intl: ISignInIntl;
 }
 
-
 export function SignInForm({ intl }: ISignInFormProps) {
-const {
-  register,
-  handleSubmit,
-  errors,
-  loading,
-  error,
-  onSubmit,
-  setError,
-  open,
-  setOpen,
-  emailValue,
-  handleChange,
-  handlerResetPassword,
-} = useSignin({ intl });
+  const {
+    register,
+    handleSubmit,
+    errors,
+    loading,
+    error,
+    onSubmit,
+    setError,
+    open,
+    setOpen,
+    emailValue,
+    handleChange,
+    handlerResetPassword,
+  } = useSignin({ intl });
 
   return (
     <>

@@ -3,7 +3,7 @@ import { NextApiRequest, NextApiResponse } from 'next';
 
 const handler = async (req: NextApiRequest, res: NextApiResponse) => {
   try {
-    const url = `${process.env.API_BASE_URL}/homeworkai-users/production/users`;
+    const url = `${process.env.API_BASE_URL}/justlaunch-users/production/users`;
     const signedReq = await signAwsRequest({
       url: url,
       method: 'POST',

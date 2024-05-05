@@ -1,19 +1,22 @@
 'use client';
+import { ISettingsIntl } from '@/app/[locale]/(users)/domain/interfaces/ISettingsIntl';
+import { TabItem } from '@/app/shared/components/TabItem';
 import * as Tabs from '@radix-ui/react-tabs';
 import { useState } from 'react';
-import { TabItem } from '@/app/shared/components/TabItem';
 import { ProfileContent } from './ProfileContent';
-import { ISettingsIntl } from '@/app/[locale]/(users)/domain/interfaces/ISettingsIntl';
 
 interface ISettingsTabsProps {
-  profile:{
+  profile: {
     email: string;
     name: string;
-  }
+  };
   intl: ISettingsIntl;
 }
 
-export function SettingsTabs({ profile:{name, email},  intl }: ISettingsTabsProps) {
+export function SettingsTabs({
+  profile: { name, email },
+  intl,
+}: ISettingsTabsProps) {
   const [currentTab, setCurrentTab] = useState('tab1');
 
   return (
@@ -29,7 +32,7 @@ export function SettingsTabs({ profile:{name, email},  intl }: ISettingsTabsProp
 
         {/* Profile */}
         <Tabs.Content className='TabsContent' value='tab1'>
-            <ProfileContent intl={intl} profile={{email, name}}/>
+          <ProfileContent intl={intl} profile={{ email, name }} />
         </Tabs.Content>
       </Tabs.Root>
     </>

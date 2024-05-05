@@ -1,15 +1,13 @@
 'use client';
-import { Cog, MessagesSquare } from 'lucide-react';
 import { Nav } from '@/app/shared/components/Nav';
+import { Cog } from 'lucide-react';
 import { usePathname } from 'next/navigation';
 
-export function BottomNavLinks({
-  item1,
-  item2,
-}: {
+interface BottomNavLinksProps {
   item1: string;
-  item2: string;
-}) {
+}
+
+export function BottomNavLinks({ item1 }: BottomNavLinksProps) {
   const currentPath = usePathname();
 
   return (
@@ -17,10 +15,6 @@ export function BottomNavLinks({
       <Nav.Root currentPath={currentPath} href='/settings'>
         <Nav.IconRight icon={Cog} />
         <Nav.Content content={item1} />
-      </Nav.Root>
-      <Nav.Root href={process.env.NEXT_PUBLIC_FEEDBACK_URL as string}>
-        <Nav.IconRight icon={MessagesSquare} />
-        <Nav.Content content={item2} />
       </Nav.Root>
     </nav>
   );

@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import { ComponentProps } from 'react';
 import { twMerge } from 'tailwind-merge';
 import { LogoV1 } from '../LogoV1';

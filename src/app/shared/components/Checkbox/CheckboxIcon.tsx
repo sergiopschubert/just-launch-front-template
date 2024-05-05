@@ -6,7 +6,7 @@ export function CheckboxIcon({ ...props }: CheckboxIconProps) {
   return (
     <svg
       {...props}
-      className=' pointer-events-none 
+      className=' pointer-events-none
       absolute ml-[0.15em]
       hidden
       h-3

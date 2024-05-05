@@ -1,10 +1,11 @@
 import { MetadataRoute } from 'next';
+import { SEO } from './SEO';
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: 'Just Launch',
-    short_name: 'Just Launch',
-    description: 'Next.js App',
+    name: SEO.title,
+    short_name: SEO.title,
+    description: SEO.description  ,
     start_url: '/',
     display: 'standalone',
     background_color: '#fff',

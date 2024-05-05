@@ -1,5 +1,4 @@
 import Providers from '@/providers/Providers';
-import { CheckIcon } from 'lucide-react';
 import { getServerSession } from 'next-auth';
 import { nextAuthOptions } from '../api/auth/[...nextauth]/auth';
 import {
@@ -12,9 +11,9 @@ import {
   Problems,
   Stats,
   Testimonials,
-} from './(LandingPage)/components';
-import { useLandingPageInternationalization } from './(LandingPage)/hooks/contents/useLandingPageInternationalization';
-import { Pricing } from './(LandingPage)/components/Pricing';
+  Pricing,
+} from './(landing-page)/components';
+import { useLandingPageInternationalization } from './(landing-page)/hooks/contents/useLandingPageInternationalization';
 
 export default async function LandingPage() {
   const session = await getServerSession(nextAuthOptions);
@@ -27,7 +26,6 @@ export default async function LandingPage() {
     statsIntl,
     testimonialsIntl,
     faqsIntl,
-    cookiesIntl,
     pricingIntl,
     featuresIntl,
   } = await useLandingPageInternationalization();

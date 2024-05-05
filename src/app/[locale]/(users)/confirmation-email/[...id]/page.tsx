@@ -7,6 +7,7 @@ export let metadata: Metadata = {};
 interface ConfirmationEmailSuccessProps {
   params: { id: string };
 }
+
 async function getData(id: string): Promise<void> {
   await fetch(
     `${process.env.NEXT_PUBLIC_DOMAIN}/api/users/update-confirmation`,

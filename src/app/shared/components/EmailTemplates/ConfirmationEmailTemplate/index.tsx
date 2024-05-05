@@ -66,7 +66,7 @@ export const ConfirmationEmailTemplate: React.FC<
         </div>
         <p>
           {intlEmail.warningMessage}
-          <a href='mailto:suporte@homeworkai.com.br' style={stylesSheet.link}>
+          <a href='mailto:suporte@justlaunch.com.br' style={stylesSheet.link}>
             {intlEmail.textWarningMessageLink}
           </a>
         </p>
@@ -75,10 +75,12 @@ export const ConfirmationEmailTemplate: React.FC<
       <div style={{ textAlign: 'center' }}>
         <img
           src='https://tllaeaskzbwwlivrilza.supabase.co/storage/v1/object/public/public-storage/favicon.png'
-          alt='logo da HomeworkAI'
+          alt='logo da Just-Launch'
           style={stylesSheet.logo}
         />
-        <p style={{ marginTop: '16px', fontSize: '12px' }}>©2024 HomeworkAI</p>
+        <p style={{ marginTop: '16px', fontSize: '12px' }}>
+          ©2024 Just Launch
+        </p>
       </div>
 
       <div
@@ -92,23 +94,23 @@ export const ConfirmationEmailTemplate: React.FC<
       >
         <p style={{ fontSize: '12px' }}>
           {intlEmail.beforeFooter} {email} {intlEmail.afterFooter}
-          <a href='mailto:suporte@homeworkai.com.br' style={stylesSheet.link}>
+          <a href='mailto:suporte@justlaunch.com.br' style={stylesSheet.link}>
             {intlEmail.textFooterLink}
           </a>
         </p>
         <p style={{ marginTop: '8px', fontSize: '12px' }}>
           {intlEmail.textLogin}
-          <a href='https://homeworkai.com.br/signin' style={stylesSheet.link}>
-            https://homeworkai.com.br/signin
+          <a href='https://justlaunch.com.br/signin' style={stylesSheet.link}>
+            https://justlaunch.com.br/signin
           </a>
         </p>
         <p style={{ marginTop: '8px', fontSize: '12px' }}>
-          <a href='https://homeworkai.com.br/privacy' style={stylesSheet.link}>
+          <a href='https://justlaunch.com.br/privacy' style={stylesSheet.link}>
             {intlEmail.textPrivacy}
           </a>{' '}
           •
           <a
-            href='https://homeworkai.com.br/terms&conditions'
+            href='https://justlaunch.com.br/terms&conditions'
             style={stylesSheet.link}
           >
             {intlEmail.textTerms}

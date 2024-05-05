@@ -1,33 +1,28 @@
 import { MetadataRoute } from 'next';
+import { SEO } from './SEO';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
     {
-      url: 'https://seu-dominio.com.br/',
+      url: `${SEO.domain}/`,
       lastModified: new Date(),
       changeFrequency: 'monthly',
       priority: 1,
     },
     {
-      url: 'https://seu-dominio.com.br/signin',
+      url: `${SEO.domain}/signin`,
       lastModified: new Date(),
       changeFrequency: 'yearly',
       priority: 0.5,
     },
     {
-      url: 'https://seu-dominio.com.br/signup',
+      url:  `${SEO.domain}/signup`,
       lastModified: new Date(),
       changeFrequency: 'yearly',
       priority: 0.8,
     },
     {
-      url: 'https://seu-dominio.com.br/cookie',
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 0.3,
-    },
-    {
-      url: 'https://seu-dominio.com.br/privacy',
+      url:  `${SEO.domain}/privacy`,
       lastModified: new Date(),
       changeFrequency: 'monthly',
       priority: 0.3,

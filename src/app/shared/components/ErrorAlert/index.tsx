@@ -1,5 +1,5 @@
-import { Popup } from '../Popup';
 import { ShieldAlert } from 'lucide-react';
+import { Popup } from '../Popup';
 
 interface ErrorAlertProps {
   title: string;

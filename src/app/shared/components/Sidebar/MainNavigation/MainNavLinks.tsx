@@ -3,7 +3,11 @@ import { Nav } from '@/app/shared/components/Nav';
 import { LayoutTemplate } from 'lucide-react';
 import { usePathname } from 'next/navigation';
 
-export function MainNavLinks({ item1 }: { item1: string }) {
+interface MainNavLinksProps {
+  item1: string;
+}
+
+export function MainNavLinks({ item1 }: MainNavLinksProps) {
   const currentPath = usePathname();
 
   return (

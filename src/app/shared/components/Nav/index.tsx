@@ -1,7 +1,7 @@
+import { NavContent } from './NavContent';
+import { NavIconLeft } from './NavIconLeft';
 import { NavIconRight } from './NavIconRight';
 import { NavRoot } from './NavRoot';
-import { NavIconLeft } from './NavIconLeft';
-import { NavContent } from './NavContent';
 
 export const Nav = {
   Root: NavRoot,

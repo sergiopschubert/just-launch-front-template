@@ -1,7 +1,7 @@
-import { ElementType, ReactNode, forwardRef } from 'react';
 import * as Dialog from '@radix-ui/react-dialog';
-import { XCircle } from 'lucide-react';
 import { DialogProps } from '@radix-ui/react-dialog';
+import { XCircle } from 'lucide-react';
+import { ElementType, ReactNode, forwardRef } from 'react';
 
 export interface PopupContentProps {
   children: ReactNode;

@@ -1,7 +1,7 @@
+import { Input } from '@/app/shared/components/Input';
+import * as Tooltip from '@radix-ui/react-tooltip';
 import { Info } from 'lucide-react';
 import { ComponentProps, ReactNode } from 'react';
-import * as Tooltip from '@radix-ui/react-tooltip';
-import { Input } from '@/app/shared/components/Input';
 import { FieldError } from 'react-hook-form';
 import { twMerge } from 'tailwind-merge';
 

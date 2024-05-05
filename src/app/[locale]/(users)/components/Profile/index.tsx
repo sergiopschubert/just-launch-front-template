@@ -31,14 +31,11 @@ export function Profile({ email, name, dark }: ProfileProps) {
         <div className='flex flex-col'>
           <span
             data-dark={dark}
-            className='block text-sm font-semibold text-white'
+            className='block text-sm font-semibold text-white  data-[dark=true]:text-primary/900'
           >
             {name}
           </span>
-          <span
-            data-dark={dark}
-            className='block text-sm text-gray-50 '
-          >
+          <span data-dark={dark} className='block text-sm text-gray-50 data-[dark=true]:text-primary/800'>
             {email}
           </span>
         </div>
@@ -46,12 +43,9 @@ export function Profile({ email, name, dark }: ProfileProps) {
       <Button
         onClick={logout}
         variant='ghost'
-        className='hover:bg-primary/800 '
+        className='hover:bg-primary/800'
       >
-        <LogOut
-          data-dark={dark}
-          className='h-5 w-5 text-gray-50'
-        />
+        <LogOut data-dark={dark} className='h-5 w-5 text-gray-50 data-[dark=true]:text-primary/800 data-[dark=true]:hover:text-primary/200' />
       </Button>
     </div>
   );

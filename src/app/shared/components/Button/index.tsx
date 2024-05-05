@@ -16,10 +16,6 @@ const button = tv({
     variant: {
       ghost: 'rounded-md px-2 hover:bg-primary/100 shadow-none',
       primary: 'bg-primary/600 text-white hover:bg-primary/700 w-full',
-      outline:
-        'px-2 border border-primary/600 text-primary/600 hover:bg-primary/50',
-      delete:
-        'w-full px-2 border border-error/500 text-error/500 hover:bg-error/100',
     },
   },
 

@@ -44,7 +44,7 @@ export const useInternationalizationUser = async () => {
   const intlSettings = {
     title: settingsTitle,
     menu: {
-      item1: settingsMenuItem1
+      item1: settingsMenuItem1,
     },
     profile: {
       title: settingsProfileTitle,

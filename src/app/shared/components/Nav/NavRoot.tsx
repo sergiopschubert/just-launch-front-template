@@ -12,7 +12,7 @@ export function NavRoot({ children, href, currentPath }: NavRootProps) {
     <Link
       href={href}
       data-active={href === currentPath}
-      className='group flex items-center gap-3 rounded px-3 py-2 data-[active=true]:bg-primary/50 hover:bg-primary/50 active:scale-95 active:bg-primary/50'
+      className='group flex items-center gap-3 rounded px-3 py-2 hover:bg-primary/50 active:scale-95 active:bg-primary/50 data-[active=true]:bg-primary/50'
     >
       {children}
     </Link>

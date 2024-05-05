@@ -1,7 +1,7 @@
 import { NextAuthOptions, Session, User } from 'next-auth';
+import { JWT } from 'next-auth/jwt';
 import CredentialsProvider from 'next-auth/providers/credentials';
 import { supabase } from '../supabase/client';
-import { JWT } from 'next-auth/jwt';
 
 const nextAuthOptions: NextAuthOptions = {
   providers: [

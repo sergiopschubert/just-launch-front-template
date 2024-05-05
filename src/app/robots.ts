@@ -1,4 +1,5 @@
 import { MetadataRoute } from 'next';
+import { SEO } from './SEO';
 
 export default function robots(): MetadataRoute.Robots {
   return {
@@ -7,6 +8,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: '/',
       disallow: '/private/',
     },
-    sitemap: 'https://seu-dominio.com.br/sitemap.xml',
+    sitemap: `${SEO.domain}/sitemap.xml`,
   };
 }
