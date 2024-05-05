@@ -2,7 +2,6 @@ import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import { SEO } from './SEO';
 import './globals.css';
-import CrispComponent from './shared/components/Crisp/Crisp';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -37,10 +36,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en'>
-      <body className={inter.className}>
-        {children}
-        <CrispComponent />
-      </body>
+      <body className={inter.className}>{children}</body>
     </html>
   );
 }
