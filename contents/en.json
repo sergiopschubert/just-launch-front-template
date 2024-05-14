@@ -453,6 +453,17 @@
       "textLogin": "To log in, access ",
       "textPrivacy": "Privacy Policy",
       "textTerms": "Terms of Use"
+    },
+    "userConfirmationAccount": {
+      "title": "Account Confirmation Required!",
+      "hello": "Hello ",
+      "message": ", we've noticed that you haven't confirmed your account yet. To ensure security and the best experience on our platform, completing this process is essential.",
+      "warningMessage": "Click the button below to receive the email.",
+      "button1": "Send Confirmation Email",
+      "button2": "Resend Confirmation Email",
+      "verifyMessage": "Check your email now and confirm your account!",
+      "awaitMessage1": "Wait for ",
+      "awaitMessage2": " seconds to send again!"
     }
   }
 }

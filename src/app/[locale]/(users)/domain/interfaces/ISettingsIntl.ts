@@ -1,4 +1,5 @@
 export interface ISettingsIntl {
+  title: string;
   menu: {
     item1: string;
   };

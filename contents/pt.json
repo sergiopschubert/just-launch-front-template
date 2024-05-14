@@ -453,6 +453,17 @@
       "textLogin": "Para fazer o login, acesse ",
       "textPrivacy": "Política de Privacidade",
       "textTerms": "Termos de Uso"
+    },
+    "userConfirmationAccount": {
+      "title": "Confirmação de Conta Necessária!",
+      "hello": "Olá ",
+      "message": ", percebemos que você ainda não confirmou sua conta. Para garantir a segurança e a melhor experiência em nossa plataforma, é essencial que você conclua esse processo.",
+      "warningMessage": "Clique no botão abaixo para receber o email.",
+      "button1": "Enviar e-mail de Confirmação",
+      "button2": "Reenviar o e-mail de Confirmação",
+      "verifyMessage": "Acesse seu e-mail agora e confirme sua conta!",
+      "awaitMessage1": "Espere por ",
+      "awaitMessage2": " segundos para enviar novamente!"
     }
   }
 }

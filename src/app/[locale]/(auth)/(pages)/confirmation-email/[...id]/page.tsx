@@ -1,13 +1,12 @@
+import { useInternationalizationUser } from '@/app/[locale]/(users)/hooks/useInternationalizationUser';
 import { SuccessMessage } from '@/app/shared/components/SuccessMessage';
 import { Metadata } from 'next/types';
-import { useInternationalizationUser } from '../../hooks/useInternationalizationUser';
 
 export let metadata: Metadata = {};
 
 interface ConfirmationEmailSuccessProps {
   params: { id: string };
 }
-
 async function getData(id: string): Promise<void> {
   await fetch(
     `${process.env.NEXT_PUBLIC_DOMAIN}/api/users/update-confirmation`,

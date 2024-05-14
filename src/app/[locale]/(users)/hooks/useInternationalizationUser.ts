@@ -1,4 +1,6 @@
 import { getTranslations } from 'next-intl/server';
+import { ISettingsIntl } from '../domain/interfaces/ISettingsIntl';
+import { IEmailConfirmationIntl } from '../domain/interfaces/IEmailConfirmationIntl';
 
 export const useInternationalizationUser = async () => {
   const internationalization = await getTranslations('Dashboard');
@@ -17,7 +19,7 @@ export const useInternationalizationUser = async () => {
     'user.settings.profile.labels.email'
   );
 
-  //### EMAIL CONFIRMATION ###
+  //### PAGE EMAIL CONFIRMATION ###
   const confirmationEmailMetadataTitle = internationalization(
     'user.confirmationEmail.metadata.title'
   );
@@ -32,7 +34,7 @@ export const useInternationalizationUser = async () => {
     'user.confirmationEmail.textButton'
   );
 
-  const intlConfirmationEmail = {
+  const intlConfirmationEmail: IEmailConfirmationIntl = {
     metadata: {
       title: confirmationEmailMetadataTitle,
     },
@@ -41,7 +43,7 @@ export const useInternationalizationUser = async () => {
     textButton: confirmationEmailTextButton,
   };
 
-  const intlSettings = {
+  const intlSettings: ISettingsIntl = {
     title: settingsTitle,
     menu: {
       item1: settingsMenuItem1,
