@@ -298,6 +298,12 @@
         "feature5": "inventore pariatur adipisci",
         "mostPopular": "true"
       }
+    },
+    "cookies": {
+      "content": "A JustLaunch usa 🍪, ao clicar em 'Aceitar', concorda com o armazenamento de cookies no seu dispositivo para melhorar a navegação no site,",
+      "acceptButton": "Aceitar",
+      "refuseButton": "Recusar",
+      "moreInfo": " saiba mais clicando aqui."
     }
   },
   "Auth": {

@@ -1,4 +1,5 @@
 import { useCallToActionInternationalization } from './useCallToActionInternationalization';
+import { useCookieBannerInternationalization } from './useCookieBannerInternationalization';
 import { useFaqsInternationalization } from './useFaqsInternationalization';
 import { useFeaturesInternationalization } from './useFeaturesInternationalization';
 import { useFooterInternationalization } from './useFooterInternationalization';
@@ -20,6 +21,7 @@ export const useLandingPageInternationalization = async () => {
   const { faqsIntl } = await useFaqsInternationalization();
   const { featuresIntl } = await useFeaturesInternationalization();
   const { pricingIntl } = await usePricingInternationalization();
+  const { cookieBannerIntl } = await useCookieBannerInternationalization();
 
   return {
     headerIntl,
@@ -32,5 +34,6 @@ export const useLandingPageInternationalization = async () => {
     faqsIntl,
     featuresIntl,
     pricingIntl,
+    cookieBannerIntl,
   };
 };

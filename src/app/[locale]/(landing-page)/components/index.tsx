@@ -9,3 +9,4 @@ export { Problems } from './Problems';
 export { Stats } from './Stats';
 export { Testimonials } from './Testimonials';
 export { Pricing } from './Pricing';
+export { CookieBanner } from './CookieBanner';
