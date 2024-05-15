@@ -25,7 +25,7 @@ export const useConfirmationEmailInternationalization = async () => {
   const textPrivacy = internationalization('confirmationEmail.textPrivacy');
   const textTerms = internationalization('confirmationEmail.textTerms');
 
-  const intlConfirmationEmail: IEmailToConfirmationOfAccountIntl = {
+  const confirmationEmailIntl: IEmailToConfirmationOfAccountIntl = {
     subject,
     headerTitle,
     title,
@@ -43,6 +43,6 @@ export const useConfirmationEmailInternationalization = async () => {
   };
 
   return {
-    intlConfirmationEmail,
+    confirmationEmailIntl,
   };
 };

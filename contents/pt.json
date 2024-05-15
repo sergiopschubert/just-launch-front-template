@@ -402,6 +402,189 @@
       "textButton": "Entrar"
     }
   },
+  "Compliance": {
+    "terms&conditions": {
+      "metadata": {
+        "title": "Termos e condições"
+      },
+      "title": "Termos e Condições de Uso da Just Launch",
+      "lastUpdated": "Data da última atualização: 15 de Maio de 2024",
+      "section1": {
+        "title": "1. Aceitação dos Termos",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque a eros in mi iaculis condimentum. Aliquam feugiat elit eget nunc venenatis, ac finibus dui congue. Quisque mauris purus, consequat ac pulvinar at, condimentum vitae ipsum. Curabitur et nibh ut neque consectetur consequat id sit amet est. Etiam malesuada enim nibh, at ultricies tellus dapibus vitae. Quisque facilisis velit eget lacus posuere ullamcorper. In hac habitasse platea dictumst. Sed porta fermentum erat vitae feugiat. Integer tincidunt massa ex, quis interdum justo placerat quis. Suspendisse potenti."
+      },
+      "section2": {
+        "title": "2. Descrição do Serviço",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque a eros in mi iaculis condimentum. Aliquam feugiat elit eget nunc venenatis, ac finibus dui congue. Quisque mauris purus, consequat ac pulvinar at, condimentum vitae ipsum. Curabitur et nibh ut neque consectetur consequat id sit amet est. Etiam malesuada enim nibh, at ultricies tellus dapibus vitae. Quisque facilisis velit eget lacus posuere ullamcorper. In hac habitasse platea dictumst. Sed porta fermentum erat vitae feugiat. Integer tincidunt massa ex, quis interdum justo placerat quis. Suspendisse potenti."
+      },
+      "section3": {
+        "title": "3. Cadastro",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque a eros in mi iaculis condimentum. Aliquam feugiat elit eget nunc venenatis, ac finibus dui congue. Quisque mauris purus, consequat ac pulvinar at, condimentum vitae ipsum. Curabitur et nibh ut neque consectetur consequat id sit amet est. Etiam malesuada enim nibh, at ultricies tellus dapibus vitae. Quisque facilisis velit eget lacus posuere ullamcorper. In hac habitasse platea dictumst. Sed porta fermentum erat vitae feugiat. Integer tincidunt massa ex, quis interdum justo placerat quis. Suspendisse potenti."
+      },
+      "section4": {
+        "title": "4. Planos de Assinatura",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque a eros in mi iaculis condimentum. Aliquam feugiat elit eget nunc venenatis, ac finibus dui congue. Quisque mauris purus, consequat ac pulvinar at, condimentum vitae ipsum. Curabitur et nibh ut neque consectetur consequat id sit amet est. Etiam malesuada enim nibh, at ultricies tellus dapibus vitae. Quisque facilisis velit eget lacus posuere ullamcorper. In hac habitasse platea dictumst. Sed porta fermentum erat vitae feugiat. Integer tincidunt massa ex, quis interdum justo placerat quis. Suspendisse potenti."
+      },
+      "section5": {
+        "title": "5. Taxas e Pagamentos",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque a eros in mi iaculis condimentum. Aliquam feugiat elit eget nunc venenatis, ac finibus dui congue. Quisque mauris purus, consequat ac pulvinar at, condimentum vitae ipsum. Curabitur et nibh ut neque consectetur consequat id sit amet est. Etiam malesuada enim nibh, at ultricies tellus dapibus vitae. Quisque facilisis velit eget lacus posuere ullamcorper. In hac habitasse platea dictumst. Sed porta fermentum erat vitae feugiat. Integer tincidunt massa ex, quis interdum justo placerat quis. Suspendisse potenti."
+      },
+      "section6": {
+        "title": "6. Limitações do Serviço",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque a eros in mi iaculis condimentum. Aliquam feugiat elit eget nunc venenatis, ac finibus dui congue. Quisque mauris purus, consequat ac pulvinar at, condimentum vitae ipsum. Curabitur et nibh ut neque consectetur consequat id sit amet est. Etiam malesuada enim nibh, at ultricies tellus dapibus vitae. Quisque facilisis velit eget lacus posuere ullamcorper. In hac habitasse platea dictumst. Sed porta fermentum erat vitae feugiat. Integer tincidunt massa ex, quis interdum justo placerat quis. Suspendisse potenti."
+      },
+      "section7": {
+        "title": "7. Restrições de Uso",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque a eros in mi iaculis condimentum. Aliquam feugiat elit eget nunc venenatis, ac finibus dui congue. Quisque mauris purus, consequat ac pulvinar at, condimentum vitae ipsum. Curabitur et nibh ut neque consectetur consequat id sit amet est. Etiam malesuada enim nibh, at ultricies tellus dapibus vitae. Quisque facilisis velit eget lacus posuere ullamcorper. In hac habitasse platea dictumst. Sed porta fermentum erat vitae feugiat. Integer tincidunt massa ex, quis interdum justo placerat quis. Suspendisse potenti."
+      },
+      "section8": {
+        "title": "8. Responsabilidades do Usuário",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque a eros in mi iaculis condimentum. Aliquam feugiat elit eget nunc venenatis, ac finibus dui congue. Quisque mauris purus, consequat ac pulvinar at, condimentum vitae ipsum. Curabitur et nibh ut neque consectetur consequat id sit amet est. Etiam malesuada enim nibh, at ultricies tellus dapibus vitae. Quisque facilisis velit eget lacus posuere ullamcorper. In hac habitasse platea dictumst. Sed porta fermentum erat vitae feugiat. Integer tincidunt massa ex, quis interdum justo placerat quis. Suspendisse potenti."
+      },
+      "section9": {
+        "title": "9. Propriedade Intelectual",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque a eros in mi iaculis condimentum. Aliquam feugiat elit eget nunc venenatis, ac finibus dui congue. Quisque mauris purus, consequat ac pulvinar at, condimentum vitae ipsum. Curabitur et nibh ut neque consectetur consequat id sit amet est. Etiam malesuada enim nibh, at ultricies tellus dapibus vitae. Quisque facilisis velit eget lacus posuere ullamcorper. In hac habitasse platea dictumst. Sed porta fermentum erat vitae feugiat. Integer tincidunt massa ex, quis interdum justo placerat quis. Suspendisse potenti."
+      },
+      "section10": {
+        "title": "10. Isenção de Responsabilidade",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque a eros in mi iaculis condimentum. Aliquam feugiat elit eget nunc venenatis, ac finibus dui congue. Quisque mauris purus, consequat ac pulvinar at, condimentum vitae ipsum. Curabitur et nibh ut neque consectetur consequat id sit amet est. Etiam malesuada enim nibh, at ultricies tellus dapibus vitae. Quisque facilisis velit eget lacus posuere ullamcorper. In hac habitasse platea dictumst. Sed porta fermentum erat vitae feugiat. Integer tincidunt massa ex, quis interdum justo placerat quis. Suspendisse potenti."
+      },
+      "section11": {
+        "title": "11. Limitação de Responsabilidade",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque a eros in mi iaculis condimentum. Aliquam feugiat elit eget nunc venenatis, ac finibus dui congue. Quisque mauris purus, consequat ac pulvinar at, condimentum vitae ipsum. Curabitur et nibh ut neque consectetur consequat id sit amet est. Etiam malesuada enim nibh, at ultricies tellus dapibus vitae. Quisque facilisis velit eget lacus posuere ullamcorper. In hac habitasse platea dictumst. Sed porta fermentum erat vitae feugiat. Integer tincidunt massa ex, quis interdum justo placerat quis. Suspendisse potenti."
+      },
+      "section12": {
+        "title": "12. Lei Aplicável e Jurisdição",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque a eros in mi iaculis condimentum. Aliquam feugiat elit eget nunc venenatis, ac finibus dui congue. Quisque mauris purus, consequat ac pulvinar at, condimentum vitae ipsum. Curabitur et nibh ut neque consectetur consequat id sit amet est. Etiam malesuada enim nibh, at ultricies tellus dapibus vitae. Quisque facilisis velit eget lacus posuere ullamcorper. In hac habitasse platea dictumst. Sed porta fermentum erat vitae feugiat. Integer tincidunt massa ex, quis interdum justo placerat quis. Suspendisse potenti."
+      },
+      "section13": {
+        "title": "13. Alterações nos Termos",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque a eros in mi iaculis condimentum. Aliquam feugiat elit eget nunc venenatis, ac finibus dui congue. Quisque mauris purus, consequat ac pulvinar at, condimentum vitae ipsum. Curabitur et nibh ut neque consectetur consequat id sit amet est. Etiam malesuada enim nibh, at ultricies tellus dapibus vitae. Quisque facilisis velit eget lacus posuere ullamcorper. In hac habitasse platea dictumst. Sed porta fermentum erat vitae feugiat. Integer tincidunt massa ex, quis interdum justo placerat quis. Suspendisse potenti."
+      },
+      "section14": {
+        "title": "14. Rescisão",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque a eros in mi iaculis condimentum. Aliquam feugiat elit eget nunc venenatis, ac finibus dui congue. Quisque mauris purus, consequat ac pulvinar at, condimentum vitae ipsum. Curabitur et nibh ut neque consectetur consequat id sit amet est. Etiam malesuada enim nibh, at ultricies tellus dapibus vitae. Quisque facilisis velit eget lacus posuere ullamcorper. In hac habitasse platea dictumst. Sed porta fermentum erat vitae feugiat. Integer tincidunt massa ex, quis interdum justo placerat quis. Suspendisse potenti."
+      },
+      "section15": {
+        "title": "15. Contato",
+        "content": "Para perguntas relacionadas a estes Termos, entre em contato conosco: "
+      }
+    },
+    "privacyPolicy": {
+      "metadata": {
+        "title": "Política de Privacidade"
+      },
+      "title": "Política de Privacidade da Just Launch",
+      "lastUpdated": "Data da última atualização: 15 de Maio de 2024",
+      "introduction": {
+        "title": "Introdução",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque a eros in mi iaculis condimentum. Aliquam feugiat elit eget nunc venenatis, ac finibus dui congue. Quisque mauris purus, consequat ac pulvinar at, condimentum vitae ipsum. Curabitur et nibh ut neque consectetur consequat id sit amet est. Etiam malesuada enim nibh, at ultricies tellus dapibus vitae. Quisque facilisis velit eget lacus posuere ullamcorper. In hac habitasse platea dictumst. Sed porta fermentum erat vitae feugiat. Integer tincidunt massa ex, quis interdum justo placerat quis. Suspendisse potenti."
+      },
+      "privacyCommitment": {
+        "title": "1. Compromisso com a Privacidade",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque a eros in mi iaculis condimentum. Aliquam feugiat elit eget nunc venenatis, ac finibus dui congue. Quisque mauris purus, consequat ac pulvinar at, condimentum vitae ipsum. Curabitur et nibh ut neque consectetur consequat id sit amet est. Etiam malesuada enim nibh, at ultricies tellus dapibus vitae. Quisque facilisis velit eget lacus posuere ullamcorper. In hac habitasse platea dictumst. Sed porta fermentum erat vitae feugiat. Integer tincidunt massa ex, quis interdum justo placerat quis. Suspendisse potenti."
+      },
+      "dataTransparency": {
+        "title": "2. Transparência no Tratamento dos Dados",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque a eros in mi iaculis condimentum. Aliquam feugiat elit eget nunc venenatis, ac finibus dui congue. Quisque mauris purus, consequat ac pulvinar at, condimentum vitae ipsum. Curabitur et nibh ut neque consectetur consequat id sit amet est. Etiam malesuada enim nibh, at ultricies tellus dapibus vitae. Quisque facilisis velit eget lacus posuere ullamcorper. In hac habitasse platea dictumst. Sed porta fermentum erat vitae feugiat. Integer tincidunt massa ex, quis interdum justo placerat quis. Suspendisse potenti.",
+        "subsections": {
+          "providedInformation": {
+            "title": "2.1 Informações Fornecidas",
+            "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque a eros in mi iaculis condimentum. Aliquam feugiat elit eget nunc venenatis, ac finibus dui congue. Quisque mauris purus, consequat ac pulvinar at, condimentum vitae ipsum. Curabitur et nibh ut neque consectetur consequat id sit amet est. Etiam malesuada enim nibh, at ultricies tellus dapibus vitae. Quisque facilisis velit eget lacus posuere ullamcorper. In hac habitasse platea dictumst. Sed porta fermentum erat vitae feugiat. Integer tincidunt massa ex, quis interdum justo placerat quis. Suspendisse potenti."
+          },
+          "automaticallyCollectedInformation": {
+            "title": "2.2 Informações Coletadas Automaticamente",
+            "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque a eros in mi iaculis condimentum. Aliquam feugiat elit eget nunc venenatis, ac finibus dui congue. Quisque mauris purus, consequat ac pulvinar at, condimentum vitae ipsum. Curabitur et nibh ut neque consectetur consequat id sit amet est. Etiam malesuada enim nibh, at ultricies tellus dapibus vitae. Quisque facilisis velit eget lacus posuere ullamcorper. In hac habitasse platea dictumst. Sed porta fermentum erat vitae feugiat. Integer tincidunt massa ex, quis interdum justo placerat quis. Suspendisse potenti."
+          }
+        }
+      },
+      "informationAccuracy": {
+        "title": "3. Exatidão das Informações",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque a eros in mi iaculis condimentum. Aliquam feugiat elit eget nunc venenatis, ac finibus dui congue. Quisque mauris purus, consequat ac pulvinar at, condimentum vitae ipsum. Curabitur et nibh ut neque consectetur consequat id sit amet est. Etiam malesuada enim nibh, at ultricies tellus dapibus vitae. Quisque facilisis velit eget lacus posuere ullamcorper. In hac habitasse platea dictumst. Sed porta fermentum erat vitae feugiat. Integer tincidunt massa ex, quis interdum justo placerat quis. Suspendisse potenti."
+      },
+      "personalDataDefinition": {
+        "title": "4. Definição de Dados Pessoais e Dados Sensíveis",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque a eros in mi iaculis condimentum. Aliquam feugiat elit eget nunc venenatis, ac finibus dui congue. Quisque mauris purus, consequat ac pulvinar at, condimentum vitae ipsum. Curabitur et nibh ut neque consectetur consequat id sit amet est. Etiam malesuada enim nibh, at ultricies tellus dapibus vitae. Quisque facilisis velit eget lacus posuere ullamcorper. In hac habitasse platea dictumst. Sed porta fermentum erat vitae feugiat. Integer tincidunt massa ex, quis interdum justo placerat quis. Suspendisse potenti."
+      },
+      "dataUse": {
+        "title": "5. Processamento e Uso de Dados Pessoais",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque a eros in mi iaculis condimentum. Aliquam feugiat elit eget nunc venenatis, ac finibus dui congue. Quisque mauris purus, consequat ac pulvinar at, condimentum vitae ipsum. Curabitur et nibh ut neque consectetur consequat id sit amet est. Etiam malesuada enim nibh, at ultricies tellus dapibus vitae. Quisque facilisis velit eget lacus posuere ullamcorper. In hac habitasse platea dictumst. Sed porta fermentum erat vitae feugiat. Integer tincidunt massa ex, quis interdum justo placerat quis. Suspendisse potenti."
+      },
+      "dataSharing": {
+        "title": "6. Compartilhamento e Divulgação de Dados",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque a eros in mi iaculis condimentum. Aliquam feugiat elit eget nunc venenatis, ac finibus dui congue. Quisque mauris purus, consequat ac pulvinar at, condimentum vitae ipsum. Curabitur et nibh ut neque consectetur consequat id sit amet est. Etiam malesuada enim nibh, at ultricies tellus dapibus vitae. Quisque facilisis velit eget lacus posuere ullamcorper. In hac habitasse platea dictumst. Sed porta fermentum erat vitae feugiat. Integer tincidunt massa ex, quis interdum justo placerat quis. Suspendisse potenti."
+      },
+      "dataControllerRole": {
+        "title": "7. Papel da Empresa como Controladora de Dados",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque a eros in mi iaculis condimentum. Aliquam feugiat elit eget nunc venenatis, ac finibus dui congue. Quisque mauris purus, consequat ac pulvinar at, condimentum vitae ipsum. Curabitur et nibh ut neque consectetur consequat id sit amet est. Etiam malesuada enim nibh, at ultricies tellus dapibus vitae. Quisque facilisis velit eget lacus posuere ullamcorper. In hac habitasse platea dictumst. Sed porta fermentum erat vitae feugiat. Integer tincidunt massa ex, quis interdum justo placerat quis. Suspendisse potenti."
+      },
+      "dataProcessingUse": {
+        "title": "8. Segurança da Informação e Compatibilidade de Navegadores",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque a eros in mi iaculis condimentum. Aliquam feugiat elit eget nunc venenatis, ac finibus dui congue. Quisque mauris purus, consequat ac pulvinar at, condimentum vitae ipsum. Curabitur et nibh ut neque consectetur consequat id sit amet est. Etiam malesuada enim nibh, at ultricies tellus dapibus vitae. Quisque facilisis velit eget lacus posuere ullamcorper. In hac habitasse platea dictumst. Sed porta fermentum erat vitae feugiat. Integer tincidunt massa ex, quis interdum justo placerat quis. Suspendisse potenti."
+      },
+      "analysisTools": {
+        "title": "9. Uso de Ferramentas de Análise e Rastreamento",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque a eros in mi iaculis condimentum. Aliquam feugiat elit eget nunc venenatis, ac finibus dui congue. Quisque mauris purus, consequat ac pulvinar at, condimentum vitae ipsum. Curabitur et nibh ut neque consectetur consequat id sit amet est. Etiam malesuada enim nibh, at ultricies tellus dapibus vitae. Quisque facilisis velit eget lacus posuere ullamcorper. In hac habitasse platea dictumst. Sed porta fermentum erat vitae feugiat. Integer tincidunt massa ex, quis interdum justo placerat quis. Suspendisse potenti.",
+        "subsections": {
+          "cookiePolicy": {
+            "title": "9.1 Política de Cookies",
+            "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque a eros in mi iaculis condimentum. Aliquam feugiat elit eget nunc venenatis, ac finibus dui congue. Quisque mauris purus, consequat ac pulvinar at, condimentum vitae ipsum. Curabitur et nibh ut neque consectetur consequat id sit amet est. Etiam malesuada enim nibh, at ultricies tellus dapibus vitae. Quisque facilisis velit eget lacus posuere ullamcorper. In hac habitasse platea dictumst. Sed porta fermentum erat vitae feugiat. Integer tincidunt massa ex, quis interdum justo placerat quis. Suspendisse potenti."
+          }
+        }
+      },
+      "dataRetentionDuration": {
+        "title": "10. Duração do Tratamento de Dados Pessoais",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque a eros in mi iaculis condimentum. Aliquam feugiat elit eget nunc venenatis, ac finibus dui congue. Quisque mauris purus, consequat ac pulvinar at, condimentum vitae ipsum. Curabitur et nibh ut neque consectetur consequat id sit amet est. Etiam malesuada enim nibh, at ultricies tellus dapibus vitae. Quisque facilisis velit eget lacus posuere ullamcorper. In hac habitasse platea dictumst. Sed porta fermentum erat vitae feugiat. Integer tincidunt massa ex, quis interdum justo placerat quis. Suspendisse potenti."
+      },
+      "policyChanges": {
+        "title": "11. Alterações na Política de Privacidade",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque a eros in mi iaculis condimentum. Aliquam feugiat elit eget nunc venenatis, ac finibus dui congue. Quisque mauris purus, consequat ac pulvinar at, condimentum vitae ipsum. Curabitur et nibh ut neque consectetur consequat id sit amet est. Etiam malesuada enim nibh, at ultricies tellus dapibus vitae. Quisque facilisis velit eget lacus posuere ullamcorper. In hac habitasse platea dictumst. Sed porta fermentum erat vitae feugiat. Integer tincidunt massa ex, quis interdum justo placerat quis. Suspendisse potenti."
+      },
+      "userRights": {
+        "title": "12. Direitos do Usuário",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque a eros in mi iaculis condimentum. Aliquam feugiat elit eget nunc venenatis, ac finibus dui congue. Quisque mauris purus, consequat ac pulvinar at, condimentum vitae ipsum. Curabitur et nibh ut neque consectetur consequat id sit amet est. Etiam malesuada enim nibh, at ultricies tellus dapibus vitae. Quisque facilisis velit eget lacus posuere ullamcorper. In hac habitasse platea dictumst. Sed porta fermentum erat vitae feugiat. Integer tincidunt massa ex, quis interdum justo placerat quis. Suspendisse potenti."
+      },
+      "contact": {
+        "title": "13. Contato",
+        "content": "Para exercer seus direitos ou em caso de dúvidas, entre em contato pelo e-mail"
+      }
+    },
+    "cookie": {
+      "metadata": {
+        "title": "Política de Cookies"
+      },
+      "title": "Política de Cookies da Just Launch",
+      "lastUpdated": "Data da última atualização: 15 de Maio de 2024",
+      "introduction": {
+        "title": "1. O Que São Cookies?",
+        "content": "Cookies são pequenos arquivos de texto enviados para o seu dispositivo quando você visita um site. Eles melhoram sua experiência de navegação, lembrando suas ações e preferências (como login e seleção de região), para que você não precise reinseri-las a cada visita."
+      },
+      "usage": {
+        "title": "2. Como Usamos os Cookies",
+        "content": "Nós utilizamos cookies para coletar informações sobre como você usa nossos sites e serviços. Isso inclui:\n- Rastreamento de IP (Internet Protocol);\n- Identificadores de dispositivo;\n- Tipo de navegador e tempo de acesso;\n- Melhoria e desenvolvimento de nossos produtos e serviços;\n- Envio de anúncios e ofertas personalizadas."
+      },
+      "thirdPartyCookies": {
+        "title": "3. Cookies de Terceiros",
+        "content": "Além dos cookies que nós próprios estabelecemos, também usamos ferramentas de terceiros para análise e publicidade, que incluem:\n- Google Analytics: Para entender como os usuários interagem com nosso site.\n- Facebook Pixel: Para publicidade direcionada e análise do engajamento.\n- Microsoft Clarity: Para análise de comportamento e experiência do usuário.\n- Stripe: Para processamento de pagamentos e segurança das transações."
+      },
+      "cookieManagement": {
+        "title": "4. Gerenciamento de Cookies",
+        "content": "Você tem controle total sobre o uso de cookies. A maioria dos navegadores aceita cookies automaticamente, mas você pode ajustar as configurações do seu navegador para recusar ou limitar cookies. No entanto, isso pode afetar sua experiência no nosso site, podendo resultar em lentidão no carregamento ou na limitação de certas funcionalidades."
+      },
+      "cookiePolicy": {
+        "title": "5. Política de Cookies na Just Launch",
+        "content": "Em cada visita ao nosso site, apresentaremos nossa política de cookies, oferecendo a você a escolha de aceitar ou não os cookies. Respeitamos sua decisão e fornecemos opções para gerenciar suas preferências."
+      },
+      "policyUpdates": {
+        "title": "6. Atualizações na Política de Cookies",
+        "content": "Podemos atualizar esta política periodicamente. Recomendamos que você revise esta política regularmente para se manter informado sobre como estamos utilizando cookies."
+      },
+      "contact": {
+        "title": "7. Contato",
+        "content": "Para perguntas relacionadas a estes Termos, entre em contato conosco em: "
+      }
+    }
+  },
   "Dashboard": {
     "user": {
       "settings": {

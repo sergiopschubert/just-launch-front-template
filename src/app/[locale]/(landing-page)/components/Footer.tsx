@@ -1,5 +1,5 @@
 import { LogoV2 } from '@/app/shared/components/LogoV2';
-import { Facebook, Instagram, Youtube } from 'lucide-react';
+import { CloudUpload, Facebook, Instagram, Youtube } from 'lucide-react';
 import { IFooterIntl } from '../domain/interfaces/IFooter';
 
 interface FooterProps {
@@ -99,10 +99,20 @@ export function Footer({ intl }: FooterProps) {
             </div>
           </div>
         </div>
-        <div className='mt-16 border-t border-white/10 pt-8 sm:mt-20 lg:mt-24'>
+        <div className='md: mt-16 flex flex-col justify-between border-t border-white/10 pt-8 sm:mt-20 md:flex-row lg:mt-24'>
           <a href='#'>
             <p className='text-xs leading-5 text-primary/50'>
               &copy; {currentYear} {intl?.menuTitle3}, {intl?.copyright}
+            </p>
+          </a>
+          <a
+            className='h-8 w-[270px] rounded border border-white/20 bg-primary/600 shadow hover:border-white/50'
+            href='https://justlaunch.com.br?affiliate=true'
+          >
+            <p className='flex w-full flex-row items-center justify-center pt-1 font-normal text-white/60 hover:text-white'>
+              Construído com{' '}
+              <CloudUpload className='mx-2 h-5 w-5' strokeWidth={'2.9px'} />
+              Just<span className='font-bold'>Launch</span>
             </p>
           </a>
         </div>

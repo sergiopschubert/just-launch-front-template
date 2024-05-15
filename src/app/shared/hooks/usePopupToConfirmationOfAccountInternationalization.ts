@@ -22,7 +22,7 @@ export const usePopupToConfirmationOfAccountInternationalization = async () => {
     'userConfirmationAccount.awaitMessage2'
   );
 
-  const intlPopupToConfirmationOfAccount: IPopupToConfirmationOfAccountIntl = {
+  const popupToConfirmationOfAccountIntl: IPopupToConfirmationOfAccountIntl = {
     title,
     hello,
     message,
@@ -35,6 +35,6 @@ export const usePopupToConfirmationOfAccountInternationalization = async () => {
   };
 
   return {
-    intlPopupToConfirmationOfAccount,
+    popupToConfirmationOfAccountIntl,
   };
 };
