@@ -6,12 +6,14 @@ import { useContextSelector } from 'use-context-selector';
 import { UsersContext } from '@/app/shared/contexts/UsersContext';
 import { usePlans } from '../hooks/usePlans';
 import Link from 'next/link';
+import { ReactNode } from 'react';
 
 interface PricingProps {
   intl: IPricingIntl;
+  callToActionToSaveLeads?: ReactNode;
 }
 
-export function Pricing({ intl }: PricingProps) {
+export function Pricing({ intl, callToActionToSaveLeads }: PricingProps) {
   const user = useContextSelector(UsersContext, (context) => context.user);
 
   const { urls, billingPortal, userWithoutPlan } = usePlans(
@@ -132,22 +134,28 @@ export function Pricing({ intl }: PricingProps) {
                     </ul>
                   </div>
                   <div className='flex flex-col '>
-                    {user.email ? (
-                      <a
-                        href={userWithoutPlan ? urls[item.name] : billingPortal}
-                        aria-describedby={item.name}
-                        className='mt-8 block rounded-md bg-primary/600 px-3.5 py-2 text-center text-sm font-semibold leading-6 text-white shadow-sm hover:bg-primary/700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary/600'
-                      >
-                        {userWithoutPlan ? intl.callToAction : intl.cancel}
-                      </a>
+                    {!callToActionToSaveLeads ? (
+                      user.email ? (
+                        <a
+                          href={
+                            userWithoutPlan ? urls[item.name] : billingPortal
+                          }
+                          aria-describedby={item.name}
+                          className='mt-8 block rounded-md bg-primary/600 px-3.5 py-2 text-center text-sm font-semibold leading-6 text-white shadow-sm hover:bg-primary/700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary/600'
+                        >
+                          {userWithoutPlan ? intl.callToAction : intl.cancel}
+                        </a>
+                      ) : (
+                        <Link
+                          href={'/signup'}
+                          aria-describedby={item.name}
+                          className='mt-8 block rounded-md bg-primary/600 px-3.5 py-2 text-center text-sm font-semibold leading-6 text-white shadow-sm hover:bg-primary/700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary/600'
+                        >
+                          {intl.callToAction}
+                        </Link>
+                      )
                     ) : (
-                      <Link
-                        href={'/signup'}
-                        aria-describedby={item.name}
-                        className='mt-8 block rounded-md bg-primary/600 px-3.5 py-2 text-center text-sm font-semibold leading-6 text-white shadow-sm hover:bg-primary/700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary/600'
-                      >
-                        {intl.callToAction}
-                      </Link>
+                      callToActionToSaveLeads
                     )}
 
                     <div className='mt-2 flex items-center justify-center'>

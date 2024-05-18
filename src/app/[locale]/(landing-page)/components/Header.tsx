@@ -8,7 +8,7 @@ import { SelectOfLanguages } from '@/app/shared/components/SelectOfLanguages';
 import { Popover, Transition } from '@headlessui/react';
 import { Session } from 'next-auth';
 import Link from 'next/link';
-import { Fragment } from 'react';
+import { Fragment, ReactNode } from 'react';
 import { twMerge } from 'tailwind-merge';
 import { IHeaderIntl } from '../domain/interfaces/IHeaderIntl';
 
@@ -16,6 +16,7 @@ interface HeaderProps {
   intl: IHeaderIntl;
   session: Session | null;
   withoutMenu?: boolean;
+  callToActionToSaveLeads?: ReactNode;
 }
 
 function MobileNavLink({
@@ -59,7 +60,11 @@ function MobileNavIcon({ open }: { open: boolean }) {
   );
 }
 
-function MobileNavigation({ intl, session }: HeaderProps) {
+function MobileNavigation({
+  intl,
+  session,
+  callToActionToSaveLeads,
+}: HeaderProps) {
   return (
     <Popover>
       <Popover.Button
@@ -106,10 +111,12 @@ function MobileNavigation({ intl, session }: HeaderProps) {
                   {intl?.buttons.option3}
                 </MobileNavLink>
               </>
-            ) : (
+            ) : !callToActionToSaveLeads ? (
               <MobileNavLink href='/signin'>
                 {intl?.buttons.option1}
               </MobileNavLink>
+            ) : (
+              callToActionToSaveLeads
             )}
           </Popover.Panel>
         </Transition.Child>
@@ -118,7 +125,12 @@ function MobileNavigation({ intl, session }: HeaderProps) {
   );
 }
 
-export function Header({ intl, session, withoutMenu }: HeaderProps) {
+export function Header({
+  intl,
+  session,
+  withoutMenu,
+  callToActionToSaveLeads,
+}: HeaderProps) {
   return (
     <>
       <header className='bg-primary/50 py-10'>
@@ -159,20 +171,30 @@ export function Header({ intl, session, withoutMenu }: HeaderProps) {
                   <></>
                 ) : (
                   <div className='-mr-1 lg:hidden'>
-                    <MobileNavigation intl={intl} session={session} />
+                    <MobileNavigation
+                      intl={intl}
+                      session={session}
+                      callToActionToSaveLeads={callToActionToSaveLeads}
+                    />
                   </div>
                 )}
               </div>
             ) : (
               <div className='flex items-center gap-x-5 md:gap-x-8'>
-                <div className='hidden lg:block'>
-                  <NavLink href='/signin'>{intl?.buttons.option1}</NavLink>
-                </div>
-                <Link href={'/signup'}>
-                  <Button variant='primary' className='hidden p-3 md:block'>
-                    {intl?.buttons.option2}
-                  </Button>
-                </Link>
+                {!callToActionToSaveLeads ? (
+                  <>
+                    <div className='hidden lg:block'>
+                      <NavLink href='/signin'>{intl?.buttons.option1}</NavLink>
+                    </div>
+                    <Link href={'/signup'}>
+                      <Button variant='primary' className='hidden p-3 md:block'>
+                        {intl?.buttons.option2}
+                      </Button>
+                    </Link>
+                  </>
+                ) : (
+                  callToActionToSaveLeads
+                )}
 
                 <SelectOfLanguages principalLanguage={intl?.language} />
 

@@ -49,7 +49,7 @@ export function SaveLeads({ intl }: SaveLeadsProps) {
         onOpenChange={setOpen}
         className='py-4'
         trigger={
-          <a className='focus-visible:ring-primary-500 mt-8 flex w-full max-w-80 items-center justify-center rounded-lg bg-primary/600 p-3 text-sm font-semibold text-white shadow-sm outline-none hover:bg-primary/700 focus-visible:ring-2 focus-visible:ring-offset-2 active:opacity-80'>
+          <a className='focus-visible:ring-primary-500 flex w-full max-w-80 items-center justify-center rounded-lg bg-primary/600 p-3 text-sm font-semibold text-white shadow-sm outline-none hover:bg-primary/700 focus-visible:ring-2 focus-visible:ring-offset-2 active:opacity-80'>
             {intl.callToActionButton}
           </a>
         }
