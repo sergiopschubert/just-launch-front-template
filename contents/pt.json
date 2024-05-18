@@ -304,6 +304,11 @@
       "acceptButton": "Aceitar",
       "refuseButton": "Recusar",
       "moreInfo": " saiba mais clicando aqui."
+    },
+    "saveLeads": {
+      "callToActionButton": "Entrar na lista de espera",
+      "successMessage": "Parabéns! Você entrou na lista de espera com sucesso.",
+      "errorMessageToValidateEmail": "Por favor, insira um e-mail válido."
     }
   },
   "Auth": {

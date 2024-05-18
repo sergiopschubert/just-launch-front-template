@@ -3,12 +3,14 @@ import { Container } from '@/app/[locale]/(landing-page)/components/Container';
 import { Button } from '@/app/shared/components/Button';
 import { ChevronDown, Mouse, Star } from 'lucide-react';
 import { IHeroIntl } from '../domain/interfaces/IHeroIntl';
+import { ReactNode } from 'react';
 
 interface HeroProps {
   intl: IHeroIntl;
+  callToActionToSaveLeads?: ReactNode;
 }
 
-export function Hero({ intl }: HeroProps) {
+export function Hero({ intl, callToActionToSaveLeads }: HeroProps) {
   return (
     <div className='bg-primary/50'>
       <Container className='pb-16 pt-20 lg:pt-12'>
@@ -29,9 +31,14 @@ export function Hero({ intl }: HeroProps) {
               </span>{' '}
             </h1>
             <p className='mt-4 max-w-lg text-gray-700'>{intl.subtitle}</p>
-            <Button className='mt-8 max-w-80 p-3'>
-              {intl.callToActionButton}
-            </Button>
+            {!callToActionToSaveLeads ? (
+              <Button className='mt-8 max-w-80 p-3'>
+                {intl.callToActionButton}
+              </Button>
+            ) : (
+              callToActionToSaveLeads
+            )}
+
             <div className='flex flex-col items-center space-x-4 py-4 md:flex-row'>
               <div className='flex md:-space-x-4'>
                 <img

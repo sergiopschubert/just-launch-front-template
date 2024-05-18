@@ -304,6 +304,11 @@
       "acceptButton": "Accept",
       "refuseButton": "Refuse",
       "moreInfo": " learn more by clicking here."
+    },
+    "saveLeads": {
+      "callToActionButton": "Join the waiting list",
+      "successMessage": "Congratulations! You have successfully joined the waiting list.",
+      "errorMessageToValidateEmail": "Please enter a valid email."
     }
   },
   "Auth": {

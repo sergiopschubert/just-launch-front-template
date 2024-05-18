@@ -8,7 +8,7 @@ const button = tv({
   base: [
     'flex items-center justify-center',
     'rounded-lg py-2 text-sm font-semibold outline-none shadow-sm',
-    'focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-violet-500',
+    'focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-primary-500',
     'active:opacity-80',
   ],
 
