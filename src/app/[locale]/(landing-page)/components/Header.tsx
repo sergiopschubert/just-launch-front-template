@@ -83,7 +83,7 @@ function MobileNavigation({
           leaveFrom='opacity-100'
           leaveTo='opacity-0'
         >
-          <Popover.Overlay className='bg-gray/500/50 fixed inset-0' />
+          <Popover.Overlay className='fixed inset-0 bg-gray-500/50' />
         </Transition.Child>
         <Transition.Child
           as={Fragment}
@@ -96,15 +96,15 @@ function MobileNavigation({
         >
           <Popover.Panel
             as='div'
-            className='text-gray/900 ring-gray/900/5 absolute inset-x-0 top-full mt-4 flex origin-top flex-col rounded-2xl bg-white p-4 text-lg tracking-tight shadow-xl ring-1'
+            className='absolute inset-x-0 top-full mt-4 flex origin-top flex-col rounded-2xl bg-white p-4 text-lg tracking-tight text-gray-900 shadow-xl ring-1 ring-gray-900/5'
           >
             <MobileNavLink href='#features'>{intl?.menu.option1}</MobileNavLink>
             <MobileNavLink href='#testimonials'>
               {intl?.menu.option2}
             </MobileNavLink>
-            <MobileNavLink href='#pricing'>{intl?.menu.option3}</MobileNavLink>
-            <MobileNavLink href='#doubts'>{intl?.menu.option4}</MobileNavLink>
-            <hr className='border-gray/500/40 m-2' />
+            <MobileNavLink href='#doubts'>{intl?.menu.option3}</MobileNavLink>
+            <MobileNavLink href='#pricing'>{intl?.menu.option4}</MobileNavLink>
+            <hr className='m-2 border-gray-500/40' />
             {session ? (
               <>
                 <MobileNavLink href='/home'>
@@ -146,8 +146,8 @@ export function Header({
                 <div className='hidden lg:flex lg:gap-x-6'>
                   <NavLink href='#features'>{intl?.menu.option1}</NavLink>
                   <NavLink href='#testimonials'>{intl?.menu.option2}</NavLink>
-                  <NavLink href='#pricing'>{intl?.menu.option3}</NavLink>
-                  <NavLink href='#doubts'>{intl?.menu.option4}</NavLink>
+                  <NavLink href='#doubts'>{intl?.menu.option3}</NavLink>
+                  <NavLink href='#pricing'>{intl?.menu.option4}</NavLink>
                 </div>
               )}
             </div>

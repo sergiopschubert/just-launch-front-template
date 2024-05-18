@@ -32,7 +32,7 @@ export function Faq({ intl }: FaqProps) {
           <h2 className='text-4xl font-bold tracking-tight text-gray-800 sm:text-4xl md:text-5xl'>
             {intl?.title}
           </h2>
-          <p className='text-gray/600 mt-6 w-3/4 max-w-2xl text-lg tracking-tight'>
+          <p className='mt-6 w-3/4 max-w-2xl text-lg tracking-tight text-gray-600'>
             {intl?.subtitle}
           </p>
         </div>
@@ -51,7 +51,7 @@ export function Faq({ intl }: FaqProps) {
         }}
         className='mx-auto px-6 pt-20 lg:px-8 '
       >
-        <div className='divide-gray/900/10 relative isolate mx-auto max-w-4xl divide-y overflow-hidden px-6'>
+        <div className='relative isolate mx-auto max-w-4xl divide-y divide-gray-900/10 overflow-hidden px-6'>
           <dl className='mt-10 space-y-6 divide-y divide-gray-900/10'>
             {intl?.faqs.map((faq, index) => (
               <Disclosure as='div' key={faq.question} className='pt-6'>

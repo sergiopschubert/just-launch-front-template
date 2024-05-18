@@ -60,15 +60,15 @@ export function Testimonials({ intl }: TestimonialsProps) {
                 damping: 20,
               },
             }}
-            className='ring-gray/900/5 rounded-2xl bg-white shadow-lg ring-1 sm:col-span-2 xl:col-start-2 xl:row-end-1'
+            className='rounded-2xl bg-white shadow-lg ring-1 ring-gray-900/5 sm:col-span-2 xl:col-start-2 xl:row-end-1'
           >
-            <blockquote className='text-gray/900 p-6 text-lg font-semibold leading-7 tracking-tight sm:p-12 sm:text-xl sm:leading-8'>
+            <blockquote className='p-6 text-lg font-semibold leading-7 tracking-tight text-gray-900 sm:p-12 sm:text-xl sm:leading-8'>
               <p>{`“${intl?.principalTestimonial.body}”`}</p>
             </blockquote>
 
-            <figcaption className='border-gray/900/10 flex flex-wrap items-center gap-x-4 gap-y-4 border-t px-6 py-4 sm:flex-nowrap'>
+            <figcaption className='flex flex-wrap items-center gap-x-4 gap-y-4 border-t border-gray-900/10 px-6 py-4 sm:flex-nowrap'>
               <Image
-                className='bg-gray/50 h-10 w-10 flex-none rounded-full'
+                className='h-10 w-10 flex-none rounded-full bg-gray-50'
                 src={intl?.principalTestimonial.author.imageUrl}
                 alt={intl?.principalTestimonial.author.name}
                 width={10}
@@ -78,7 +78,7 @@ export function Testimonials({ intl }: TestimonialsProps) {
                 <div className='font-semibold'>
                   {intl?.principalTestimonial.author.name}
                 </div>
-                <div className='text-gray/600'>{`${intl?.principalTestimonial.author.handle}`}</div>
+                <div className='text-gray-600'>{`${intl?.principalTestimonial.author.handle}`}</div>
               </div>
             </figcaption>
           </motion.figure>
@@ -114,14 +114,14 @@ export function Testimonials({ intl }: TestimonialsProps) {
                   {column.map((testimonial) => (
                     <figure
                       key={testimonial.author.handle}
-                      className='ring-gray/900/5 rounded-2xl bg-white p-6 shadow-lg ring-1'
+                      className='rounded-2xl bg-white p-6 shadow-lg ring-1 ring-gray-900/5'
                     >
-                      <blockquote className='text-gray/900'>
+                      <blockquote className='text-gray-900'>
                         <p>{`“${testimonial.body}”`}</p>
                       </blockquote>
                       <figcaption className='mt-6 flex items-center gap-x-4'>
                         <Image
-                          className='bg-gray/50 h-10 w-10 flex-none rounded-full'
+                          className='h-10 w-10 flex-none rounded-full bg-gray-50'
                           src={testimonial.author.imageUrl}
                           alt={testimonial.author.name}
                           width={10}
@@ -131,7 +131,7 @@ export function Testimonials({ intl }: TestimonialsProps) {
                           <div className='font-semibold'>
                             {testimonial.author.name}
                           </div>
-                          <div className='text-gray/600'>{`${testimonial.author.handle}`}</div>
+                          <div className='text-gray-600'>{`${testimonial.author.handle}`}</div>
                         </div>
                       </figcaption>
                     </figure>

@@ -18,7 +18,7 @@ export function Stats({ intl }: StatsProps) {
             <h2 className='text-4xl font-bold tracking-tight text-gray-800 sm:text-4xl'>
               {intl?.title}
             </h2>
-            <p className='text-gray/600 mt-4 text-lg leading-8'>
+            <p className='mt-4 text-lg leading-8 text-gray-600'>
               {intl?.subtitle}
             </p>
           </div>

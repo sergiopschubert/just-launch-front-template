@@ -75,11 +75,11 @@ export function PopupToConfirmationOfAccount({
                   />
                 </div>
                 <div className='mt-3 flex flex-col items-center  justify-center sm:mt-5'>
-                  <h3 className='text-gray/900 text-base font-semibold leading-6'>
+                  <h3 className='text-base font-semibold leading-6 text-gray-900'>
                     {intl.title}
                   </h3>
 
-                  <p className='text-gray/500 mt-2 w-2/4 text-sm'>
+                  <p className='mt-2 w-2/4 text-sm text-gray-500'>
                     {intl.hello} {user.first_name}
                     {intl.message}
                     <br />

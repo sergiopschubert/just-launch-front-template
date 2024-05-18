@@ -22,7 +22,7 @@ export function Pricing({ intl, callToActionToSaveLeads }: PricingProps) {
   );
 
   return (
-    <div className='isolate overflow-hidden bg-primary/600'>
+    <div id='pricing' className='isolate overflow-hidden bg-primary/600'>
       <div className='mx-auto max-w-7xl px-6 pb-96 pt-24 text-center sm:pt-32 lg:px-8'>
         <motion.div
           initial={{

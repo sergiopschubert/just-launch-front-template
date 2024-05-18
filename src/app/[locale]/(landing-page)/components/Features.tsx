@@ -18,7 +18,7 @@ export function Features({ intl }: FeaturesProps) {
   };
 
   return (
-    <div className='bg-primary/50'>
+    <div id='features' className='bg-primary/50'>
       <Container className='pb-16 pt-20 lg:pt-12'>
         <div className='mb-20 mt-10 flex flex-col items-center justify-center px-52 text-center'>
           <h3 className='text-lg font-semibold leading-8 tracking-tight text-primary/500'>
