@@ -5,6 +5,7 @@ import { useFeaturesInternationalization } from './useFeaturesInternationalizati
 import { useFooterInternationalization } from './useFooterInternationalization';
 import { useHeaderInternationalization } from './useHeaderInternationalization';
 import { useHeroInternationalization } from './useHeroInternationalization';
+import { useMarketingBannerInternationalization } from './useMarketingBannerInternationalization';
 import { usePricingInternationalization } from './usePricingInternationalization';
 import { useProblemsInternationalization } from './useProblemsInternationalization';
 import { useSaveLeadsInternationalization } from './useSaveLeadsInternationalization';
@@ -24,6 +25,8 @@ export const useLandingPageInternationalization = async () => {
   const { pricingIntl } = await usePricingInternationalization();
   const { cookieBannerIntl } = await useCookieBannerInternationalization();
   const { saveLeadsIntl } = await useSaveLeadsInternationalization();
+  const { marketingBannerIntl } =
+    await useMarketingBannerInternationalization();
 
   return {
     headerIntl,
@@ -38,5 +41,6 @@ export const useLandingPageInternationalization = async () => {
     pricingIntl,
     cookieBannerIntl,
     saveLeadsIntl,
+    marketingBannerIntl,
   };
 };
