@@ -1,9 +1,5 @@
-import {
-  Footer,
-  Header,
-  CookieBanner,
-} from './[locale]/(landing-page)/components';
-import { useLandingPageInternationalization } from './[locale]/(landing-page)/hooks/contents/useLandingPageInternationalization';
+import { Footer, Header, CookieBanner } from './(landing-page)/components';
+import { useLandingPageInternationalization } from './(landing-page)/hooks/contents/useLandingPageInternationalization';
 
 export default async function NotFound() {
   const { footerIntl, headerIntl, cookieBannerIntl } =
