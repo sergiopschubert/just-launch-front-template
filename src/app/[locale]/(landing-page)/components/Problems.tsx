@@ -34,8 +34,8 @@ export function Problems({ intl }: ProblemsProps) {
             {intl?.subtitle}
           </motion.p>
 
-          <div className='flex flex-row items-center justify-center py-8'>
-            <div className='flex items-center justify-center'>
+          <div className='flex items-center justify-center py-8'>
+            <div className='flex flex-col items-center justify-center md:flex-row'>
               <motion.div
                 initial={{
                   scale: 0.1,
@@ -56,7 +56,7 @@ export function Problems({ intl }: ProblemsProps) {
                 <p className='font-semibold'>{intl?.problems.option1.text}</p>
               </motion.div>
 
-              <Redo className='h-12 w-12' />
+              <Redo className='my-3 h-12 w-12 rotate-90 md:mt-0 md:rotate-0' />
               <motion.div
                 initial={{
                   scale: 0.1,
@@ -77,7 +77,7 @@ export function Problems({ intl }: ProblemsProps) {
                 </span>
                 <p className='font-semibold'>{intl?.problems.option2.text}</p>
               </motion.div>
-              <Undo className='mt-10 h-12 w-12 rotate-180' />
+              <Undo className='my-3 h-12 w-12 -rotate-90 md:mt-10 md:rotate-180' />
               <motion.div
                 initial={{
                   scale: 0.1,
