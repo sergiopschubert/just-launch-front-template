@@ -15,7 +15,7 @@ export function Hero({ intl, callToActionToSaveLeads }: HeroProps) {
     <div className='bg-primary/50'>
       <Container className='pb-16 pt-20 lg:pt-12'>
         <div className='flex flex-col items-center justify-center space-y-14 text-center md:flex-row md:space-x-9 md:text-left'>
-          <div className='w-1/2'>
+          <div className='w-full md:w-1/2'>
             <h1 className='text-5xl font-bold text-gray-800'>
               {intl.title}{' '}
               <span className='relative whitespace-nowrap text-primary/600'>
@@ -31,13 +31,15 @@ export function Hero({ intl, callToActionToSaveLeads }: HeroProps) {
               </span>{' '}
             </h1>
             <p className='mt-4 max-w-lg text-gray-700'>{intl.subtitle}</p>
-            {!callToActionToSaveLeads ? (
-              <Button className='mt-8 max-w-80 p-3'>
-                {intl.callToActionButton}
-              </Button>
-            ) : (
-              callToActionToSaveLeads
-            )}
+            <div className='flex w-full items-center justify-center md:w-1/2 md:items-start md:justify-start'>
+              {!callToActionToSaveLeads ? (
+                <Button className='mt-8 max-w-80 p-3'>
+                  {intl.callToActionButton}
+                </Button>
+              ) : (
+                callToActionToSaveLeads
+              )}
+            </div>
 
             <div className='flex flex-col items-center space-x-4 py-4 md:flex-row'>
               <div className='flex md:-space-x-4'>
