@@ -107,7 +107,7 @@ export function Footer({ intl }: FooterProps) {
           </a>
           <a
             className='h-8 w-[270px] rounded border border-white/20 bg-primary/600 shadow hover:border-white/50'
-            href='https://justlaunch.com.br?affiliate=true'
+            href='https://justlaunch.com.br?utm_source=affiliate&utm_medium=website&utm_campaign=site-affiliate'
           >
             <p className='flex w-full flex-row items-center justify-center pt-1 font-normal text-white/60 hover:text-white'>
               Construído com{' '}
