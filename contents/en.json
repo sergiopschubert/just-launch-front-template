@@ -309,6 +309,13 @@
       "callToActionButton": "Join the waiting list",
       "successMessage": "Congratulations! You have successfully joined the waiting list.",
       "errorMessageToValidateEmail": "Please enter a valid email."
+    },
+    "companies": {
+      "title": "Companies that trust in Just Launch"
+    },
+    "countdownBanner": {
+      "leftText": "DISCOUNT ENDS IN: ",
+      "rightText": "DON'T MISS OUT!"
     }
   },
   "Auth": {

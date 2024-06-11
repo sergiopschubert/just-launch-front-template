@@ -309,6 +309,13 @@
       "callToActionButton": "Entrar na lista de espera",
       "successMessage": "Parabéns! Você entrou na lista de espera com sucesso.",
       "errorMessageToValidateEmail": "Por favor, insira um e-mail válido."
+    },
+    "companies": {
+      "title": "Empresas que confiam na Just Launch"
+    },
+    "countdownBanner": {
+      "leftText": "O DESCONTO TERMINA EM: ",
+      "rightText": "NÃO PERCA A OPORTUNIDADE!"
     }
   },
   "Auth": {
