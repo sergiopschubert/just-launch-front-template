@@ -10,3 +10,5 @@ export { Stats } from './Stats';
 export { Testimonials } from './Testimonials';
 export { Pricing } from './Pricing';
 export { CookieBanner } from './CookieBanner';
+export { CountdownBanner } from './CountdownBanner';
+export { Companies } from './Companies';

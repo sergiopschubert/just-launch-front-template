@@ -1,6 +1,7 @@
 import { useCallToActionInternationalization } from './useCallToActionInternationalization';
+import { useCompaniesInternationalization } from './useCompaniesInternationalization';
 import { useCookieBannerInternationalization } from './useCookieBannerInternationalization';
-import { useCountdownBannerInternationalization } from './useCountdownBannerInternationalization';
+import { useCountdownBannerInternationalization } from './useCountdownBannerInternationalization copy';
 import { useFaqsInternationalization } from './useFaqsInternationalization';
 import { useFeaturesInternationalization } from './useFeaturesInternationalization';
 import { useFooterInternationalization } from './useFooterInternationalization';
@@ -30,6 +31,7 @@ export const useLandingPageInternationalization = async () => {
     await useMarketingBannerInternationalization();
   const { countdownBannerIntl } =
     await useCountdownBannerInternationalization();
+  const { companiesIntl } = await useCompaniesInternationalization();
 
   return {
     headerIntl,
@@ -46,5 +48,6 @@ export const useLandingPageInternationalization = async () => {
     saveLeadsIntl,
     marketingBannerIntl,
     countdownBannerIntl,
+    companiesIntl,
   };
 };
