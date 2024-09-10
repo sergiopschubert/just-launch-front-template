@@ -1,6 +1,10 @@
 import { Inter } from 'next/font/google';
 import { ReactNode } from 'react';
-import { Footer, Header, CookieBanner } from '../(landing-page)/components';
+import {
+  Footer,
+  Header,
+  CookieBanner,
+} from '@/@JustLaunch/components/LandingPage';
 import { useLandingPageInternationalization } from '../(landing-page)/hooks/contents/useLandingPageInternationalization';
 
 const inter = Inter({ subsets: ['latin'] });

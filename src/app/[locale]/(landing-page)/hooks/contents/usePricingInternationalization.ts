@@ -1,6 +1,6 @@
 import { getTranslations } from 'next-intl/server';
-import { IPricingIntl } from '../../domain/interfaces/IPricingIntl';
-import { useSharedInternationalization } from '@/app/shared/hooks/useSharedInternationalization';
+import { IPricingIntl } from '../../../../../lib/domain/interfaces/LandingPage/IPricingIntl';
+import { useSharedInternationalization } from '@/app/shared/hooks/contents/useSharedInternationalization';
 
 export const usePricingInternationalization = async () => {
   const internationalization = await getTranslations('LandingPage');

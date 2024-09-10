@@ -1,11 +1,11 @@
 'use client';
 import { ISignUpIntl } from '@/app/[locale]/(auth)/domain/interfaces/ISignupIntl';
 import { useSignup } from '@/app/[locale]/(auth)/hooks/useSignup';
-import { Button } from '@/app/shared/components/Button';
-import { ErrorAlert } from '@/app/shared/components/ErrorAlert';
-import { Input } from '@/app/shared/components/Input';
-import { Link } from '@/app/shared/components/Link';
-import { Toast } from '@/app/shared/components/Toast';
+import { Button } from '@/@JustLaunch/components';
+import { ErrorAlert } from '@/@JustLaunch/components';
+import { Input } from '@/@JustLaunch/components';
+import { Link } from '@/@JustLaunch/components';
+import { Toast } from '@/@JustLaunch/components';
 import { FormInput, Mail, User2 } from 'lucide-react';
 
 interface ISignUpFormProps {

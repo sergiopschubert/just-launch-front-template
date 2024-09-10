@@ -1,5 +1,5 @@
 import { getTranslations } from 'next-intl/server';
-import { IFaqIntl } from '../../domain/interfaces/IFaqIntl';
+import { IFaqIntl } from '../../../../../lib/domain/interfaces/LandingPage/IFaqIntl';
 
 export const useFaqsInternationalization = async () => {
   const internationalization = await getTranslations('LandingPage');

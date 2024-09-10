@@ -1,5 +1,5 @@
 import { getTranslations } from 'next-intl/server';
-import { IStatsIntl } from '../../domain/interfaces/IStatsIntls';
+import { IStatsIntl } from '../../../../../lib/domain/interfaces/LandingPage/IStatsIntls';
 
 export const useStatsInternationalization = async () => {
   const internationalization = await getTranslations('LandingPage');

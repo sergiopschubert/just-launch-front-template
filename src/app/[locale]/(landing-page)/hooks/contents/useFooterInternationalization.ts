@@ -1,5 +1,5 @@
 import { getTranslations } from 'next-intl/server';
-import { IFooterIntl } from '../../domain/interfaces/IFooter';
+import { IFooterIntl } from '../../../../../lib/domain/interfaces/LandingPage/IFooter';
 
 export const useFooterInternationalization = async () => {
   const internationalization = await getTranslations('LandingPage');

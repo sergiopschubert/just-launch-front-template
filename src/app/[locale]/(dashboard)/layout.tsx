@@ -1,9 +1,9 @@
 import { nextAuthOptions } from '@/app/api/auth/[...nextauth]/auth';
-import { SelectOfLanguages } from '@/app/shared/components/SelectOfLanguages';
-import { Sidebar } from '@/app/shared/components/Sidebar';
-import { BottomNavigation } from '@/app/shared/components/Sidebar/BottomNavigation';
-import { MainNavigation } from '@/app/shared/components/Sidebar/MainNavigation';
-import { useSharedInternationalization } from '@/app/shared/hooks/useSharedInternationalization';
+import { SelectOfLanguages } from '@/@JustLaunch/components';
+import { Sidebar } from '@/@JustLaunch/components';
+import { BottomNavigation } from '@/@JustLaunch/components';
+import { MainNavigation } from '@/@JustLaunch/components';
+import { useSharedInternationalization } from '@/app/shared/hooks/contents/useSharedInternationalization';
 import Providers from '@/providers/Providers';
 import { getServerSession } from 'next-auth';
 import { Inter } from 'next/font/google';

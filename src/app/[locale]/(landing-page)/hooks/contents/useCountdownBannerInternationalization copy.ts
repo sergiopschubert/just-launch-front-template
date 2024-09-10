@@ -1,5 +1,5 @@
 import { getTranslations } from 'next-intl/server';
-import { ICountdownBannerIntl } from '../../domain/interfaces/ICountdownBannerIntl';
+import { ICountdownBannerIntl } from '../../../../../lib/domain/interfaces/LandingPage/ICountdownBannerIntl';
 
 export const useCountdownBannerInternationalization = async () => {
   const internationalization = await getTranslations('LandingPage');

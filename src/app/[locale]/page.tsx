@@ -1,4 +1,5 @@
-import { LogoV2 } from '../shared/components/LogoV2';
+import { SuccessMessage } from '@/@JustLaunch/components';
+import { LogoV2 } from '@/@JustLaunch/components/LogoV2';
 
 export default async function LandingPage() {
   return (

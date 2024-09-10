@@ -1,5 +1,5 @@
 import { getTranslations } from 'next-intl/server';
-import { IFeaturesIntl } from '../../domain/interfaces/IFeaturesIntl';
+import { IFeaturesIntl } from '../../../../../lib/domain/interfaces/LandingPage/IFeaturesIntl';
 
 export const useFeaturesInternationalization = async () => {
   const internationalization = await getTranslations('LandingPage');

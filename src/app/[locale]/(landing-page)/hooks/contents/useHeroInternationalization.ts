@@ -1,5 +1,5 @@
 import { getTranslations } from 'next-intl/server';
-import { IHeroIntl } from '../../domain/interfaces/IHeroIntl';
+import { IHeroIntl } from '../../../../../lib/domain/interfaces/LandingPage/IHeroIntl';
 
 export const useHeroInternationalization = async () => {
   const internationalization = await getTranslations('LandingPage');

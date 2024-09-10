@@ -1,5 +1,5 @@
 import { getTranslations } from 'next-intl/server';
-import { ISaveLeadsIntl } from '../../domain/interfaces/ISaveLeads';
+import { ISaveLeadsIntl } from '../../../../../lib/domain/interfaces/LandingPage/ISaveLeads';
 
 export const useSaveLeadsInternationalization = async () => {
   const internationalization = await getTranslations('LandingPage');

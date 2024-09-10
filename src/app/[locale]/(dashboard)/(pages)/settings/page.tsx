@@ -1,12 +1,12 @@
-import { SettingsTabs } from '@/app/[locale]/(users)/components/Settingtabs';
 import { nextAuthOptions } from '@/app/api/auth/[...nextauth]/auth';
 import { getServerSession } from 'next-auth/next';
 import { redirect } from 'next/navigation';
-import { useInternationalizationUser } from '../../../(users)/hooks/useInternationalizationUser';
+import { useInternationalizationDashboard } from '../../hooks/contents/useInternationalizationDashboard';
 import { Metadata } from 'next';
+import { SettingsTabs } from '../../components/SettingTabs';
 
 export const metadata: Metadata = {
-  title: 'Settings'
+  title: 'Settings',
 };
 
 export default async function Settings() {
@@ -21,7 +21,7 @@ export default async function Settings() {
     redirect('/signin');
   }
 
-  const { intlSettings } = await useInternationalizationUser();
+  const { intlSettings } = await useInternationalizationDashboard();
   return (
     <>
       <h1 className='text-3xl font-semibold text-zinc-900'>

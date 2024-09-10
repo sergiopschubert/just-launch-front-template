@@ -1,5 +1,5 @@
 import { getTranslations } from 'next-intl/server';
-import { ICookieBannerIntl } from '../../domain/interfaces/ICookieBannerIntl';
+import { ICookieBannerIntl } from '../../../../../lib/domain/interfaces/LandingPage/ICookieBannerIntl';
 
 export const useCookieBannerInternationalization = async () => {
   const internationalization = await getTranslations('LandingPage');

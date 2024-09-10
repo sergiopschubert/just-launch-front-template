@@ -1,10 +1,10 @@
 'use client';
 import { IResetPasswordIntl } from '@/app/[locale]/(auth)/domain/interfaces/IResetPasswordIntl';
-import { Button } from '@/app/shared/components/Button';
-import { ErrorAlert } from '@/app/shared/components/ErrorAlert';
-import { Input } from '@/app/shared/components/Input';
-import { Link } from '@/app/shared/components/Link';
-import { Toast } from '@/app/shared/components/Toast';
+import { Button } from '@/app/shared/components';
+import { ErrorAlert } from '@/app/shared/components';
+import { Input } from '@/app/shared/components';
+import { Link } from '@/app/shared/components';
+import { Toast } from '@/app/shared/components';
 import { ArrowLeft, FormInput } from 'lucide-react';
 import { useEffect } from 'react';
 import { useResetPassword } from '../../../hooks/useResetPassword';

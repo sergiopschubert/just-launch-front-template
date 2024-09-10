@@ -1,13 +1,13 @@
 'use client';
 import { ISignInIntl } from '@/app/[locale]/(auth)/domain/interfaces/ISignInIntl';
 import { useSignin } from '@/app/[locale]/(auth)/hooks/useSignin';
-import { Button } from '@/app/shared/components/Button';
-import { Checkbox } from '@/app/shared/components/Checkbox';
-import { ErrorAlert } from '@/app/shared/components/ErrorAlert';
-import { Input } from '@/app/shared/components/Input';
-import { Link } from '@/app/shared/components/Link';
-import { Popup } from '@/app/shared/components/Popup';
-import { Toast } from '@/app/shared/components/Toast';
+import { Button } from '@/@JustLaunch/components';
+import { Checkbox } from '@/@JustLaunch/components';
+import { ErrorAlert } from '@/@JustLaunch/components';
+import { Input } from '@/@JustLaunch/components';
+import { Link } from '@/@JustLaunch/components';
+import { Popup } from '@/@JustLaunch/components';
+import { Toast } from '@/@JustLaunch/components';
 import { FormInput, Lock, Mail } from 'lucide-react';
 
 interface ISignInFormProps {

@@ -1,6 +1,6 @@
 import { getTranslations } from 'next-intl/server';
-import { IHeaderIntl } from '../../domain/interfaces/IHeaderIntl';
-import { useSharedInternationalization } from '@/app/shared/hooks/useSharedInternationalization';
+import { IHeaderIntl } from '../../../../../lib/domain/interfaces/LandingPage/IHeaderIntl';
+import { useSharedInternationalization } from '@/app/shared/hooks/contents/useSharedInternationalization';
 
 export const useHeaderInternationalization = async () => {
   const internationalization = await getTranslations('LandingPage');

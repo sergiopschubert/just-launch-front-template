@@ -1,5 +1,5 @@
 import { useInternationalizationUser } from '@/app/[locale]/(users)/hooks/useInternationalizationUser';
-import { SuccessMessage } from '@/app/shared/components/SuccessMessage';
+import { SuccessMessage } from '@/app/shared/components';
 import { Metadata } from 'next/types';
 
 export let metadata: Metadata = {};
