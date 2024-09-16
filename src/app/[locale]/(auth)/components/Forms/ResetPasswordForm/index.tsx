@@ -1,7 +1,7 @@
 'use client';
 import { IResetPasswordIntl } from '@/app/[locale]/(auth)/domain/interfaces/IResetPasswordIntl';
 import { Button } from '@/app/shared/components';
-import { ErrorAlert } from '@/app/shared/components';
+import { ErrorPopup } from '@/app/shared/components';
 import { Input } from '@/app/shared/components';
 import { Link } from '@/app/shared/components';
 import { Toast } from '@/app/shared/components';
@@ -78,11 +78,11 @@ export function ResetPasswordForm({ intl }: IResetPasswordProps) {
       </form>
 
       {error ? (
-        <ErrorAlert
+        <ErrorPopup
           title={error.title}
           message={error.message}
           onClose={() => setError(null)}
-        ></ErrorAlert>
+        ></ErrorPopup>
       ) : null}
       <Toast />
     </>

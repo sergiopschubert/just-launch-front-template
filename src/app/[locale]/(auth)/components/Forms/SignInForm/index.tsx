@@ -3,7 +3,7 @@ import { ISignInIntl } from '@/app/[locale]/(auth)/domain/interfaces/ISignInIntl
 import { useSignin } from '@/app/[locale]/(auth)/hooks/useSignin';
 import { Button } from '@/@JustLaunch/components';
 import { Checkbox } from '@/@JustLaunch/components';
-import { ErrorAlert } from '@/@JustLaunch/components';
+import { ErrorPopup } from '@/@JustLaunch/components';
 import { Input } from '@/@JustLaunch/components';
 import { Link } from '@/@JustLaunch/components';
 import { Popup } from '@/@JustLaunch/components';
@@ -129,11 +129,11 @@ export function SignInForm({ intl }: ISignInFormProps) {
         <Link href={'/signup'}>{intl?.form.register}</Link>
       </div>
       {error ? (
-        <ErrorAlert
+        <ErrorPopup
           title={error.title}
           message={error.message}
           onClose={() => setError(null)}
-        ></ErrorAlert>
+        ></ErrorPopup>
       ) : null}
       <Toast />
     </>

@@ -1,13 +1,13 @@
 import { ShieldAlert } from 'lucide-react';
 import { Popup } from '../Popup';
 
-interface ErrorAlertProps {
+interface ErrorPopupProps {
   title: string;
   message: string;
   onClose?: () => void;
 }
 
-export function ErrorAlert({ title, message, onClose }: ErrorAlertProps) {
+export function ErrorPopup({ title, message, onClose }: ErrorPopupProps) {
   return (
     <Popup.Root defaultOpen={true}>
       <Popup.Content

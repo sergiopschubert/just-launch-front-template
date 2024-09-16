@@ -2,7 +2,7 @@
 import { ISignUpIntl } from '@/app/[locale]/(auth)/domain/interfaces/ISignupIntl';
 import { useSignup } from '@/app/[locale]/(auth)/hooks/useSignup';
 import { Button } from '@/@JustLaunch/components';
-import { ErrorAlert } from '@/@JustLaunch/components';
+import { ErrorPopup } from '@/@JustLaunch/components';
 import { Input } from '@/@JustLaunch/components';
 import { Link } from '@/@JustLaunch/components';
 import { Toast } from '@/@JustLaunch/components';
@@ -103,11 +103,11 @@ export function SignUpForm({ intl }: ISignUpFormProps) {
         </div>
       </form>
       {error ? (
-        <ErrorAlert
+        <ErrorPopup
           title={error.title}
           message={error.message}
           onClose={() => setError(null)}
-        ></ErrorAlert>
+        ></ErrorPopup>
       ) : null}
       <Toast />
     </>

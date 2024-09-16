@@ -1,16 +1,16 @@
-import type { Config } from "tailwindcss";
+import type { Config } from 'tailwindcss';
 
 const config: Config = {
-  content: ["./src/**/*.tsx"],
+  content: ['./src/**/*.tsx'],
   theme: {
     extend: {
       gridTemplateColumns: {
         app: 'minmax(18rem, 20rem) 1fr',
       },
       colors: {
-        'green/100': '#DCFAE6',
-        'green/500': '#17B26A',
-        'green/600': '#079455',
+        'success/100': '#DCFAE6',
+        'success/500': '#17B26A',
+        'success/600': '#079455',
         'primary/50': '#eff6ff',
         'primary/100': '#dbeafe',
         'primary/200': '#bfdbfe',
@@ -24,6 +24,13 @@ const config: Config = {
         'primary/950': '#172554',
         'error/100': '#FEE4E2',
         'error/500': '#F04438',
+        'error/600': '#dc2626',
+        'warning/100': '#fef3c7',
+        'warning/500': '#f59e0b',
+        'warning/600': '#d97706',
+        'info/100': '#dbeafe',
+        'info/500': '#3b82f6',
+        'info/600': '#2563eb',
       },
     },
   },
