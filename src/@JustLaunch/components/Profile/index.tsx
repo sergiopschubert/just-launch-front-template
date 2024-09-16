@@ -1,3 +1,4 @@
+import { Avatar } from '../Avatar';
 import { LogoutButton } from '../LogoutButton';
 
 interface ProfileProps {
@@ -7,16 +8,11 @@ interface ProfileProps {
   imageUri?: string;
 }
 
-export function Profile({
-  email,
-  name,
-  dark,
-  imageUri = 'https://api.dicebear.com/7.x/bottts-neutral/svg?seed=Aneka&backgroundColor=bfdbfe&eyes=happy',
-}: ProfileProps) {
+export function Profile({ email, name, dark, imageUri }: ProfileProps) {
   return (
     <div className='flex items-center justify-between gap-3'>
       <div className='flex gap-3'>
-        <img src={imageUri} className='h-10 w-10 rounded-full' alt={''}></img>
+        <Avatar imageUri={imageUri} />
         <div className='flex flex-col'>
           <span
             data-dark={dark}
