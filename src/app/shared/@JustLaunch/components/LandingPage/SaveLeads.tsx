@@ -1,13 +1,13 @@
 'use client';
-import { Button } from '@/app/shared/components';
-import { Input } from '@/app/shared/components';
-import { Popup } from '@/app/shared/components';
-import { Toast } from '@/app/shared/components';
+import { Button } from '@/app/shared/@JustLaunch/components';
+import { Input } from '@/app/shared/@JustLaunch/components';
+import { Popup } from '@/app/shared/@JustLaunch/components';
+import { Toast } from '@/app/shared/@JustLaunch/components';
 import { useFormspark } from '@formspark/use-formspark';
 import { Lock, Mail } from 'lucide-react';
 import { useState } from 'react';
 import { toast } from 'react-toastify';
-import { ISaveLeadsIntl } from '../../../[locale]/(landing-page)/domain/interfaces/ISaveLeads';
+import { ISaveLeadsIntl } from '../../domain/interfaces/LandingPage/ISaveLeads';
 
 interface SaveLeadsProps {
   intl: ISaveLeadsIntl;

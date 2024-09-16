@@ -1,16 +1,17 @@
 'use client';
-import { Container } from '@/app/shared/components/LandingPage/Container';
-import { NavLink } from '@/app/shared/components/LandingPage/NavLink';
-import { Button } from '@/app/shared/components';
-import { LogoV2 } from '@/app/shared/components';
-import { SelectOfLanguages } from '@/app/shared/components';
+
 import { Popover, Transition } from '@headlessui/react';
 import { Session } from 'next-auth';
 import Link from 'next/link';
 import { Fragment, ReactNode } from 'react';
 import { twMerge } from 'tailwind-merge';
-import { IHeaderIntl } from '../../../[locale]/(landing-page)/domain/interfaces/IHeaderIntl';
-import { Profile } from '@/app/shared/components';
+import { IHeaderIntl } from '../../domain/interfaces/LandingPage/IHeaderIntl';
+import { Container } from './Container';
+import { LogoV2 } from '../LogoV2';
+import { NavLink } from './NavLink';
+import { Button } from '../Button';
+import { Profile } from '../Profile';
+import { SelectOfLanguages } from '../SelectOfLanguages';
 
 interface HeaderProps {
   intl: IHeaderIntl;

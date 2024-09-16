@@ -1,6 +1,6 @@
 'use client';
 import { motion } from 'framer-motion';
-import { IStatsIntl } from '../../../[locale]/(landing-page)/domain/interfaces/IStatsIntls';
+import { IStatsIntl } from '../../domain/interfaces/LandingPage/IStatsIntls';
 
 interface StatsProps {
   intl: IStatsIntl;

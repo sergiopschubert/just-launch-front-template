@@ -1,7 +1,7 @@
 'use client';
 import { motion } from 'framer-motion';
 import { Redo, Undo } from 'lucide-react';
-import { IProblemsIntl } from '../../../[locale]/(landing-page)/domain/interfaces/IProblemsIntl';
+import { IProblemsIntl } from '../../domain/interfaces/LandingPage/IProblemsIntl';
 
 interface ProblemsProps {
   intl: IProblemsIntl;

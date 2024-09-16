@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 export function SimpleAnalytics() {
   return (
     <>
@@ -7,7 +9,7 @@ export function SimpleAnalytics() {
         src='https://scripts.simpleanalyticscdn.com/latest.js'
       ></script>
       <noscript>
-        <img
+        <Image
           src='https://queue.simpleanalyticscdn.com/noscript.gif'
           alt=''
           referrerPolicy='no-referrer-when-downgrade'

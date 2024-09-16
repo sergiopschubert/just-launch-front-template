@@ -2,6 +2,7 @@ import React from 'react';
 import { Meta, StoryObj } from '@storybook/react';
 import { DataTable } from './';
 import { ColumnDef } from '@tanstack/react-table';
+import Image from 'next/image';
 
 const statuses = {
   Completed: 'text-success/500',
@@ -146,7 +147,7 @@ const columns: ColumnDef<(typeof activityItems)[0]>[] = [
     header: 'User',
     cell: ({ row }) => (
       <div className='flex items-center'>
-        <img
+        <Image
           src={row.original.user.imageUrl}
           alt={row.original.user.name}
           className='h-8 w-8 rounded-full'

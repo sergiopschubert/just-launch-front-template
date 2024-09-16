@@ -2,7 +2,8 @@
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 import { ReactNode } from 'react';
-import { ICallToActionIntl } from '../../../[locale]/(landing-page)/domain/interfaces/ICallToActionIntl';
+import { ICallToActionIntl } from '../../domain/interfaces/LandingPage/ICallToActionIntl';
+import Image from 'next/image';
 
 interface CallToActionProps {
   intl: ICallToActionIntl;
@@ -86,7 +87,7 @@ export function CallToAction({
             }}
             className='relative mt-16 hidden h-80 md:block lg:mt-8'
           >
-            <img
+            <Image
               className='absolute left-0 top-0 w-[57rem] max-w-none rounded-md bg-white/5 ring-1 ring-white/10'
               src='https://via.placeholder.com/1920x1800'
               alt='Image'

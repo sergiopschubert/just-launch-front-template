@@ -1,5 +1,5 @@
 import type { NextApiRequest, NextApiResponse } from 'next';
-import { ConfirmationEmailTemplate } from '@/app/shared/emails/EmailTemplates/ConfirmationEmailTemplate';
+import { ConfirmationEmailTemplate } from '@/app/shared/@JustLaunch/emails/EmailTemplates/ConfirmationEmailTemplate';
 import { Resend } from 'resend';
 
 const resend = new Resend(process.env.RESEND_KEY as string);

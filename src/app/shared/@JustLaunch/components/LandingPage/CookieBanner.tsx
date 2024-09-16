@@ -1,7 +1,7 @@
 'use client';
 import Link from 'next/link';
 import CookieConsent from 'react-cookie-consent';
-import { ICookieBannerIntl } from '../../../[locale]/(landing-page)/domain/interfaces/ICookieBannerIntl';
+import { ICookieBannerIntl } from '../../domain/interfaces/LandingPage/ICookieBannerIntl';
 
 interface CookieBannerProps {
   intl: ICookieBannerIntl;

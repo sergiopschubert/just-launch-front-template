@@ -1,6 +1,6 @@
-import { LogoV2 } from '@/app/shared/components';
 import { CloudUpload, Facebook, Instagram, Youtube } from 'lucide-react';
-import { IFooterIntl } from '../../../[locale]/(landing-page)/domain/interfaces/IFooter';
+import { IFooterIntl } from '../../domain/interfaces/LandingPage/IFooter';
+import { LogoV2 } from '../LogoV2';
 
 interface FooterProps {
   intl: IFooterIntl;

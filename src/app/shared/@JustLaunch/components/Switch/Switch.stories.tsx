@@ -21,7 +21,7 @@ export const Checked: Story = {
   },
 };
 
-export const isDisabled: Story = {
+export const IsDisabled: Story = {
   args: {
     disabled: true,
   },

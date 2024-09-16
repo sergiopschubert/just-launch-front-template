@@ -1,9 +1,9 @@
 'use client';
 import { motion } from 'framer-motion';
-import { ICompaniesIntl } from '../../../[locale]/(landing-page)/domain/interfaces/ICompaniesIntl';
-import { HomeworkAI } from '../../../[locale]/(landing-page)/components/logos/HomeworkAI';
-import { LogoEasy } from '../../../[locale]/(landing-page)/components/logos/LogoEasy';
-import { NotificaIgreja } from '../../../[locale]/(landing-page)/components/logos/NotificaIgreja';
+import { HomeworkAI } from '../logos/HomeworkAI';
+import { LogoEasy } from '../logos/LogoEasy';
+import { NotificaIgreja } from '../logos/NotificaIgreja';
+import { ICompaniesIntl } from '../../domain/interfaces/LandingPage/ICompaniesIntl';
 
 interface CompaniesProps {
   intl: ICompaniesIntl;

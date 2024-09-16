@@ -1,4 +1,4 @@
-import { IMarketingBannerIntl } from '../../../[locale]/(landing-page)/domain/interfaces/IMarketingBannerIntl';
+import { IMarketingBannerIntl } from '../../domain/interfaces/LandingPage/IMarketingBannerIntl';
 
 interface MarketingBannerProps {
   href: string;

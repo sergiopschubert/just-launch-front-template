@@ -45,7 +45,7 @@ export const Selected: Story = {
   },
 };
 
-export const isDisabled: Story = {
+export const IsDisabled: Story = {
   args: {
     label: 'Option',
     value: 'option',

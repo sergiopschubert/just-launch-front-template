@@ -2,7 +2,7 @@
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 import { twMerge } from 'tailwind-merge';
-import { ITestimonialsIntl } from '../../../[locale]/(landing-page)/domain/interfaces/ITestimonials';
+import { ITestimonialsIntl } from '../../domain/interfaces/LandingPage/ITestimonials';
 
 interface TestimonialsProps {
   intl: ITestimonialsIntl;

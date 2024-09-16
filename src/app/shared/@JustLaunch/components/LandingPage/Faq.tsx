@@ -2,7 +2,7 @@
 import { Disclosure } from '@headlessui/react';
 import { motion } from 'framer-motion';
 import { Minus, Plus } from 'lucide-react';
-import { IFaqIntl } from '../../../[locale]/(landing-page)/domain/interfaces/IFaqIntl';
+import { IFaqIntl } from '../../domain/interfaces/LandingPage/IFaqIntl';
 
 interface FaqProps {
   intl: IFaqIntl;

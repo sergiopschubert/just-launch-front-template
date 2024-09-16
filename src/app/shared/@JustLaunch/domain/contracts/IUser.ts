@@ -1,4 +1,4 @@
-import { SubscriptionStatus } from '../../@JustLaunch/domain/enums/SubscriptionStatus';
+import { SubscriptionStatus } from '../enums/SubscriptionStatus';
 
 interface ILimits {
   maxContents: number;

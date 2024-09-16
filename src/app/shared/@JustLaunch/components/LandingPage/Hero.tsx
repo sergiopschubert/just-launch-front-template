@@ -1,9 +1,10 @@
 'use client';
-import { Container } from '@/app/shared/components/LandingPage/Container';
-import { Button } from '@/app/shared/components';
-import { ChevronDown, Mouse, Star } from 'lucide-react';
-import { IHeroIntl } from '../../../[locale]/(landing-page)/domain/interfaces/IHeroIntl';
+
+import { ChevronDown, Container, Mouse, Star } from 'lucide-react';
 import { ReactNode } from 'react';
+import { IHeroIntl } from '../../domain/interfaces/LandingPage/IHeroIntl';
+import { Button } from '../Button';
+import Image from 'next/image';
 
 interface HeroProps {
   intl: IHeroIntl;
@@ -43,27 +44,27 @@ export function Hero({ intl, callToActionToSaveLeads }: HeroProps) {
 
             <div className='flex flex-col items-center space-x-4 py-4 md:flex-row'>
               <div className='flex md:-space-x-4'>
-                <img
+                <Image
                   className='h-12 w-12 rounded-full border-2 border-primary/50'
                   src='https://via.placeholder.com/48x48'
                   alt='User 1'
                 />
-                <img
+                <Image
                   className='h-12 w-12 rounded-full border-2 border-primary/50'
                   src='https://via.placeholder.com/48x48'
                   alt='User 2'
                 />
-                <img
+                <Image
                   className='h-12 w-12 rounded-full border-2 border-primary/50'
                   src='https://via.placeholder.com/48x48'
                   alt='User 3'
                 />
-                <img
+                <Image
                   className='h-12 w-12 rounded-full border-2 border-primary/50'
                   src='https://via.placeholder.com/48x48'
                   alt='User 4'
                 />
-                <img
+                <Image
                   className='h-12 w-12 rounded-full border-2 border-primary/50'
                   src='https://via.placeholder.com/48x48'
                   alt='User 5'
@@ -89,7 +90,7 @@ export function Hero({ intl, callToActionToSaveLeads }: HeroProps) {
           </div>
 
           <div className='w-full md:h-[500px] md:w-1/2'>
-            <img
+            <Image
               src='https://via.placeholder.com/1280x500'
               alt='Imagem de exemplo'
               className='h-full w-full object-cover'

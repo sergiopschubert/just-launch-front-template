@@ -5,6 +5,7 @@ import { Plus } from 'lucide-react';
 import { useState } from 'react';
 import { IFeaturesIntl } from '../../domain/interfaces/LandingPage/IFeaturesIntl';
 import { Container } from './Container';
+import Image from 'next/image';
 
 interface FeaturesProps {
   intl: IFeaturesIntl;
@@ -57,7 +58,7 @@ export function Features({ intl }: FeaturesProps) {
             }}
             className='mt-8 w-full px-4 md:mt-0 md:w-1/2 md:px-8'
           >
-            <img
+            <Image
               src={currentImage}
               alt='Selected Feature'
               className='w-full rounded-lg shadow-lg'

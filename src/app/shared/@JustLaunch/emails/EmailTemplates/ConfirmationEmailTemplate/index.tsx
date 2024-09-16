@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import React from 'react';
 
 interface ConfirmationEmailProps {
@@ -74,7 +75,7 @@ export const ConfirmationEmailTemplate: React.FC<
       </div>
 
       <div style={{ textAlign: 'center' }}>
-        <img
+        <Image
           src='https://tllaeaskzbwwlivrilza.supabase.co/storage/v1/object/public/public-storage/favicon.png'
           alt='logo da Just-Launch'
           style={stylesSheet.logo}
