@@ -1,6 +1,6 @@
 import { Metadata } from 'next';
 import { Fragment, Key } from 'react';
-import { useCookiePolicyInternationalization } from '../../hooks/contents/useCookiePolicyInternationalization';
+import { useCookiePolicyInternationalization } from '../../../../shared/@JustLaunch/hooks/contents/useCookiePolicyInternationalization';
 
 export let metadata: Metadata = {};
 

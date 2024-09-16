@@ -1,5 +1,6 @@
-import { useSignupInternationalization } from '@/app/[locale]/(auth)/hooks/contents/useSignupInternationalization';
-import { SuccessMessage } from '@/app/shared/components';
+import { SuccessMessage } from '@/app/shared/@JustLaunch/components';
+import { useSignupInternationalization } from '@/app/shared/@JustLaunch/hooks/contents/useSignupInternationalization';
+
 import { Metadata } from 'next/types';
 
 export let metadata: Metadata = {};

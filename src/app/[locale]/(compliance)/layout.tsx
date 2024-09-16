@@ -4,8 +4,8 @@ import {
   Footer,
   Header,
   CookieBanner,
-} from '@/@JustLaunch/components/LandingPage';
-import { useLandingPageInternationalization } from '../(landing-page)/hooks/contents/useLandingPageInternationalization';
+} from '@/app/shared/@JustLaunch/components/LandingPage';
+import { useLandingPageInternationalization } from '../../shared/@JustLaunch/hooks/contents/useLandingPageInternationalization';
 
 const inter = Inter({ subsets: ['latin'] });
 

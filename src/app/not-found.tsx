@@ -1,5 +1,5 @@
-import { Button } from '@/@JustLaunch/components';
-import { Link } from '@/@JustLaunch/components';
+import { Button } from '@/app/shared/@JustLaunch/components';
+import { Link } from '@/app/shared/@JustLaunch/components';
 
 export default function NotFound() {
   return (

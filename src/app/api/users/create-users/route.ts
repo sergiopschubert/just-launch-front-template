@@ -9,7 +9,7 @@ export async function POST(req: Request) {
     const signedReq = await signAwsRequest({
       url: url,
       method: 'POST',
-      body: body,
+      body: JSON.stringify(body),
       region: process.env.REGION as string,
       accessKeyId: process.env.AWS_KEY_ID as string,
       secretAccessKey: process.env.AWS_ACCESS_SECRET_KEY as string,

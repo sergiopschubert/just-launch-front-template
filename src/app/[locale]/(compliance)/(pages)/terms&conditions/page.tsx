@@ -1,6 +1,6 @@
 import { Metadata } from 'next';
 import { Fragment } from 'react';
-import { useTermsAndConditionsInternationalization } from '../../hooks/contents/useTermsAndConditionsInternationalization';
+import { useTermsAndConditionsInternationalization } from '../../../../shared/@JustLaunch/hooks/contents/useTermsAndConditionsInternationalization';
 
 export let metadata: Metadata = {};
 

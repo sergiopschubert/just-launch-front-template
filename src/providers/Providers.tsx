@@ -1,5 +1,5 @@
 'use client';
-import { UsersProvider } from '@/app/shared/contexts/UsersContext';
+import { UsersProvider } from '@/app/shared/@JustLaunch/contexts/UsersContext';
 import { ReactNode } from 'react';
 
 export default function Providers({ children }: { children: ReactNode }) {

@@ -1,5 +1,5 @@
-import { ResetPasswordForm } from '@/app/[locale]/(auth)/components/Forms/ResetPasswordForm';
-import { useResetPasswordInternationalization } from '@/app/[locale]/(auth)/hooks/contents/useResetPasswordInternationalization';
+import { ResetPasswordForm } from '@/app/shared/@JustLaunch/components/Forms/ResetPasswordForm';
+import { useResetPasswordInternationalization } from '@/app/shared/@JustLaunch/hooks/contents/useResetPasswordInternationalization';
 import { Metadata } from 'next';
 
 export let metadata: Metadata = {};

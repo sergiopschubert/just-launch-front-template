@@ -1,9 +1,9 @@
 import { nextAuthOptions } from '@/app/api/auth/[...nextauth]/auth';
 import { getServerSession } from 'next-auth/next';
 import { redirect } from 'next/navigation';
-import { useInternationalizationDashboard } from '../../hooks/contents/useInternationalizationDashboard';
 import { Metadata } from 'next';
-import { SettingsTabs } from '../../components/SettingTabs';
+import { SettingsTabs } from '@/app/shared/@JustLaunch/components';
+import { useInternationalizationDashboard } from '@/app/shared/@JustLaunch/hooks/contents/useInternationalizationDashboard';
 
 export const metadata: Metadata = {
   title: 'Settings',

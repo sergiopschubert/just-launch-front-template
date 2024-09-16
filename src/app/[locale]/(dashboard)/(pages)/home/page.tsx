@@ -1,3 +1,4 @@
+import { Heading } from '@/app/shared/@JustLaunch/components/Heading';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -7,7 +8,7 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <>
-      <h1 className='text-3xl font-semibold text-zinc-900'>Home</h1>
+      <Heading title='Home' />
     </>
   );
 }
