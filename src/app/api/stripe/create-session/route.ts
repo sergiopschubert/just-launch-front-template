@@ -1,14 +1,15 @@
 import { nextAuthOptions } from '@/app/api/auth/[...nextauth]/auth';
 import { stripe } from '@/app/shared/services/stripe/client';
-import { NextApiRequest, NextApiResponse } from 'next';
 import { getServerSession } from 'next-auth/next';
+import { NextResponse } from 'next/server';
 
-const handler = async (req: NextApiRequest, res: NextApiResponse) => {
-  const session = await getServerSession(req, res, nextAuthOptions);
+export async function POST(req: Request) {
+  const session = await getServerSession(nextAuthOptions);
 
   if (session?.user && session.user.id) {
-    const { plan, customer, locale } = JSON.parse(req.body);
     try {
+      const { plan, customer, locale } = await req.json();
+
       const prices = await stripe.prices.list({
         limit: 16,
       });
@@ -20,9 +21,12 @@ const handler = async (req: NextApiRequest, res: NextApiResponse) => {
             ? price.currency === 'brl'
             : price.currency === 'usd')
       );
-      if (!price) throw new Error('Price not found');
 
-      const session = await stripe.checkout.sessions.create({
+      if (!price) {
+        return NextResponse.json({ error: 'Price not found' }, { status: 404 });
+      }
+
+      const stripeSession = await stripe.checkout.sessions.create({
         mode: 'subscription',
         line_items: [
           {
@@ -35,14 +39,16 @@ const handler = async (req: NextApiRequest, res: NextApiResponse) => {
         cancel_url: `${process.env.NEXT_PUBLIC_DOMAIN}/`,
         allow_promotion_codes: true,
       });
-      res.status(200).json({ url: session.url });
+
+      return NextResponse.json({ url: stripeSession.url }, { status: 200 });
     } catch (error) {
       console.log(error);
-      throw new Error();
+      return NextResponse.json(
+        { error: 'Error creating checkout session' },
+        { status: 500 }
+      );
     }
   } else {
-    res.status(401).json({ error: 'Unauthorized' });
+    return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
   }
-};
-
-export default handler;
+}
