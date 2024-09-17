@@ -27,3 +27,13 @@ export { Alert } from './Alert';
 export { LogoutButton } from './LogoutButton';
 export { SettingsTabs } from './SettingTabs';
 export { ProfileContent } from './ProfileContent';
+export {
+  BarChartComponent,
+  BarChartHorizontal,
+  BarChartMultiple,
+  FunnelChart,
+  PieChartComponent,
+  SimpleAreaChart,
+  StackedAreaChart,
+  RadialBarChartComponent,
+} from './Charts';

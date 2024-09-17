@@ -1,5 +1,5 @@
 import { nextAuthOptions } from '@/app/api/auth/[...nextauth]/auth';
-import { stripe } from '@/app/shared/services/stripe/client';
+import { stripe } from '@/app/shared/@JustLaunch/services/stripe/client';
 import { getServerSession } from 'next-auth/next';
 import { NextResponse } from 'next/server';
 
