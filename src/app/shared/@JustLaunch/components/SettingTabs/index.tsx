@@ -28,6 +28,11 @@ export function SettingsTabs({
             title={intl.menu.item1}
             isSelected={currentTab === 'tab1'}
           />
+          <TabItem
+            value='tab2'
+            title={intl.menu.item2}
+            isSelected={currentTab === 'tab2'}
+          />
         </Tabs.List>
 
         {/* Profile */}

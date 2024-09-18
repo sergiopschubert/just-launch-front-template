@@ -1,8 +1,8 @@
 'use client';
 import { motion } from 'framer-motion';
-import { HomeworkAI } from '../logos/HomeworkAI';
-import { LogoEasy } from '../logos/LogoEasy';
-import { NotificaIgreja } from '../logos/NotificaIgreja';
+import { HomeworkAI } from './logos/HomeworkAI';
+import { LogoEasy } from './logos/LogoEasy';
+import { NotificaIgreja } from './logos/NotificaIgreja';
 import { ICompaniesIntl } from '../../domain/interfaces/LandingPage/ICompaniesIntl';
 
 interface CompaniesProps {

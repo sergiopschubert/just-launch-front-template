@@ -4,5 +4,5 @@ import { BottomNavLinks } from './BottomNavLinks';
 export async function BottomNavigation() {
   const { intlBottomNavigation } = await useSharedInternationalization();
 
-  return <BottomNavLinks item1={intlBottomNavigation.item1} />;
+  return <BottomNavLinks {...intlBottomNavigation} />;
 }

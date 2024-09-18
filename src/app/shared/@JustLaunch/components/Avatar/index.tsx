@@ -8,11 +8,13 @@ interface AvatarProps extends ComponentProps<'img'> {
 
 export function Avatar({
   className,
-  imageUri = 'https://api.dicebear.com/7.x/bottts-neutral/svg?seed=Aneka&backgroundColor=bfdbfe&eyes=happy',
+  imageUri = 'https://api.dicebear.com/7.x/bottts-neutral/png?seed=Aneka&backgroundColor=bfdbfe&eyes=happy',
 }: AvatarProps) {
   return (
     <Image
       src={imageUri}
+      width={40}
+      height={40}
       className={twMerge('h-10 w-10 rounded-full', className)}
       alt={'Avatar image'}
     />

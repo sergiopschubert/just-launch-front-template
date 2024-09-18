@@ -1,3 +1,4 @@
+'use client';
 import { ComponentProps } from 'react';
 import { PieChart, Pie, Cell, Tooltip, ResponsiveContainer } from 'recharts';
 import { CustomTooltip } from '../CustomTooltip';

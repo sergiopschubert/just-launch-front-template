@@ -1,9 +1,9 @@
+'use client';
 import { ComponentProps } from 'react';
 import {
   BarChart,
   Bar,
   XAxis,
-  YAxis,
   CartesianGrid,
   Tooltip,
   ResponsiveContainer,

@@ -1,3 +1,4 @@
+'use client';
 import { useState, useMemo } from 'react';
 import {
   ColumnDef,
@@ -98,20 +99,6 @@ export function DataTable<TData>({
     return pages;
   };
 
-  const visibleColumns = useMemo(() => {
-    if (window.innerWidth < 768) {
-      return table
-        .getAllColumns()
-        .map((col, index) =>
-          index === 0 || index === table.getAllColumns().length - 1
-            ? col.id
-            : null
-        )
-        .filter(Boolean);
-    }
-    return table.getAllColumns().map((col) => col.id);
-  }, [table]);
-
   return (
     <div className='overflow-x-auto'>
       <div className='mb-4 flex items-center justify-between'>
@@ -140,7 +127,6 @@ export function DataTable<TData>({
           )}
         </div>
 
-        {/* Hide filter button on mobile */}
         <div className='hidden sm:block'>
           <Menu
             as='div'
@@ -173,15 +159,15 @@ export function DataTable<TData>({
         </div>
       </div>
 
-      <table className='min-w-full divide-y divide-gray-200'>
-        <thead>
-          {table.getHeaderGroups().map((headerGroup) => (
-            <tr key={headerGroup.id}>
-              {headerGroup.headers.map((header) =>
-                visibleColumns.includes(header.id) ? (
+      <div className='overflow-x-auto'>
+        <table className='min-w-full divide-y divide-gray-200'>
+          <thead>
+            {table.getHeaderGroups().map((headerGroup) => (
+              <tr key={headerGroup.id}>
+                {headerGroup.headers.map((header) => (
                   <th
                     key={header.id}
-                    className='px-6 py-3 text-left text-xs font-medium uppercase tracking-wider text-gray-500'
+                    className='px-2 py-3 text-left text-xs font-medium uppercase tracking-wider text-gray-500'
                   >
                     {header.isPlaceholder
                       ? null
@@ -190,28 +176,26 @@ export function DataTable<TData>({
                           header.getContext()
                         )}
                   </th>
-                ) : null
-              )}
-            </tr>
-          ))}
-        </thead>
-        <tbody className='divide-y divide-gray-200 bg-white'>
-          {table.getRowModel().rows.map((row) => (
-            <tr key={row.id}>
-              {row.getVisibleCells().map((cell) =>
-                visibleColumns.includes(cell.column.id) ? (
+                ))}
+              </tr>
+            ))}
+          </thead>
+          <tbody className='divide-y divide-gray-200 bg-white'>
+            {table.getRowModel().rows.map((row) => (
+              <tr key={row.id}>
+                {row.getVisibleCells().map((cell) => (
                   <td
                     key={cell.id}
-                    className='whitespace-nowrap px-6 py-4 text-sm text-gray-500'
+                    className='whitespace-nowrap px-2 py-4 text-sm text-gray-500'
                   >
                     {flexRender(cell.column.columnDef.cell, cell.getContext())}
                   </td>
-                ) : null
-              )}
-            </tr>
-          ))}
-        </tbody>
-      </table>
+                ))}
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
       <div className='flex items-center justify-between p-4'>
         <div className='flex space-x-1'>
           <button

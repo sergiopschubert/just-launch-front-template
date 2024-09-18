@@ -1,5 +1,5 @@
+'use client';
 import { ResponsiveFunnel } from '@nivo/funnel';
-
 import { NoDataAvailable } from '../NoDataAvailable';
 import { chartsColors } from '..';
 

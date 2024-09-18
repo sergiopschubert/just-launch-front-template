@@ -8,10 +8,10 @@ interface HeadingProps {
 
 export function Heading({ title, children }: HeadingProps) {
   return (
-    <div className='w-full p-4'>
+    <div className='w-full'>
       <div className='flex w-full flex-col sm:flex-row sm:items-center sm:justify-between'>
         <div className='mb-2 sm:mb-0'>
-          <h2 className='text-3xl font-semibold'>{title}</h2>
+          <h1 className='text-3xl font-semibold'>{title}</h1>
         </div>
         <div className='flex items-center space-x-2'>{children}</div>
       </div>

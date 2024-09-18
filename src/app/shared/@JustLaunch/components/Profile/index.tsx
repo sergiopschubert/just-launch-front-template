@@ -16,13 +16,13 @@ export function Profile({ email, name, dark, imageUri }: ProfileProps) {
         <div className='flex flex-col'>
           <span
             data-dark={dark}
-            className='block text-sm font-semibold text-white  data-[dark=true]:text-primary/900'
+            className='block max-w-[150px] truncate text-sm font-semibold text-white data-[dark=true]:text-primary/900'
           >
             {name}
           </span>
           <span
             data-dark={dark}
-            className='block text-sm text-gray-50 data-[dark=true]:text-primary/800'
+            className='block max-w-[150px] truncate text-sm text-gray-50 data-[dark=true]:text-primary/800'
           >
             {email}
           </span>

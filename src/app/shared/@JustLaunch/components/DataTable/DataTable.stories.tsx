@@ -148,6 +148,8 @@ const columns: ColumnDef<(typeof activityItems)[0]>[] = [
     cell: ({ row }) => (
       <div className='flex items-center'>
         <Image
+          width={32}
+          height={32}
           src={row.original.user.imageUrl}
           alt={row.original.user.name}
           className='h-8 w-8 rounded-full'

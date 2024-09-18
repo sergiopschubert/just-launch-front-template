@@ -633,10 +633,12 @@
     "sidebar": {
       "bottomNavigation": {
         "item1": "Configurações",
-        "item2": "Feedback"
+        "item2": "Feedback",
+        "item3": "Suporte"
       },
       "mainNavigation": {
-        "item1": "Home"
+        "item1": "Home",
+        "item2": "Clientes"
       }
     },
     "confirmationEmail": {
