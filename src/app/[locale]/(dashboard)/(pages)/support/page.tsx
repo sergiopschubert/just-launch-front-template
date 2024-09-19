@@ -3,25 +3,28 @@ import {
   EmptyState,
   Button,
 } from '@/app/shared/@JustLaunch/components';
-
 import { Container } from '@/app/shared/@JustLaunch/components/LandingPage/Container';
+import { useInternationalizationDashboard } from '@/app/shared/@JustLaunch/hooks/contents/useInternationalizationDashboard';
 import { Metadata } from 'next';
 
-export const metadata: Metadata = {
-  title: 'Support',
-};
+export const metadata: Metadata = {};
 
-export default function Support() {
+export default async function Support() {
+  const { intlSupport } = await useInternationalizationDashboard();
+  metadata.title = intlSupport.metadata.title;
+
   return (
     <>
       <Container>
-        <Heading title='Support - (Demo Page)' />
+        <Heading title={intlSupport.metadata.title} />
         <div className='mt-16'>
           <EmptyState
-            title={'No Ticket'}
-            description={'Get Started by creating a new ticket of support'}
+            title={intlSupport.emptyState.title}
+            description={intlSupport.emptyState.description}
           >
-            <Button className='px-3 py-2'>New Ticket</Button>
+            <Button className='px-3 py-2'>
+              {intlSupport.emptyState.newTicketButton}
+            </Button>
           </EmptyState>
         </div>
       </Container>

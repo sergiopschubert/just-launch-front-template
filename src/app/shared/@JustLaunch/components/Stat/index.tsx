@@ -7,9 +7,10 @@ interface StatProps {
   title: string;
   value: string;
   change: string;
+  textFooter?: string;
 }
 
-export function Stat({ title, value, change }: StatProps) {
+export function Stat({ title, value, change, textFooter }: StatProps) {
   return (
     <div className='text-gray-900'>
       <motion.div
@@ -57,7 +58,7 @@ export function Stat({ title, value, change }: StatProps) {
         >
           {change}
         </Badge>{' '}
-        <span className='text-gray-500'>from last week</span>
+        <span className='text-gray-500'>{textFooter}</span>
       </motion.div>
     </div>
   );

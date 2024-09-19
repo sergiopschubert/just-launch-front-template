@@ -1,14 +1,36 @@
 export interface ISettingsIntl {
+  metadata: {
+    title: string;
+  };
   title: string;
-  menu: {
+  tabs: {
     item1: string;
     item2: string;
   };
   profile: {
-    title: string;
-    label: {
-      name: string;
-      email: string;
+    labels: {
+      item1: string;
+      item2: string;
+      item3: string;
+    };
+  };
+  subheadings: {
+    item1: string;
+    item2: string;
+    item3: string;
+  };
+  descriptions: {
+    item1: string;
+    item2: string;
+    item3: string;
+  };
+  buttons: {
+    item1: string;
+    item2: string;
+  };
+  checkbox: {
+    labels: {
+      item1: string;
     };
   };
 }

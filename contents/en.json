@@ -604,27 +604,122 @@
     }
   },
   "Dashboard": {
-    "user": {
-      "settings": {
-        "title": "Settings",
-        "menu": {
-          "item1": "Profile"
-        },
-        "profile": {
-          "title": "Personal Information",
-          "labels": {
-            "name": "Name",
-            "email": "Email"
-          }
+    "settings": {
+      "metadata": {
+        "title": "Settings"
+      },
+      "title": "Settings - (Demo Page)",
+      "tabs": {
+        "item1": "Profile",
+        "item2": "Plans"
+      },
+      "profile": {
+        "labels": {
+          "item1": "Name",
+          "item2": "Email",
+          "item3": "Bio"
         }
       },
-      "confirmationEmail": {
-        "metadata": {
-          "title": "Email Confirmation"
-        },
-        "title": "Email Confirmed!",
-        "description": "Access the tool now",
-        "textButton": "Go to the dashboard"
+      "subheadings": {
+        "item1": "User",
+        "item2": "Bio",
+        "item3": "Email"
+      },
+      "descriptions": {
+        "item1": "This will be displayed on your public profile.",
+        "item2": "This will be displayed on your public profile. Maximum of 240 characters.",
+        "item3": "This is how customers can contact you for support."
+      },
+      "checkbox": {
+        "labels": {
+          "item1": "Show email on public profile"
+        }
+      },
+      "buttons": {
+        "item1": "Save",
+        "item2": "Cancel"
+      }
+    },
+    "confirmationEmail": {
+      "metadata": {
+        "title": "Email Confirmation"
+      },
+      "title": "Email Confirmed!",
+      "description": "Access the tool now",
+      "textButton": "Go to the dashboard"
+    },
+    "feedback": {
+      "metadata": {
+        "title": "Feedback - (Demo Page)"
+      },
+      "constructionState": {
+        "title": "Under Construction",
+        "description": "This section is under construction. Please check back later.",
+        "notifyButton": "Notify me"
+      }
+    },
+    "support": {
+      "metadata": {
+        "title": "Support - (Demo Page)"
+      },
+      "emptyState": {
+        "title": "No Ticket",
+        "description": "Get started by creating a new support ticket",
+        "newTicketButton": "New Ticket"
+      }
+    },
+    "home": {
+      "metadata": {
+        "title": "Home - (Demo Page)"
+      },
+      "headings": {
+        "overview": "Overview",
+        "recentOrders": "Recent Orders"
+      },
+      "stats": {
+        "totalRevenue": "Total Revenue",
+        "avgOrderValue": "Average Order Value",
+        "ticketsSold": "Tickets Sold",
+        "pageViews": "Page Views",
+        "totalSales": "Total Sales"
+      },
+      "selectPeriod": {
+        "placeholder": "Period",
+        "options": {
+          "lastWeek": "Last week",
+          "lastTwoWeeks": "Last two weeks",
+          "lastMonth": "Last month",
+          "lastQuarter": "Last quarter"
+        }
+      },
+      "chart": {
+        "title": "Sales by Month",
+        "description": "This is the sales chart"
+      },
+      "table": {
+        "columns": {
+          "customerName": "Customer Name",
+          "amount": "Amount",
+          "date": "Date"
+        }
+      }
+    },
+    "customers": {
+      "metadata": {
+        "title": "Customers - (Demo Page)"
+      },
+      "heading": {
+        "title": "Customers - (Demo Page)",
+        "button": "Create customer"
+      },
+      "table": {
+        "columns": {
+          "name": "Name",
+          "status": "Status",
+          "email": "Email",
+          "birth": "Birth Date",
+          "phone": "Phone"
+        }
       }
     }
   },
@@ -633,10 +728,12 @@
     "sidebar": {
       "bottomNavigation": {
         "item1": "Settings",
-        "item2": "Feedback"
+        "item2": "Feedback",
+        "item3": "Support"
       },
       "mainNavigation": {
-        "item1": "Home"
+        "item1": "Home",
+        "item2": "Customers"
       }
     },
     "confirmationEmail": {

@@ -29,76 +29,69 @@ export function ProfileContent({
         <Card className='mt-5'>
           <section className='grid gap-x-8 gap-y-6 sm:grid-cols-2'>
             <div className='space-y-1'>
-              <SubHeading title='User' />
+              <SubHeading title={intl.subheadings.item1} />
               <p className='text-sm font-light text-gray-700'>
-                This will be displayed on your public profile.
+                {intl.descriptions.item1}
               </p>
             </div>
             <div className='mt-3 flex flex-col gap-y-2'>
               <Avatar className='h-12 w-12' imageUri={imgURL} />
               <Input.Root>
-                <Input.Label>{intl.profile.label.name}</Input.Label>
+                <Input.Label>{intl.profile.labels.item1}</Input.Label>
                 <Input.Wrapper disabled={true}>
                   <Input.Icon icon={UserCircle} />
                   <Input.PlaceHolder type='text' disabled placeholder={name} />
                 </Input.Wrapper>
               </Input.Root>
-              <Input.Root>
-                <Input.Label>{intl.profile.label.email}</Input.Label>
-                <Input.Wrapper disabled={true}>
-                  <Input.Icon icon={Mail} />
-                  <Input.PlaceHolder type='text' disabled placeholder={email} />
-                </Input.Wrapper>
-              </Input.Root>
             </div>
           </section>
         </Card>
         <Card className='mt-5'>
           <section className='grid gap-x-8 gap-y-6 sm:grid-cols-2'>
             <div className='space-y-1'>
-              <SubHeading title='Bio' />
+              <SubHeading title={intl.subheadings.item2} />
               <p className='text-sm font-light text-gray-700'>
-                This will be displayed on your public profile. Maximum 240
-                characters.
-              </p>
-            </div>
-
-            <Textarea.Root>
-              <Textarea.Label>Label</Textarea.Label>
-              <Textarea.PlaceHolder placeholder='' />
-            </Textarea.Root>
-          </section>
-        </Card>
-        <Card className='mt-5'>
-          <section className='grid gap-x-8 gap-y-6 sm:grid-cols-2'>
-            <div className='space-y-1'>
-              <SubHeading title='Email' />
-              <p className='text-sm font-light text-gray-700'>
-                This is how customers can contact you for support.
+                {intl.descriptions.item2}
               </p>
             </div>
             <div className='space-y-4'>
               <Input.Root>
-                <Input.Label>{intl.profile.label.email}</Input.Label>
+                <Input.Label>{intl.profile.labels.item2}</Input.Label>
                 <Input.Wrapper>
                   <Input.Icon icon={Mail} />
-                  <Input.PlaceHolder type='text' disabled placeholder={email} />
+                  <Input.PlaceHolder type='text' placeholder={email} />
                 </Input.Wrapper>
               </Input.Root>
               <Checkbox.Root>
                 <Checkbox.Input defaultChecked />
                 <Checkbox.Icon />
-                <Checkbox.Label>Show email on public profile</Checkbox.Label>
+                <Checkbox.Label>{intl.checkbox.labels.item1}</Checkbox.Label>
               </Checkbox.Root>
             </div>
           </section>
         </Card>
+        <Card className='mt-5'>
+          <section className='grid gap-x-8 gap-y-6 sm:grid-cols-2'>
+            <div className='space-y-1'>
+              <SubHeading title={intl.subheadings.item3} />
+              <p className='text-sm font-light text-gray-700'>
+                {intl.descriptions.item3}
+              </p>
+            </div>
+
+            <Textarea.Root>
+              <Textarea.Label> {intl.profile.labels.item3}</Textarea.Label>
+              <Textarea.PlaceHolder placeholder='' />
+            </Textarea.Root>
+          </section>
+        </Card>
+
         <div className='mt-4 flex w-full justify-end gap-4'>
-          <div className='w-16'>
-            <Button variant='outline'>Reset</Button>
+          <div className='w-28'>
+            <Button variant='outline'>{intl.buttons.item2}</Button>
           </div>
           <div className='w-28'>
-            <Button>Save changes</Button>
+            <Button>{intl.buttons.item1}</Button>
           </div>
         </div>
       </div>

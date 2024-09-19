@@ -23,7 +23,17 @@ const statusColors = {
   Disabled: BadgeColor.Zinc,
 };
 
-export function CustomersTable() {
+interface CustomersTable {
+  intl: {
+    name: string;
+    status: string;
+    email: string;
+    birth: string;
+    phone: string;
+  };
+}
+
+export function CustomersTable({ intl }: CustomersTable) {
   const [customers, setCustomers] = useState<Customer[]>([]);
 
   useEffect(() => {
@@ -41,7 +51,7 @@ export function CustomersTable() {
   const columns = [
     {
       accessorKey: 'name',
-      header: 'Name',
+      header: intl.name,
       cell: ({ row }: { row: { original: Customer } }) => (
         <div className='flex items-center'>
           <Image
@@ -51,21 +61,21 @@ export function CustomersTable() {
             alt={row.original.name}
             className='h-8 w-8 rounded-full'
           />
-          <span className='ml-2'>{row.original.name}</span>
+          <span className='mx-5'>{row.original.name}</span>
         </div>
       ),
     },
     {
       accessorKey: 'email',
-      header: 'Email',
+      header: intl.email,
     },
     {
       accessorKey: 'birth',
-      header: 'Birthdate',
+      header: intl.birth,
     },
     {
       accessorKey: 'phone',
-      header: 'Telefone',
+      header: intl.phone,
     },
     {
       accessorKey: 'status',

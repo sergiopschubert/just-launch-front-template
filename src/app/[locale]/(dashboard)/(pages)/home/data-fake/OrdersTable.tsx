@@ -10,7 +10,15 @@ interface Order {
   customerName: string;
 }
 
-export function OrdersTable() {
+interface OrdersTableProps {
+  intl: {
+    customerName: string;
+    amount: string;
+    date: string;
+  };
+}
+
+export function OrdersTable({ intl }: OrdersTableProps) {
   const [orders, setOrders] = useState<Order[]>([]);
 
   useEffect(() => {
@@ -23,15 +31,15 @@ export function OrdersTable() {
 
   const columns = [
     {
-      header: 'Name',
+      header: intl.customerName,
       accessorKey: 'customerName',
     },
     {
-      header: 'Amount',
+      header: intl.amount,
       accessorKey: 'amount',
     },
     {
-      header: 'Date',
+      header: intl.date,
       accessorKey: 'date',
     },
   ];

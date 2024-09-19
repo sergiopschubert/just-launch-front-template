@@ -18,6 +18,7 @@ export function UsersProvider({ children }: UsersProviderProps) {
       const data = await response.json();
       if (data) setUser(data);
     } catch (error) {
+      console.error(error);
       console.error('Failed to fetch users', error);
     }
   }, []);

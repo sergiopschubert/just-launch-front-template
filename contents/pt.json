@@ -604,27 +604,123 @@
     }
   },
   "Dashboard": {
-    "user": {
-      "settings": {
-        "title": "Configurações",
-        "menu": {
-          "item1": "Perfil"
-        },
-        "profile": {
-          "title": "Informações pessoais",
-          "labels": {
-            "name": "Nome",
-            "email": "Email"
-          }
+    "settings": {
+      "metadata": {
+        "title": "Configurações"
+      },
+      "title": "Configurações - (Demonstração page)",
+      "tabs": {
+        "item1": "Perfil",
+        "item2": "Planos"
+      },
+      "profile": {
+        "labels": {
+          "item1": "Nome",
+          "item2": "Email",
+          "item3": "Bio"
         }
       },
-      "confirmationEmail": {
-        "metadata": {
-          "title": "Confirmação de email"
-        },
-        "title": "Email Confirmado!",
-        "description": "Acesse agora ferramenta",
-        "textButton": "Ir para a dashboard"
+      "subheadings": {
+        "item1": "User",
+        "item2": "Bio",
+        "item3": "Email"
+      },
+      "descriptions": {
+        "item1": "Isso será exibido no seu perfil público.",
+        "item2": "Isso será exibido no seu perfil público. Máximo de 240 caracteres.",
+        "item3": "É assim que os clientes podem entrar em contato com você para obter suporte."
+      },
+      "checkbox": {
+        "labels": {
+          "item1": "Mostrar e-mail no perfil público"
+        }
+      },
+      "buttons": {
+        "item1": "Salvar",
+        "item2": "Cancelar"
+      }
+    },
+    "confirmationEmail": {
+      "metadata": {
+        "title": "Confirmação de email"
+      },
+      "title": "Email Confirmado!",
+      "description": "Acesse agora ferramenta",
+      "textButton": "Ir para a dashboard"
+    },
+    "feedback": {
+      "metadata": {
+        "title": "Feedback - (Demonstração page)"
+      },
+      "constructionState": {
+        "title": "Em Construção",
+        "description": "Esta seção está em construção. Por favor, volte mais tarde.",
+        "notifyButton": "Notificar-me"
+      }
+    },
+
+    "support": {
+      "metadata": {
+        "title": "Suporte - (Página de Demonstração)"
+      },
+      "emptyState": {
+        "title": "Nenhum Ticket",
+        "description": "Comece criando um novo ticket de suporte",
+        "newTicketButton": "Novo Ticket"
+      }
+    },
+    "home": {
+      "metadata": {
+        "title": "Início - (Página de Demonstração)"
+      },
+      "headings": {
+        "overview": "Visão Geral",
+        "recentOrders": "Pedidos Recentes"
+      },
+      "stats": {
+        "totalRevenue": "Receita Total",
+        "avgOrderValue": "Valor Médio do Pedido",
+        "ticketsSold": "Ingressos Vendidos",
+        "pageViews": "Visualizações de Página",
+        "totalSales": "Vendas Totais"
+      },
+      "selectPeriod": {
+        "placeholder": "Período",
+        "options": {
+          "lastWeek": "Última semana",
+          "lastTwoWeeks": "Últimas duas semanas",
+          "lastMonth": "Último mês",
+          "lastQuarter": "Último trimestre"
+        }
+      },
+      "chart": {
+        "title": "Vendas por Mês",
+        "description": "Este é o gráfico de vendas"
+      },
+      "table": {
+        "columns": {
+          "customerName": "Nome do cliente",
+          "amount": "Valor",
+          "date": "Data"
+        }
+      }
+    },
+    "customers": {
+      "metadata": {
+        "title": "Clientes - (Página de Demonstração)"
+      },
+      "heading": {
+        "title": "Clientes - (Página de Demonstração)",
+        "button": "Criar cliente"
+      },
+      "table": {
+        "columns": {
+          "name": "Nome",
+          "status": "Status",
+          "email": "E-mail",
+          "birth": "Data de Nascimento",
+          "phone": "Telefone"
+        }
       }
     }
   },
