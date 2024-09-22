@@ -42,3 +42,5 @@ export { Heading } from './Heading';
 export { SubHeading } from './SubHeading';
 export { EmptyState } from './EmptyState';
 export { ConstructionState } from './ConstructionState';
+export { PlansContent } from './PlansContent';
+export { VideoComponent } from './VideoComponent';

@@ -1,17 +1,30 @@
 'use client';
-
-import { ChevronDown, Container, Mouse, Star } from 'lucide-react';
-import { ReactNode } from 'react';
+import {
+  ChevronDown,
+  DollarSign,
+  Languages,
+  Mail,
+  Mouse,
+  Puzzle,
+  ShieldCheck,
+  Star,
+  Undo,
+} from 'lucide-react';
 import { IHeroIntl } from '../../domain/interfaces/LandingPage/IHeroIntl';
 import { Button } from '../Button';
 import Image from 'next/image';
+import Link from 'next/link';
+import { Container } from './Container';
+import { Divider } from '../Divider';
+import { FeatureCard } from './FeatureCard';
+import { Avatar } from '../Avatar';
 
 interface HeroProps {
   intl: IHeroIntl;
-  callToActionToSaveLeads?: ReactNode;
+  url: string;
 }
 
-export function Hero({ intl, callToActionToSaveLeads }: HeroProps) {
+export function Hero({ intl, url }: HeroProps) {
   return (
     <div className='bg-primary/50'>
       <Container className='pb-16 pt-20 lg:pt-12'>
@@ -33,41 +46,34 @@ export function Hero({ intl, callToActionToSaveLeads }: HeroProps) {
             </h1>
             <p className='mt-4 max-w-lg text-gray-700'>{intl.subtitle}</p>
             <div className='flex w-full items-center justify-center md:w-1/2 md:items-start md:justify-start'>
-              {!callToActionToSaveLeads ? (
-                <Button className='mt-8 max-w-80 p-3'>
+              <Link href={url}>
+                <Button className='mt-8 max-w-80 p-4 md:p-3'>
                   {intl.callToActionButton}
                 </Button>
-              ) : (
-                callToActionToSaveLeads
-              )}
+              </Link>
             </div>
 
             <div className='flex flex-col items-center space-x-4 py-4 md:flex-row'>
               <div className='flex md:-space-x-4'>
-                <Image
+                <Avatar
+                  alt='Aneka'
                   className='h-12 w-12 rounded-full border-2 border-primary/50'
-                  src='https://via.placeholder.com/48x48'
-                  alt='User 1'
                 />
-                <Image
+                <Avatar
+                  alt='Aneka'
                   className='h-12 w-12 rounded-full border-2 border-primary/50'
-                  src='https://via.placeholder.com/48x48'
-                  alt='User 2'
                 />
-                <Image
+                <Avatar
+                  alt='Aneka'
                   className='h-12 w-12 rounded-full border-2 border-primary/50'
-                  src='https://via.placeholder.com/48x48'
-                  alt='User 3'
                 />
-                <Image
+                <Avatar
+                  alt='Aneka'
                   className='h-12 w-12 rounded-full border-2 border-primary/50'
-                  src='https://via.placeholder.com/48x48'
-                  alt='User 4'
                 />
-                <Image
+                <Avatar
+                  alt='Aneka'
                   className='h-12 w-12 rounded-full border-2 border-primary/50'
-                  src='https://via.placeholder.com/48x48'
-                  alt='User 5'
                 />
               </div>
 
@@ -89,17 +95,56 @@ export function Hero({ intl, callToActionToSaveLeads }: HeroProps) {
             </div>
           </div>
 
-          <div className='w-full md:h-[500px] md:w-1/2'>
-            <Image
-              src='https://via.placeholder.com/1280x500'
-              alt='Imagem de exemplo'
-              className='h-full w-full object-cover'
+          <div className='flex w-full flex-col gap-y-4 md:h-[500px] md:w-1/2'>
+            <FeatureCard
+              icon={<ShieldCheck className='text-white' size={26} />}
+              title={intl.features.authentication.title}
+              description={intl.features.authentication.description}
+              bgColor='bg-primary/400'
             />
+            <Divider />
+            <FeatureCard
+              icon={<DollarSign className='text-white' size={26} />}
+              title={intl.features.payments.title}
+              description={intl.features.payments.description}
+              bgColor='bg-primary/500'
+            />
+            <Divider />
+            <FeatureCard
+              icon={<Puzzle className='text-white' size={26} />}
+              title={intl.features.components.title}
+              description={intl.features.components.description}
+              bgColor='bg-primary/600'
+            />
+            <Divider />
+            <FeatureCard
+              icon={<Mail className='text-white' size={26} />}
+              title={intl.features.emails.title}
+              description={intl.features.emails.description}
+              bgColor='bg-primary/700'
+            />
+            <Divider />
+            <FeatureCard
+              icon={<Languages className='text-white' size={26} />}
+              title={intl.features.localization.title}
+              description={intl.features.localization.description}
+              bgColor='bg-primary/800'
+            />
+            <div className='flex w-full flex-row items-end justify-end font-light text-primary/500'>
+              git clone
+              <Undo className='h-12 w-12 rotate-90' />
+            </div>
           </div>
         </div>
-        <div className='flex flex-col items-center justify-center space-y-2 pt-5'>
-          <Mouse className='h-6 w-6 text-primary/700' />
-          <ChevronDown className='h-6 w-6 animate-bounce text-primary/700' />
+        <div className='flex flex-row items-center justify-center space-x-2'>
+          <div className='flex flex-col items-center justify-center space-y-2 pt-5'>
+            <Mouse className='h-6 w-6 text-primary/600' />
+            <div className='-space-y-3'>
+              <ChevronDown className='h-6 w-6 animate-bounce text-primary/600' />
+              <ChevronDown className='h-6 w-6 animate-bounce text-primary/600' />
+            </div>
+          </div>
+          <span className='font-light text-primary/600'>{intl.learnMore}</span>
         </div>
       </Container>
     </div>

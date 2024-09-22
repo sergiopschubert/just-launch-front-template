@@ -59,12 +59,14 @@ export function Features({ intl }: FeaturesProps) {
             className='mt-8 w-full px-4 md:mt-0 md:w-1/2 md:px-8'
           >
             <Image
+              width={811}
+              height={811}
               src={currentImage}
               alt='Selected Feature'
-              className='w-full rounded-lg shadow-lg'
+              className='w-full rounded-lg '
             />
           </motion.div>
-          <div className='mt-6 w-full px-4 md:mt-0 md:w-1/2'>
+          <div className='mt-6 flex w-full flex-col items-center justify-center px-4 md:mt-0 md:w-1/2'>
             <Accordion.Root
               type='single'
               defaultValue={intl.features[0].id}
@@ -73,7 +75,7 @@ export function Features({ intl }: FeaturesProps) {
               {intl.features.map((feature, index) => (
                 <Accordion.Item
                   key={feature.id}
-                  value={feature.title}
+                  value={feature.id}
                   className='mb-4'
                 >
                   <Accordion.Header className='w-full'>

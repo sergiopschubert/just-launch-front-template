@@ -12,3 +12,4 @@ export { Pricing } from './Pricing';
 export { CookieBanner } from './CookieBanner';
 export { CountdownBanner } from './CountdownBanner';
 export { Companies } from './Companies';
+export { FeatureCard } from './FeatureCard';

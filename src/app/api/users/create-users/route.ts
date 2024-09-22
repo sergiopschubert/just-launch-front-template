@@ -4,7 +4,7 @@ import { NextResponse } from 'next/server';
 export async function POST(req: Request) {
   try {
     const body = await req.json();
-    const url = `${process.env.API_USERS_URL}/production/users`;
+    const url = `${process.env.API_USERS_URL}/${process.env.API_USERS_URL}/users`;
 
     const signedReq = await signAwsRequest({
       url: url,

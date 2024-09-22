@@ -17,6 +17,12 @@ export const useProblemsInternationalization = async () => {
   const option3Emoji = internationalization('problems.problems.option3.emoji');
   const option3Text = internationalization('problems.problems.option3.text');
 
+  const option4Emoji = internationalization('problems.problems.option4.emoji');
+  const option4Text = internationalization('problems.problems.option4.text');
+
+  const option5Emoji = internationalization('problems.problems.option5.emoji');
+  const option5Text = internationalization('problems.problems.option5.text');
+
   const problemsIntl: IProblemsIntl = {
     headerTitle,
     title,
@@ -33,6 +39,14 @@ export const useProblemsInternationalization = async () => {
       option3: {
         text: option3Text,
         emoji: option3Emoji,
+      },
+      option4: {
+        text: option4Text,
+        emoji: option4Emoji,
+      },
+      option5: {
+        text: option5Text,
+        emoji: option5Emoji,
       },
     },
   };

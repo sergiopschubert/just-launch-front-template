@@ -15,5 +15,13 @@ export interface IProblemsIntl {
       text: string;
       emoji: string;
     };
+    option4: {
+      text: string;
+      emoji: string;
+    };
+    option5: {
+      text: string;
+      emoji: string;
+    };
   };
 }

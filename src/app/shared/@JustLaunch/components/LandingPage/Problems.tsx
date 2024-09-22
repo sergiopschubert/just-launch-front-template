@@ -9,8 +9,8 @@ interface ProblemsProps {
 
 export function Problems({ intl }: ProblemsProps) {
   return (
-    <div className='bg-primary/50'>
-      <div className='bg-primary/600 px-8 py-36 text-white shadow-lg md:rounded-b-full md:rounded-t-full'>
+    <div className='bg-primary/50 pb-20'>
+      <div className='mx-auto max-w-7xl rounded-3xl bg-primary/600 px-8 py-16 text-white shadow-2xl'>
         <div className='container mx-auto text-center'>
           <h3 className='text-lg font-semibold leading-8 tracking-tight text-primary/50'>
             {intl?.headerTitle}
@@ -57,6 +57,7 @@ export function Problems({ intl }: ProblemsProps) {
               </motion.div>
 
               <Redo className='my-3 h-12 w-12 rotate-90 md:mt-0 md:rotate-0' />
+
               <motion.div
                 initial={{
                   scale: 0.1,
@@ -77,7 +78,9 @@ export function Problems({ intl }: ProblemsProps) {
                 </span>
                 <p className='font-semibold'>{intl?.problems.option2.text}</p>
               </motion.div>
-              <Undo className='my-3 h-12 w-12 -rotate-90 md:mt-10 md:rotate-180' />
+
+              <Redo className='my-3 h-12 w-12 rotate-90 md:mt-0 md:rotate-0' />
+
               <motion.div
                 initial={{
                   scale: 0.1,
@@ -97,6 +100,52 @@ export function Problems({ intl }: ProblemsProps) {
                   {intl?.problems.option3.emoji}
                 </span>
                 <p className='font-semibold'>{intl?.problems.option3.text}</p>
+              </motion.div>
+
+              <Undo className='my-3 h-12 w-12 rotate-90 md:mt-0 md:-rotate-12' />
+
+              <motion.div
+                initial={{
+                  scale: 0.1,
+                }}
+                whileInView={{
+                  scale: 1.0,
+                  transition: {
+                    type: 'spring',
+                    stiffness: 260,
+                    damping: 20,
+                    delay: 0.7,
+                  },
+                }}
+                className='px-8 text-center'
+              >
+                <span className='mb-2 block text-5xl'>
+                  {intl?.problems.option4.emoji}
+                </span>
+                <p className='font-semibold'>{intl?.problems.option4.text}</p>
+              </motion.div>
+
+              <Undo className='my-3 h-12 w-12 rotate-90 md:mt-0 md:-rotate-12' />
+
+              <motion.div
+                initial={{
+                  scale: 0.1,
+                }}
+                whileInView={{
+                  scale: 1.0,
+                  transition: {
+                    type: 'spring',
+                    stiffness: 260,
+                    damping: 20,
+                    delay: 0.9,
+                  },
+                }}
+                className='px-8 text-center'
+              >
+                <span className='mb-2 block text-5xl'>
+                  {intl?.problems.option5.emoji}
+                </span>
+                <p className='font-semibold'>{intl?.problems.option5.text}</p>
               </motion.div>
             </div>
           </div>

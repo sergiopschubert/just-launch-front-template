@@ -91,7 +91,7 @@ export function CallToAction({
               width={912}
               height={860}
               className='absolute left-0 top-0 w-[57rem] max-w-none rounded-md bg-white/5 ring-1 ring-white/10'
-              src='https://via.placeholder.com/1920x1800'
+              src='/doc.png'
               alt='Image'
             />
           </motion.div>
