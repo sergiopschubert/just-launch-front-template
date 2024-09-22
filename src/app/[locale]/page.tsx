@@ -33,7 +33,7 @@ export default async function LandingPage() {
     <>
       <Providers>
         <Header intl={headerIntl} session={null} />
-        <Hero intl={heroIntl} url={'#'} />
+        <Hero intl={heroIntl} url={'/signup'} />
         <Problems intl={problemsIntl} />
         <Features intl={featuresIntl} />
         <Testimonials intl={testimonialsIntl} />
