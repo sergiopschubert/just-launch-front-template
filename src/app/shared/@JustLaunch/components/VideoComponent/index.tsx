@@ -10,6 +10,8 @@ export const VideoComponent = ({ src }: VideoComponentProps) => {
   const [isVideoLoaded, setIsVideoLoaded] = useState(false);
 
   useEffect(() => {
+    const videoContainer = videoContainerRef.current;
+
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
@@ -22,13 +24,13 @@ export const VideoComponent = ({ src }: VideoComponentProps) => {
       { threshold: 0.1 }
     );
 
-    if (videoContainerRef.current) {
-      observer.observe(videoContainerRef.current);
+    if (videoContainer) {
+      observer.observe(videoContainer);
     }
 
     return () => {
-      if (videoContainerRef.current) {
-        observer.unobserve(videoContainerRef.current);
+      if (videoContainer) {
+        observer.unobserve(videoContainer);
       }
     };
   }, []);
