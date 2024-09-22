@@ -8,7 +8,7 @@ export async function GET() {
 
   if (session?.user && session.user.id) {
     try {
-      const url = `${process.env.API_USERS_URL}/production/users/${session.user.id}`;
+      const url = `${process.env.API_USERS_URL}/${process.env.ENVIRONMENT}/users/${session.user.id}`;
       const signedReq = await signAwsRequest({
         url: url,
         method: 'GET',
