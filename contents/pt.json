@@ -14,8 +14,8 @@
       }
     },
     "hero": {
-      "title": "Lance seu SaaS",
-      "titleWithEffect": "em Tempo Recorde",
+      "title": "Lance seu SaaS em",
+      "titleWithEffect": "Tempo Recorde",
       "subtitle": "Com esse kit starter Next.js, você tem tudo o que precisa para construir sua startup, SaaS, microSaaS, ferramenta de IA ou qualquer aplicativo web. Com grande parte do trabalho inicial já feito, você pode desenvolver mais rápido e concentrar-se na solução do problema que deseja resolver.",
       "callToActionButton": "Experimente grátis",
       "testimonials": {

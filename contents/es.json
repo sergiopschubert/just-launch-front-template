@@ -1,0 +1,615 @@
+{
+  "LandingPage": {
+    "header": {
+      "menu": {
+        "option1": "Características",
+        "option2": "Testimonios",
+        "option3": "¿Preguntas?",
+        "option4": "Planes"
+      },
+      "buttons": {
+        "option1": "Iniciar sesión",
+        "option2": "Crear una cuenta",
+        "option3": "Acceder al panel"
+      }
+    },
+    "hero": {
+      "title": "Lanza tu SaaS en",
+      "titleWithEffect": "Tiempo Récord",
+      "subtitle": "Con este kit de inicio Next.js, tienes todo lo que necesitas para construir tu startup, SaaS, microSaaS, herramienta de IA o cualquier aplicación web. Con gran parte del trabajo inicial ya hecho, puedes desarrollar más rápido y concentrarte en resolver el problema que deseas abordar.",
+      "callToActionButton": "Prueba gratis",
+      "testimonials": {
+        "text": "Clientes Satisfechos",
+        "numberOfClients": "2000"
+      },
+      "learnMore": "Aprende más",
+      "features": {
+        "authentication": {
+          "title": "Autenticación",
+          "description": "Autentica y crea usuarios con Supabase."
+        },
+        "payments": {
+          "title": "Pagos",
+          "description": "Procesa y gestiona pagos y suscripciones con Stripe."
+        },
+        "components": {
+          "title": "Componentes",
+          "description": "Usa componentes predefinidos para crear interfaces rápidamente."
+        },
+        "emails": {
+          "title": "Emails",
+          "description": "Envía correos electrónicos transaccionales con Resend y correos de marketing con Brevo."
+        },
+        "localization": {
+          "title": "Localización",
+          "description": "Soporte para múltiples idiomas."
+        }
+      }
+    },
+    "problems": {
+      "headerTitle": "El problema",
+      "title": "XX% Título llamativo del problema",
+      "subtitle": "Descripción del problema que resuelve tu producto. Debe ser una descripción corta y directa al punto.",
+      "problems": {
+        "option1": {
+          "emoji": "🧑🏻‍💻",
+          "text": "Problema 1"
+        },
+        "option2": {
+          "emoji": "😓",
+          "text": "Problema 2"
+        },
+        "option3": {
+          "emoji": "✅",
+          "text": "Solución"
+        },
+        "option4": {
+          "emoji": "😔",
+          "text": "Problema 3"
+        },
+        "option5": {
+          "emoji": "😔",
+          "text": "Problema 4"
+        }
+      }
+    },
+    "banner": {
+      "content": "¡Tenemos descuentos de lanzamiento en todos los planes!",
+      "leftText": "LANZAMIENTO",
+      "rightText": "LANZAMIENTO"
+    },
+    "features": {
+      "headerTitle": "Características",
+      "beforeTitle": "Título",
+      "titleWithEffect": "impactante",
+      "afterTitle": "de las características",
+      "subtitle": "Descripción de los problemas que tu producto resuelve. Debe ser una descripción corta y directa al punto.",
+      "feature1": {
+        "title": "Autenticación",
+        "description": "El template utiliza NextAuth junto con Supabase para la autenticación de usuarios. La configuración ya está lista para usar, lo que te permite habilitar la funcionalidad y comenzar a autenticar a tus usuarios de manera segura y eficiente.",
+        "icon": "🔐",
+        "image": "/auth.png"
+      },
+      "feature2": {
+        "title": "Envío de correos",
+        "description": "Para el envío de correos, el boilerplate cuenta con la integración de Resend. Ya incluye plantillas listas para correos de recuperación de contraseña y confirmación de cuenta. Puedes adaptar y expandir fácilmente para otros casos de envío, personalizando las plantillas según sea necesario.",
+        "icon": "📧",
+        "image": "/email.png"
+      },
+      "feature3": {
+        "title": "Pasarela de pagos",
+        "description": "Stripe se utiliza como pasarela de pago, ofreciendo una solución robusta para la gestión de suscripciones. El boilerplate ya está configurado para manejar suscripciones, escuchar eventos de cambios de estado (suscripciones, cancelaciones, mejoras) y aplicar las acciones necesarias automáticamente.",
+        "icon": "💳",
+        "image": "/pay.png"
+      },
+      "feature4": {
+        "title": "Localización",
+        "description": "Ofrecemos soporte para múltiples idiomas, con inglés y portugués activados por defecto. La adición de otros idiomas se simplifica a través de next-intl, que gestiona la traducción de todo el contenido del sitio de manera eficiente.",
+        "icon": "🌍",
+        "image": "/intl.png"
+      },
+      "feature5": {
+        "title": "¡Mucho más!",
+        "description": "El template ofrece landing page interactiva, autenticación segura con NextAuth y Supabase, panel de control para usuarios autenticados, registro de usuarios con DynamoDB, soporte para múltiples idiomas, captura de leads con Formspark, pagos con Stripe, chat de soporte con Crisp, monitoreo con Simple Analytics, envío de correos con Resend, correos de marketing con Brevo, página 404 personalizada, páginas de políticas, SEO optimizado y mucho más.",
+        "icon": "🚀",
+        "image": "/doc.png"
+      }
+    },
+    "callToAction": {
+      "title": "¿SIGUES CON DUDAS?",
+      "description": "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed sit amet. n faucibus orci luctus et ultrices posuere cubilia curae.",
+      "firstButton": "Accede a la documentación",
+      "secondButton": "Prueba gratis",
+      "imageUrl": "https://via.placeholder.com/1920x1800"
+    },
+    "stats": {
+      "headerTitle": "Estadísticas",
+      "title": "Impacto en Números",
+      "subtitle": "Descripción del impacto en números.",
+      "stats1": {
+        "title": "Estadística 1",
+        "value": "100+"
+      },
+      "stats2": {
+        "title": "Estadística 2",
+        "value": "1000+"
+      },
+      "stats3": {
+        "title": "Estadística 3",
+        "value": "20000+"
+      },
+      "stats4": {
+        "title": "400H+"
+      }
+    },
+    "testimonials": {
+      "headerTitle": "Testimonios",
+      "title": "Calidad y simplicidad aprobada por quienes valoran",
+      "testimonial1": {
+        "body": "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed sit amet.",
+        "author": {
+          "name": "Mauris euismod",
+          "handle": "Nullam vitae",
+          "imageUrl": "https://via.placeholder.com/48x48"
+        }
+      },
+      "testimonial2": {
+        "body": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.",
+        "author": {
+          "name": "Vivamus fermentum",
+          "handle": "Curabitur aliquet",
+          "imageUrl": "https://via.placeholder.com/48x48"
+        }
+      },
+      "testimonial3": {
+        "body": "Suspendisse potenti. In eleifend massa nec odio eleifend, a pellentesque felis aliquet.",
+        "author": {
+          "name": "Fusce vehicula",
+          "handle": "Etiam ultricies",
+          "imageUrl": "https://via.placeholder.com/48x48"
+        }
+      },
+      "testimonial4": {
+        "body": "Quisque id diam vel quam elementum pulvinar. Etiam non quam lacus.",
+        "author": {
+          "name": "Vestibulum lacinia",
+          "handle": "Praesent sapien",
+          "imageUrl": "https://via.placeholder.com/48x48"
+        }
+      },
+      "testimonial5": {
+        "body": "Donec sollicitudin molestie malesuada. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.",
+        "author": {
+          "name": "Nulla quis",
+          "handle": "Donec rutrum",
+          "imageUrl": "https://via.placeholder.com/48x48"
+        }
+      }
+    },
+    "faq": {
+      "headerTitle": "FAQ",
+      "title": "¿Tienes alguna duda?",
+      "subtitle": "Encuentra respuestas a las preguntas más frecuentes y aclara las tuyas.",
+      "questions&Answers": {
+        "faq1": {
+          "question": "¿Lorem ipsum dolor sit amet?",
+          "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor."
+        },
+        "faq2": {
+          "question": "¿Consectetur adipiscing elit?",
+          "answer": "Curabitur vel urna. In tristique orci porttitor ipsum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque cursus luctus mauris."
+        },
+        "faq3": {
+          "question": "¿Nec sagittis sem nibh id elit?",
+          "answer": "Duis semper. Donec vel libero ullamcorper, faucibus aliquet magna. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum."
+        },
+        "faq4": {
+          "question": "¿Curabitur mollis pretium?",
+          "answer": "Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus. Phasellus ultrices nulla quis nibh. Quisque a lectus. Donec consectetuer ligula vulputate sem tristique cursus."
+        },
+        "faq5": {
+          "question": "¿Maecenas tempus tellus eget?",
+          "answer": "Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum."
+        },
+        "faq6": {
+          "question": "¿Sem quam semper libero?",
+          "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum."
+        },
+        "faq7": {
+          "question": "¿Praesent mauris fusce nec tellus?",
+          "answer": "Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos."
+        }
+      }
+    },
+    "footer": {
+      "description": "Lorem ipsum dolor sit amet, Lorem ipsum dolor",
+      "menuTitle1": "Soporte",
+      "menuTitle2": "Institucional",
+      "menuTitle3": "Just Launch",
+      "navigation": {
+        "support": {
+          "item1": {
+            "name": "¿Preguntas?",
+            "href": "#doubts"
+          },
+          "item2": {
+            "name": "Documentación",
+            "href": "docs.justlaunch.com.br"
+          },
+          "item3": {
+            "name": "Envía tu sugerencia",
+            "href": "#"
+          }
+        },
+        "company": {
+          "item1": {
+            "name": "Características",
+            "href": "#features"
+          },
+          "item2": {
+            "name": "Testimonios",
+            "href": "#testimonials"
+          },
+          "item3": {
+            "name": "Planes",
+            "href": "#pricing"
+          },
+          "item4": {
+            "name": "Acceder al Panel",
+            "href": "/home"
+          },
+          "item5": {
+            "name": "Crear una cuenta",
+            "href": "/signup"
+          }
+        },
+        "legal": {
+          "item1": {
+            "name": "Política de Cookies",
+            "href": "/cookie"
+          },
+          "item2": {
+            "name": "Política de Privacidad",
+            "href": "/privacy"
+          },
+          "item3": {
+            "name": "Términos y Condiciones",
+            "href": "/terms&conditions"
+          }
+        },
+        "social": {
+          "item1": {
+            "name": "Facebook",
+            "href": "#"
+          },
+          "item2": {
+            "name": "Instagram",
+            "href": "#"
+          },
+          "item3": {
+            "name": "Youtube",
+            "href": "#"
+          }
+        }
+      },
+      "copyright": "Todos los derechos reservados."
+    },
+    "pricing": {
+      "headerTitle": "Precios",
+      "title": "Elige el precio que mejor se adapte a ti",
+      "subtitle": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit numquam eligendi quos odit doloribus molestiae voluptatum.",
+      "textOfMostPopular": "Más popular",
+      "callToAction": "Prueba gratis",
+      "cancel": "Cancelar mi plan",
+      "footerDescription": "Modi dolorem. expedita deleniti!",
+      "price1": {
+        "name": "Starter",
+        "description": "Modi dolorem expedita deleniti. Corporis iste qui inventore pariatur adipisci vitae.",
+        "nextPrice": "$69.90",
+        "price": "$49.90",
+        "moreInfoOfPrice": "/Mes",
+        "feature1": "5 lorem ipsum",
+        "feature2": "Hasta 1000 Modi dolorem",
+        "feature3": "expedita deleniti",
+        "feature4": "Corporis iste qui",
+        "feature5": "inventore pariatur adipisci",
+        "mostPopular": "false"
+      },
+      "price2": {
+        "name": "Pro",
+        "description": "Modi dolorem expedita deleniti. Corporis iste qui inventore pariatur adipisci vitae.",
+        "nextPrice": "$99.90",
+        "price": "$69.90",
+        "moreInfoOfPrice": "/Mes",
+        "feature1": "5 lorem ipsum",
+        "feature2": "Hasta 1000 Modi dolorem",
+        "feature3": "expedita deleniti",
+        "feature4": "Corporis iste qui",
+        "feature5": "inventore pariatur adipisci",
+        "mostPopular": "true"
+      }
+    },
+    "cookies": {
+      "content": "JustLaunch utiliza 🍪, al hacer clic en 'Aceptar', aceptas el almacenamiento de cookies en tu dispositivo para mejorar la navegación del sitio.",
+      "acceptButton": "Aceptar",
+      "refuseButton": "Rechazar",
+      "moreInfo": " aprende más haciendo clic aquí."
+    },
+    "saveLeads": {
+      "callToActionButton": "Únete a la lista de espera",
+      "successMessage": "¡Felicidades! Te has unido a la lista de espera con éxito.",
+      "errorMessageToValidateEmail": "Por favor, introduce un correo electrónico válido."
+    },
+    "companies": {
+      "title": "Empresas que confían en Just Launch"
+    },
+    "countdownBanner": {
+      "leftText": "EL DESCUENTO TERMINA EN: ",
+      "rightText": "¡NO PIERDAS LA OPORTUNIDAD!"
+    }
+  },
+  "Auth": {
+    "signup": {
+      "metadata": {
+        "title": "Registro"
+      },
+      "title": "Crear cuenta",
+      "headerSubtitle": "Comienza tu ",
+      "subtitleWithColor": "prueba gratuita de 7 días ",
+      "subtitle": "y crea hasta 5 ejercicios. ¡No pedimos tu tarjeta de crédito! 😉",
+      "registerSuccessMessage": "¡Registro exitoso!",
+      "errors": {
+        "register": {
+          "title": "Error de registro",
+          "message": "Actualmente estamos experimentando dificultades técnicas y no podemos procesar tu registro. Inténtalo de nuevo más tarde. Si el problema persiste, contáctanos en support@justlaunch.com.br."
+        }
+      },
+      "form": {
+        "labelName": "Tu nombre",
+        "labelEmail": "Correo electrónico",
+        "labelPassword": "Contraseña",
+        "labelConfirmPassword": "Confirma tu contraseña",
+        "placeholderEmail": "Ingresa tu correo electrónico",
+        "placeholderPassword": "Elige una contraseña segura",
+        "placeholderName": "Ingresa tu nombre",
+        "placeholderConfirmPassword": "Confirma tu contraseña",
+        "alertWarningPassword": "Debe tener al menos 8 caracteres.",
+        "messageOfPolicies": "Al continuar, aceptas los ",
+        "terms&conditions": "Términos de uso",
+        "privacy": "Políticas de privacidad",
+        "button": "Crear cuenta",
+        "alreadyAccountMessage": "¿Ya tienes una cuenta?",
+        "alreadyAccountButton": "Inicia sesión con tu cuenta"
+      }
+    },
+    "signin": {
+      "metadata": {
+        "title": "Iniciar sesión"
+      },
+      "title": "Iniciar sesión",
+      "subtitle": "Ingresa tus credenciales a continuación:",
+      "errors": {
+        "auth": {
+          "title": "Error de autenticación",
+          "message": "Durante el proceso de autenticación, identificamos que el correo electrónico y/o la contraseña ingresada pueden ser incorrectos. Revisa tus credenciales e inténtalo de nuevo. Si olvidaste tu contraseña, utiliza la opción de recuperación."
+        },
+        "resetPassword": {
+          "title": "Error de restablecimiento de contraseña",
+          "message": "Lo sentimos, no podemos enviar el correo de restablecimiento de contraseña en este momento. Inténtalo de nuevo más tarde. Si el problema persiste, contáctanos en support@justlaunch.com.br."
+        },
+        "invalidMail": "Por favor, ingresa una dirección de correo válida."
+      },
+      "authSuccessMessage": "¡Autenticación exitosa!",
+      "resetPasswordSuccessMessage": "¡Se ha enviado un correo para restablecer la contraseña!",
+      "form": {
+        "email": "Ingresa tu correo electrónico",
+        "password": "***********",
+        "stayConnected": "Mantenerme conectado",
+        "forgotPassword": "¿Olvidaste la contraseña?",
+        "button": "Iniciar sesión",
+        "noAccount": "¿No estás registrado?",
+        "register": "Crear una cuenta"
+      },
+      "popup": {
+        "title": "Recuperar contraseña",
+        "subtitle": "Solo déjanos tu correo electrónico a continuación y te enviaremos instrucciones para recuperar tu contraseña.",
+        "button": "Recuperar contraseña"
+      }
+    },
+    "resetPassword": {
+      "metadata": {
+        "title": "Restablecer contraseña"
+      },
+      "title": "Crear una nueva contraseña",
+      "headerSubtitle": "Ingresa una ",
+      "subtitleWithColor": "nueva contraseña ",
+      "subtitle": "para tu cuenta. Asegúrate de que sea segura y única para garantizar la seguridad de tu información.",
+      "form": {
+        "password": "Elige una contraseña segura",
+        "confirmPassword": "Confirma tu contraseña",
+        "labelPassword": "Contraseña",
+        "labelConfirmPassword": "Confirma tu contraseña",
+        "labelWarningPassword": "Debe tener al menos 8 caracteres.",
+        "button": "Restablecer contraseña",
+        "login": "Volver a iniciar sesión"
+      },
+      "resetPasswordSuccessMessage": "¡Contraseña cambiada!",
+      "errors": {
+        "resetPassword": {
+          "title": "Error de restablecimiento de contraseña",
+          "message": "Lo sentimos, no podemos restablecer tu contraseña en este momento. Inténtalo de nuevo más tarde. Si el problema persiste, contáctanos en support@homeworkai.com.br."
+        }
+      }
+    },
+    "signUpSuccess": {
+      "metadata": {
+        "title": "Éxito - Registro"
+      },
+      "title": "¡Registro exitoso!",
+      "description": "Accede a la herramienta y despídete de las horas dedicadas a crear tareas manualmente.",
+      "textButton": "Iniciar sesión"
+    }
+  },
+  "Dashboard": {
+    "settings": {
+      "metadata": {
+        "title": "Configuraciones"
+      },
+      "title": "Configuraciones - (Página de demostración)",
+      "tabs": {
+        "item1": "Perfil",
+        "item2": "Planes"
+      },
+      "profile": {
+        "labels": {
+          "item1": "Nombre",
+          "item2": "Correo electrónico",
+          "item3": "Bio"
+        }
+      },
+      "subheadings": {
+        "item1": "Usuario",
+        "item2": "Bio",
+        "item3": "Correo electrónico"
+      },
+      "descriptions": {
+        "item1": "Esto se mostrará en tu perfil público.",
+        "item2": "Esto se mostrará en tu perfil público. Máximo de 240 caracteres.",
+        "item3": "Así es como los clientes pueden ponerse en contacto contigo para soporte."
+      },
+      "checkbox": {
+        "labels": {
+          "item1": "Mostrar correo electrónico en el perfil público"
+        }
+      },
+      "buttons": {
+        "item1": "Guardar",
+        "item2": "Cancelar"
+      }
+    },
+    "confirmationEmail": {
+      "metadata": {
+        "title": "Confirmación de correo electrónico"
+      },
+      "title": "¡Correo electrónico confirmado!",
+      "description": "Accede a la herramienta ahora",
+      "textButton": "Ir al panel"
+    },
+    "feedback": {
+      "metadata": {
+        "title": "Comentarios - (Página de demostración)"
+      },
+      "constructionState": {
+        "title": "En construcción",
+        "description": "Esta sección está en construcción. Por favor, vuelve más tarde.",
+        "notifyButton": "Notificarme"
+      }
+    },
+    "support": {
+      "metadata": {
+        "title": "Soporte - (Página de demostración)"
+      },
+      "emptyState": {
+        "title": "No hay tickets",
+        "description": "Comienza creando un nuevo ticket de soporte",
+        "newTicketButton": "Nuevo ticket"
+      }
+    },
+    "home": {
+      "metadata": {
+        "title": "Inicio - (Página de demostración)"
+      },
+      "headings": {
+        "overview": "Visión general",
+        "recentOrders": "Pedidos recientes"
+      },
+      "stats": {
+        "totalRevenue": "Ingresos totales",
+        "avgOrderValue": "Valor promedio de pedido",
+        "ticketsSold": "Entradas vendidas",
+        "pageViews": "Vistas de página",
+        "totalSales": "Ventas totales"
+      },
+      "selectPeriod": {
+        "placeholder": "Período",
+        "options": {
+          "lastWeek": "Última semana",
+          "lastTwoWeeks": "Últimas dos semanas",
+          "lastMonth": "Último mes",
+          "lastQuarter": "Último trimestre"
+        }
+      },
+      "chart": {
+        "title": "Ventas por mes",
+        "description": "Este es el gráfico de ventas"
+      },
+      "table": {
+        "columns": {
+          "customerName": "Nombre del cliente",
+          "amount": "Cantidad",
+          "date": "Fecha"
+        }
+      }
+    },
+    "customers": {
+      "metadata": {
+        "title": "Clientes - (Página de demostración)"
+      },
+      "heading": {
+        "title": "Clientes - (Página de demostración)",
+        "button": "Crear cliente"
+      },
+      "table": {
+        "columns": {
+          "name": "Nombre",
+          "status": "Estado",
+          "email": "Correo electrónico",
+          "birth": "Fecha de nacimiento",
+          "phone": "Teléfono"
+        }
+      }
+    }
+  },
+  "Shared": {
+    "language": "Español",
+    "sidebar": {
+      "bottomNavigation": {
+        "item1": "Configuraciones",
+        "item2": "Comentarios",
+        "item3": "Soporte"
+      },
+      "mainNavigation": {
+        "item1": "Inicio",
+        "item2": "Clientes"
+      }
+    },
+    "confirmationEmail": {
+      "subject": "¡Confirmación de correo electrónico! ¿Eres tú realmente?",
+      "headerTitle": "Confirmación",
+      "title": "Confirma tu correo electrónico",
+      "hello": "Hola, ",
+      "message": "Para tu seguridad, necesitamos verificar que este correo electrónico te pertenece.",
+      "textLink": "Confirmar mi correo electrónico",
+      "warningMessage": "Si tienes algún problema, contacta a nuestro equipo ",
+      "textWarningMessageLink": "enviando un correo a soporte.",
+      "beforeFooter": "Este correo fue enviado a ",
+      "afterFooter": "cuando te registraste en Just Launch. Si ya no deseas recibir estos correos, contacta ",
+      "textFooterLink": "enviando un correo a Soporte.",
+      "textLogin": "Para iniciar sesión, accede a ",
+      "textPrivacy": "Política de privacidad",
+      "textTerms": "Términos de uso"
+    },
+    "userConfirmationAccount": {
+      "title": "¡Confirmación de cuenta requerida!",
+      "hello": "Hola ",
+      "message": ", hemos notado que aún no has confirmado tu cuenta. Para garantizar la seguridad y la mejor experiencia en nuestra plataforma, completar este proceso es esencial.",
+      "warningMessage": "Haz clic en el botón a continuación para recibir el correo.",
+      "button1": "Enviar correo de confirmación",
+      "button2": "Reenviar correo de confirmación",
+      "verifyMessage": "¡Revisa tu correo ahora y confirma tu cuenta!",
+      "awaitMessage1": "Espera ",
+      "awaitMessage2": " segundos para enviar de nuevo."
+    }
+  }
+}
+
