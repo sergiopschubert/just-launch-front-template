@@ -25,7 +25,7 @@ export const Default: Story = {
       <PopupContent
         icon={AlertCircle}
         onClose={() => console.log('Popup closed')}
-        className="bg-white p-6 rounded-md shadow-md max-w-sm"
+        className='fixed left-1/2 top-1/2 z-50  h-auto w-4/5 -translate-x-1/2 -translate-y-1/2 overflow-y-scroll rounded-md bg-white p-8 text-gray-900 shadow lg:w-3/5 lg:max-w-full'
       >
         <p>This is the popup content. It can have any custom content inside it.</p>
       </PopupContent>
@@ -50,7 +50,7 @@ export const WithStateControl: Story = {
         <PopupContent
           icon={AlertCircle}
           onClose={() => setIsOpen(false)}
-          className="bg-white p-6 rounded-md shadow-md max-w-sm"
+          className='fixed left-1/2 top-1/2 z-50  h-auto w-4/5 -translate-x-1/2 -translate-y-1/2 overflow-y-scroll rounded-md bg-white p-8 text-gray-900 shadow lg:w-3/5 lg:max-w-full'
         >
           <p>This popup is controlled by state.</p>
         </PopupContent>
