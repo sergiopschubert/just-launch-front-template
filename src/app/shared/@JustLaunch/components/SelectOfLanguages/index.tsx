@@ -8,6 +8,7 @@ import { Fragment } from 'react';
 const languages = [
   { name: 'English', href: '/en', locale: 'en' },
   { name: 'Português', href: '/pt', locale: 'pt' },
+  { name: 'Español', href: '/es', locale: 'es' },
 ];
 
 export function SelectOfLanguages({

@@ -19,8 +19,6 @@ export function PlansContent({ intl }: PlansContentProps) {
     intl.language
   );
 
-  console.log('userWithoutPlan', user);
-
   return (
     <div className='isolate p-8'>
       <div className='mx-auto max-w-7xl text-center'>
