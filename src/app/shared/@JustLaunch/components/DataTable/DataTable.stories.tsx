@@ -14,7 +14,6 @@ type Status = keyof typeof statuses;
 
 const activityItems: Array<{
   user: { name: string; imageUrl: string };
-  commit: string;
   branch: string;
   status: Status;
   duration: string;
@@ -27,7 +26,6 @@ const activityItems: Array<{
       imageUrl:
         'https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
     },
-    commit: '2d89f0c8',
     branch: 'main',
     status: 'Completed',
     duration: '25s',
@@ -40,7 +38,6 @@ const activityItems: Array<{
       imageUrl:
         'https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
     },
-    commit: '249df660',
     branch: 'main',
     status: 'Completed',
     duration: '1m 32s',
@@ -53,7 +50,6 @@ const activityItems: Array<{
       imageUrl:
         'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
     },
-    commit: '11464223',
     branch: 'developer',
     status: 'Error',
     duration: '1m 4s',
@@ -66,7 +62,6 @@ const activityItems: Array<{
       imageUrl:
         'https://images.unsplash.com/photo-1517365830460-955ce3ccd263?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
     },
-    commit: '1a2b3c4d',
     branch: 'feature-login',
     status: 'Pending',
     duration: '45s',
@@ -79,7 +74,7 @@ const activityItems: Array<{
       imageUrl:
         'https://images.unsplash.com/photo-1493666438817-866a91353ca9?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
     },
-    commit: '5f6a7b8c',
+
     branch: 'hotfix/urgent-issue',
     status: 'Completed',
     duration: '2m 15s',
@@ -93,7 +88,7 @@ const activityItems: Array<{
       imageUrl:
         'https://images.unsplash.com/photo-1493666438817-866a91353ca9?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
     },
-    commit: '9x2c3v4b',
+
     branch: 'testing',
     status: 'Pending',
     duration: '1m 5s',
@@ -106,7 +101,7 @@ const activityItems: Array<{
       imageUrl:
         'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
     },
-    commit: '8b7a9c2d',
+
     branch: 'feature/xyz',
     status: 'Completed',
     duration: '3m 21s',
@@ -119,7 +114,6 @@ const activityItems: Array<{
       imageUrl:
         'https://images.unsplash.com/photo-1517365830460-955ce3ccd263?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
     },
-    commit: '5f2d7a8b',
     branch: 'improvement/ui',
     status: 'Error',
     duration: '2m 42s',
@@ -132,7 +126,6 @@ const activityItems: Array<{
       imageUrl:
         'https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
     },
-    commit: '7g8h9j0k',
     branch: 'release/v2.0',
     status: 'Completed',
     duration: '2m 2s',
@@ -156,13 +149,6 @@ const columns: ColumnDef<(typeof activityItems)[0]>[] = [
         />
         <span className='ml-2'>{row.original.user.name}</span>
       </div>
-    ),
-  },
-  {
-    accessorKey: 'commit',
-    header: 'Commit',
-    cell: ({ row }) => (
-      <span className='font-mono text-sm'>{row.original.commit}</span>
     ),
   },
   {
