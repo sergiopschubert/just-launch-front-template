@@ -21,7 +21,7 @@ export const signAwsRequest = async ({
   accessKeyId: string;
   secretAccessKey: string;
 }): Promise<any> => {
-  const sigv4 = new SignatureV4({
+  const signv4 = new SignatureV4({
     service: 'execute-api',
     region,
     credentials: {
@@ -46,7 +46,7 @@ export const signAwsRequest = async ({
     },
   });
 
-  const signed = await sigv4.sign(request, { signingDate: new Date() });
+  const signed = await signv4.sign(request, { signingDate: new Date() });
 
   return signed;
 };

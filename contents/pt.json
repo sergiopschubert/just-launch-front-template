@@ -9,18 +9,41 @@
       },
       "buttons": {
         "option1": "Entrar",
-        "option2": "Experimente grátis",
+        "option2": "Crie uma conta",
         "option3": "Acessar o Painel"
       }
     },
     "hero": {
-      "title": "Título do",
-      "titleWithEffect": "Hero!",
-      "subtitle": "Esta é uma descrição detalhada do que o seu site ou aplicativo faz, escrita em algumas linhas. Ela deve ser persuasiva e direta ao ponto.",
+      "title": "Lance seu SaaS em",
+      "titleWithEffect": "Tempo Recorde",
+      "subtitle": "Com esse kit starter Next.js, você tem tudo o que precisa para construir sua startup, SaaS, microSaaS, ferramenta de IA ou qualquer aplicativo web. Com grande parte do trabalho inicial já feito, você pode desenvolver mais rápido e concentrar-se na solução do problema que deseja resolver.",
       "callToActionButton": "Experimente grátis",
       "testimonials": {
         "text": "Clientes Satisfeitos",
-        "numberOfClients": "100"
+        "numberOfClients": "2000"
+      },
+      "learnMore": "Saiba mais",
+      "features": {
+        "authentication": {
+          "title": "Autenticação",
+          "description": "Autentique e crie usuários com Supabase."
+        },
+        "payments": {
+          "title": "Pagamentos",
+          "description": "Processe e gerencie pagamentos e assinaturas com Stripe."
+        },
+        "components": {
+          "title": "Componentes",
+          "description": "Use componentes prontos para criar interfaces rapidamente."
+        },
+        "emails": {
+          "title": "Emails",
+          "description": "Envie emails transacionais com Resend e marketing com Brevo."
+        },
+        "localization": {
+          "title": "Internacionalização",
+          "description": "Suporte a múltiplos idiomas"
+        }
       }
     },
     "problems": {
@@ -37,8 +60,16 @@
           "text": "Problema 2"
         },
         "option3": {
+          "emoji": "✅",
+          "text": "Solução"
+        },
+        "option4": {
           "emoji": "😔",
           "text": "Problema 3"
+        },
+        "option5": {
+          "emoji": "😔",
+          "text": "Problema 4"
         }
       }
     },
@@ -54,34 +85,34 @@
       "afterTitle": "das funcionalidade",
       "subtitle": "Descrição dos problemas que o seu produto resolve. Deve ser uma descrição curta e direta ao ponto.",
       "feature1": {
-        "title": "Funcionalidade 1",
-        "description": "Descrição da funcionalidade",
-        "icon": "💰",
-        "image": "https://via.placeholder.com/400x400"
+        "title": "Autenticação",
+        "description": "O template utiliza NextAuth em conjunto com Supabase para a autenticação de usuários. A configuração já vem pronta, permitindo que você apenas habilite a funcionalidade para começar a autenticar seus usuários de maneira segura e eficiente.",
+        "icon": "🔐",
+        "image": "/auth.png"
       },
       "feature2": {
-        "title": "Funcionalidade 2",
-        "description": "Descrição da funcionalidade",
-        "icon": "👋",
-        "image": "https://via.placeholder.com/400x400/000"
+        "title": "Envio de Emails",
+        "description": "Para o envio de emails, o boilerplate conta com a integração do Resend. Ele já inclui templates prontos para emails de recuperação de senha e confirmação de conta. Você pode facilmente adaptar e expandir para outros casos de envio, personalizando os templates conforme necessário.",
+        "icon": "📧",
+        "image": "/email.png"
       },
       "feature3": {
-        "title": "Funcionalidade 3",
-        "description": "Descrição da funcionalidade",
-        "icon": "🪄",
-        "image": "https://via.placeholder.com/400x400"
+        "title": "Gateway de Pagamento",
+        "description": "O Stripe é utilizado como gateway de pagamento, oferecendo uma solução robusta para a cobrança de assinaturas. O boilerplate já vem configurado para gerenciar assinaturas, ouvir eventos de mudança de estado (assinaturas, cancelamentos, upgrades), e aplicar as ações necessárias automaticamente.",
+        "icon": "💳",
+        "image": "/pay.png"
       },
       "feature4": {
-        "title": "Funcionalidade 4",
-        "description": "Descrição da funcionalidade",
-        "icon": "🚀",
-        "image": "https://via.placeholder.com/400x400/000"
+        "title": "Internacionalização",
+        "description": "Oferecemos suporte a múltiplos idiomas, com inglês e português ativados por padrão. A adição de outras línguas é simplificada através do next-intl, que gerencia a tradução de todo o conteúdo do site de maneira eficiente.",
+        "icon": "🌍",
+        "image": "/intl.png"
       },
       "feature5": {
-        "title": "Funcionalidade 5",
-        "description": "Descrição da funcionalidade",
-        "icon": "🎉",
-        "image": "https://via.placeholder.com/400x400/f4f4f4"
+        "title": "Muito Mais!",
+        "description": "O template oferece landing page interativa, autenticação segura com NextAuth e Supabase, dashboard para usuários autenticados, registro de usuários com DynamoDB, suporte a múltiplos idiomas, coleta de leads via Formspark, pagamentos com Stripe, chat de suporte Crisp, monitoramento com Simple Analytics, envio de emails pelo Resend, envio de emails de marketing com brevo, página 404 personalizada, páginas de políticas, SEO otimizado e muito mais!",
+        "icon": "🚀",
+        "image": "/doc.png"
       }
     },
     "callToAction": {
@@ -604,27 +635,123 @@
     }
   },
   "Dashboard": {
-    "user": {
-      "settings": {
-        "title": "Configurações",
-        "menu": {
-          "item1": "Perfil"
-        },
-        "profile": {
-          "title": "Informações pessoais",
-          "labels": {
-            "name": "Nome",
-            "email": "Email"
-          }
+    "settings": {
+      "metadata": {
+        "title": "Configurações"
+      },
+      "title": "Configurações - (Demonstração page)",
+      "tabs": {
+        "item1": "Perfil",
+        "item2": "Planos"
+      },
+      "profile": {
+        "labels": {
+          "item1": "Nome",
+          "item2": "Email",
+          "item3": "Bio"
         }
       },
-      "confirmationEmail": {
-        "metadata": {
-          "title": "Confirmação de email"
-        },
-        "title": "Email Confirmado!",
-        "description": "Acesse agora ferramenta",
-        "textButton": "Ir para a dashboard"
+      "subheadings": {
+        "item1": "User",
+        "item2": "Bio",
+        "item3": "Email"
+      },
+      "descriptions": {
+        "item1": "Isso será exibido no seu perfil público.",
+        "item2": "Isso será exibido no seu perfil público. Máximo de 240 caracteres.",
+        "item3": "É assim que os clientes podem entrar em contato com você para obter suporte."
+      },
+      "checkbox": {
+        "labels": {
+          "item1": "Mostrar e-mail no perfil público"
+        }
+      },
+      "buttons": {
+        "item1": "Salvar",
+        "item2": "Cancelar"
+      }
+    },
+    "confirmationEmail": {
+      "metadata": {
+        "title": "Confirmação de email"
+      },
+      "title": "Email Confirmado!",
+      "description": "Acesse agora ferramenta",
+      "textButton": "Ir para a dashboard"
+    },
+    "feedback": {
+      "metadata": {
+        "title": "Feedback - (Demonstração page)"
+      },
+      "constructionState": {
+        "title": "Em Construção",
+        "description": "Esta seção está em construção. Por favor, volte mais tarde.",
+        "notifyButton": "Notificar-me"
+      }
+    },
+
+    "support": {
+      "metadata": {
+        "title": "Suporte - (Página de Demonstração)"
+      },
+      "emptyState": {
+        "title": "Nenhum Ticket",
+        "description": "Comece criando um novo ticket de suporte",
+        "newTicketButton": "Novo Ticket"
+      }
+    },
+    "home": {
+      "metadata": {
+        "title": "Início - (Página de Demonstração)"
+      },
+      "headings": {
+        "overview": "Visão Geral",
+        "recentOrders": "Pedidos Recentes"
+      },
+      "stats": {
+        "totalRevenue": "Receita Total",
+        "avgOrderValue": "Valor Médio do Pedido",
+        "ticketsSold": "Ingressos Vendidos",
+        "pageViews": "Visualizações de Página",
+        "totalSales": "Vendas Totais"
+      },
+      "selectPeriod": {
+        "placeholder": "Período",
+        "options": {
+          "lastWeek": "Última semana",
+          "lastTwoWeeks": "Últimas duas semanas",
+          "lastMonth": "Último mês",
+          "lastQuarter": "Último trimestre"
+        }
+      },
+      "chart": {
+        "title": "Vendas por Mês",
+        "description": "Este é o gráfico de vendas"
+      },
+      "table": {
+        "columns": {
+          "customerName": "Nome do cliente",
+          "amount": "Valor",
+          "date": "Data"
+        }
+      }
+    },
+    "customers": {
+      "metadata": {
+        "title": "Clientes - (Página de Demonstração)"
+      },
+      "heading": {
+        "title": "Clientes - (Página de Demonstração)",
+        "button": "Criar cliente"
+      },
+      "table": {
+        "columns": {
+          "name": "Nome",
+          "status": "Status",
+          "email": "E-mail",
+          "birth": "Data de Nascimento",
+          "phone": "Telefone"
+        }
       }
     }
   },
@@ -633,10 +760,12 @@
     "sidebar": {
       "bottomNavigation": {
         "item1": "Configurações",
-        "item2": "Feedback"
+        "item2": "Feedback",
+        "item3": "Suporte"
       },
       "mainNavigation": {
-        "item1": "Home"
+        "item1": "Home",
+        "item2": "Clientes"
       }
     },
     "confirmationEmail": {

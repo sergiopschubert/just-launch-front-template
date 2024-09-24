@@ -1,5 +1,5 @@
-import { SignUpForm } from '@/app/[locale]/(auth)/components/Forms/SignUpForm';
-import { useSignupInternationalization } from '@/app/[locale]/(auth)/hooks/contents/useSignupInternationalization';
+import { SignUpForm } from '@/app/shared/@JustLaunch/components/Forms/SignUpForm';
+import { useSignupInternationalization } from '@/app/shared/@JustLaunch/hooks/contents/useSignupInternationalization';
 import { Metadata } from 'next/types';
 
 export let metadata: Metadata = {};

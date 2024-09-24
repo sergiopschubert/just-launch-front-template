@@ -1,6 +1,6 @@
 import { Metadata } from 'next';
 import { Fragment } from 'react';
-import { usePrivacyPolicyInternationalization } from '../../hooks/usePrivacyPolicyInternationalization';
+import { usePrivacyPolicyInternationalization } from '../../../../shared/@JustLaunch/hooks/contents/usePrivacyPolicyInternationalization';
 
 export let metadata: Metadata = {};
 

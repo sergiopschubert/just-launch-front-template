@@ -1,5 +1,5 @@
 import { nextAuthOptions } from '@/app/api/auth/[...nextauth]/auth';
-import { LogoV1 } from '@/app/shared/components/LogoV1';
+import { LogoV1 } from '@/app/shared/@JustLaunch/components';
 import { getServerSession } from 'next-auth';
 import { Inter } from 'next/font/google';
 import { redirect } from 'next/navigation';

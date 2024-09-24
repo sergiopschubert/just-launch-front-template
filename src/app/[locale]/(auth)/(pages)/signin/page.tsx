@@ -1,5 +1,5 @@
-import { SignInForm } from '@/app/[locale]/(auth)/components/Forms/SignInForm';
-import { useSigninInternationalization } from '@/app/[locale]/(auth)/hooks/contents/useSigninInternationalization';
+import { SignInForm } from '@/app/shared/@JustLaunch/components/Forms/SignInForm';
+import { useSigninInternationalization } from '@/app/shared/@JustLaunch/hooks/contents/useSigninInternationalization';
 import { Metadata } from 'next/types';
 
 export let metadata: Metadata = {};

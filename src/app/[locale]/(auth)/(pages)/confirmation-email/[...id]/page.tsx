@@ -1,5 +1,5 @@
-import { useInternationalizationUser } from '@/app/[locale]/(users)/hooks/useInternationalizationUser';
-import { SuccessMessage } from '@/app/shared/components/SuccessMessage';
+import { SuccessMessage } from '@/app/shared/@JustLaunch/components';
+import { useInternationalizationDashboard } from '@/app/shared/@JustLaunch/hooks/contents/useInternationalizationDashboard';
 import { Metadata } from 'next/types';
 
 export let metadata: Metadata = {};
@@ -23,7 +23,7 @@ export default async function ConfirmationEmailSuccess({
   params,
 }: ConfirmationEmailSuccessProps) {
   await getData(params.id);
-  const { intlConfirmationEmail } = await useInternationalizationUser();
+  const { intlConfirmationEmail } = await useInternationalizationDashboard();
 
   metadata.title = intlConfirmationEmail.metadata.title;
 

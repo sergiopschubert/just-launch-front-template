@@ -1,7 +1,11 @@
 import { Inter } from 'next/font/google';
 import { ReactNode } from 'react';
-import { Footer, Header, CookieBanner } from '../(landing-page)/components';
-import { useLandingPageInternationalization } from '../(landing-page)/hooks/contents/useLandingPageInternationalization';
+import {
+  Footer,
+  Header,
+  CookieBanner,
+} from '@/app/shared/@JustLaunch/components/LandingPage';
+import { useLandingPageInternationalization } from '../../shared/@JustLaunch/hooks/contents/useLandingPageInternationalization';
 
 const inter = Inter({ subsets: ['latin'] });
 

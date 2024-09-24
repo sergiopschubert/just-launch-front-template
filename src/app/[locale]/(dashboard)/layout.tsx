@@ -1,9 +1,9 @@
 import { nextAuthOptions } from '@/app/api/auth/[...nextauth]/auth';
-import { SelectOfLanguages } from '@/app/shared/components/SelectOfLanguages';
-import { Sidebar } from '@/app/shared/components/Sidebar';
-import { BottomNavigation } from '@/app/shared/components/Sidebar/BottomNavigation';
-import { MainNavigation } from '@/app/shared/components/Sidebar/MainNavigation';
-import { useSharedInternationalization } from '@/app/shared/hooks/useSharedInternationalization';
+import { SelectOfLanguages } from '@/app/shared/@JustLaunch/components';
+import { Sidebar } from '@/app/shared/@JustLaunch/components';
+import { BottomNavigation } from '@/app/shared/@JustLaunch/components';
+import { MainNavigation } from '@/app/shared/@JustLaunch/components';
+import { useSharedInternationalization } from '@/app/shared/@JustLaunch/hooks/contents/useSharedInternationalization';
 import Providers from '@/providers/Providers';
 import { getServerSession } from 'next-auth';
 import { Inter } from 'next/font/google';
@@ -41,7 +41,7 @@ export default async function PrivateLayout({ children }: PrivateLayoutProps) {
               bottomNavigation={<BottomNavigation />}
               name={name}
               email={email}
-            ></Sidebar>
+            />
 
             <main className='max-w-screen rounded-tl-3xl bg-gray-50 pb-12 pt-24 lg:col-start-2 lg:mt-5 lg:w-auto lg:px-8 lg:pt-8'>
               <div className='max-w-screen flex flex-row items-center justify-end pr-12 md:pr-5'>
