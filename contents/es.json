@@ -463,8 +463,8 @@
       "profile": {
         "labels": {
           "item1": "Nombre",
-          "item2": "Correo electrónico",
-          "item3": "Bio"
+          "item2": "Bio",
+          "item3": "Correo electrónico"
         }
       },
       "subheadings": {
@@ -612,4 +612,3 @@
     }
   }
 }
-

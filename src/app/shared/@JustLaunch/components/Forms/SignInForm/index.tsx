@@ -87,7 +87,7 @@ export function SignInForm({ intl }: ISignInFormProps) {
         }
       >
         <Popup.Content
-          className='fixed left-1/2 top-1/2 z-50  h-auto w-2/5 -translate-x-1/2 -translate-y-1/2 overflow-y-scroll rounded-md bg-white p-8 text-gray-900 shadow'
+          className='fixed left-1/2 top-1/2 z-50  h-auto w-full -translate-x-1/2 -translate-y-1/2 overflow-y-scroll rounded-md bg-white p-8 text-gray-900 shadow md:w-2/5'
           icon={Lock}
         >
           <h1 className='mb-1 mt-2 text-base font-semibold text-gray-900'>

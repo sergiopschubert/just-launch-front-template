@@ -49,14 +49,14 @@ export function ProfileContent({
         <Card className='mt-5'>
           <section className='grid gap-x-8 gap-y-6 sm:grid-cols-2'>
             <div className='space-y-1'>
-              <SubHeading title={intl.subheadings.item2} />
+              <SubHeading title={intl.subheadings.item3} />
               <p className='text-sm font-light text-gray-700'>
-                {intl.descriptions.item2}
+                {intl.descriptions.item3}
               </p>
             </div>
             <div className='space-y-4'>
               <Input.Root>
-                <Input.Label>{intl.profile.labels.item2}</Input.Label>
+                <Input.Label>{intl.profile.labels.item3}</Input.Label>
                 <Input.Wrapper>
                   <Input.Icon icon={Mail} />
                   <Input.PlaceHolder type='text' placeholder={email} />
@@ -73,14 +73,14 @@ export function ProfileContent({
         <Card className='mt-5'>
           <section className='grid gap-x-8 gap-y-6 sm:grid-cols-2'>
             <div className='space-y-1'>
-              <SubHeading title={intl.subheadings.item3} />
+              <SubHeading title={intl.subheadings.item2} />
               <p className='text-sm font-light text-gray-700'>
-                {intl.descriptions.item3}
+                {intl.descriptions.item2}
               </p>
             </div>
 
             <Textarea.Root>
-              <Textarea.Label> {intl.profile.labels.item3}</Textarea.Label>
+              <Textarea.Label> {intl.profile.labels.item2}</Textarea.Label>
               <Textarea.PlaceHolder placeholder='' />
             </Textarea.Root>
           </section>
