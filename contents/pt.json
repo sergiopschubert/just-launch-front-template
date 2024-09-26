@@ -647,8 +647,8 @@
       "profile": {
         "labels": {
           "item1": "Nome",
-          "item2": "Email",
-          "item3": "Bio"
+          "item2": "Bio",
+          "item3": "Email"
         }
       },
       "subheadings": {

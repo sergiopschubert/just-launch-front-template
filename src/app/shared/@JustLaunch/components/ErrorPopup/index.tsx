@@ -11,7 +11,7 @@ export function ErrorPopup({ title, message, onClose }: ErrorPopupProps) {
   return (
     <Popup.Root defaultOpen={true}>
       <Popup.Content
-        className='fixed left-1/2 top-1/2 z-50  h-auto w-4/5 -translate-x-1/2 -translate-y-1/2 overflow-y-scroll rounded-md bg-white p-8 text-gray-900 shadow lg:w-3/5 lg:max-w-full'
+        className='fixed left-1/2 top-1/2 z-50  h-auto w-full -translate-x-1/2 -translate-y-1/2 overflow-y-scroll rounded-md bg-white p-8 text-gray-900 shadow md:w-4/5 lg:w-3/5 lg:max-w-full'
         icon={ShieldAlert}
         error={true}
         onClose={onClose}
