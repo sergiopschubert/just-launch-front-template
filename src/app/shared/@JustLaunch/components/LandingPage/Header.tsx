@@ -1,7 +1,7 @@
 'use client';
 
 import { Popover, Transition } from '@headlessui/react';
-import { Session } from 'next-auth';
+
 import Link from 'next/link';
 import { Fragment, ReactNode } from 'react';
 import { twMerge } from 'tailwind-merge';
@@ -12,10 +12,11 @@ import { NavLink } from './NavLink';
 import { Button } from '../Button';
 import { Profile } from '../Profile';
 import { SelectOfLanguages } from '../SelectOfLanguages';
+import { User } from '@supabase/supabase-js';
 
 interface HeaderProps {
   intl: IHeaderIntl;
-  session: Session | null;
+  user: User | null;
   withoutMenu?: boolean;
   callToActionToSaveLeads?: ReactNode;
 }
@@ -63,7 +64,7 @@ function MobileNavIcon({ open }: { open: boolean }) {
 
 function MobileNavigation({
   intl,
-  session,
+  user,
   callToActionToSaveLeads,
 }: HeaderProps) {
   return (
@@ -106,7 +107,7 @@ function MobileNavigation({
             <MobileNavLink href='#doubts'>{intl?.menu.option3}</MobileNavLink>
             <MobileNavLink href='#pricing'>{intl?.menu.option4}</MobileNavLink>
             <hr className='m-2 border-gray-500/40' />
-            {session ? (
+            {user ? (
               <>
                 <MobileNavLink href='/home'>
                   {intl?.buttons.option3}
@@ -128,7 +129,7 @@ function MobileNavigation({
 
 export function Header({
   intl,
-  session,
+  user,
   withoutMenu,
   callToActionToSaveLeads,
 }: HeaderProps) {
@@ -152,7 +153,7 @@ export function Header({
                 </div>
               )}
             </div>
-            {session && session.user?.email && session.user?.name ? (
+            {user && user.email && user.user_metadata.name ? (
               <div className='flex items-center gap-x-5 md:gap-x-8'>
                 <div className='hidden lg:block'>
                   <Link href={'/home'}>
@@ -163,8 +164,8 @@ export function Header({
                 </div>
                 <div className='hidden md:block'>
                   <Profile
-                    email={session.user?.email}
-                    name={session.user?.name}
+                    email={user.email}
+                    name={user.user_metadata.name}
                     dark={true}
                   />
                 </div>
@@ -174,7 +175,7 @@ export function Header({
                   <div className='-mr-1 lg:hidden'>
                     <MobileNavigation
                       intl={intl}
-                      session={session}
+                      user={user}
                       callToActionToSaveLeads={callToActionToSaveLeads}
                     />
                   </div>
@@ -203,7 +204,7 @@ export function Header({
                   <></>
                 ) : (
                   <div className='-mr-1 lg:hidden'>
-                    <MobileNavigation intl={intl} session={session} />
+                    <MobileNavigation intl={intl} user={user} />
                   </div>
                 )}
               </div>
