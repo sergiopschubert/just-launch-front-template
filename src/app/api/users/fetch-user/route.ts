@@ -1,27 +1,42 @@
-import { nextAuthOptions } from '@/app/api/auth/[...nextauth]/auth';
-import { signAwsRequest } from '@/app/shared/utils/signAwsRequest';
-import { getServerSession } from 'next-auth/next';
+export const runtime = 'edge';
+
 import { NextResponse } from 'next/server';
+import { createClient } from '../../auth/supabase/server';
+import { fetchUserAws } from './_providers/_aws';
+import { logger } from '@/app/shared/@JustLaunch/services/logger/client';
+import { fetchUserSupabase } from './_providers/_supabase';
 
 export async function GET() {
-  const session = await getServerSession(nextAuthOptions);
+  const context = 'FetchUser.GET';
+  const supabase = await createClient();
 
-  if (session?.user && session.user.id) {
-    try {
-      const url = `${process.env.API_USERS_URL}/${process.env.ENVIRONMENT}/users/${session.user.id}`;
-      const signedReq = await signAwsRequest({
-        url: url,
-        method: 'GET',
-        region: process.env.REGION as string,
-        accessKeyId: process.env.AWS_KEY_ID as string,
-        secretAccessKey: process.env.AWS_ACCESS_SECRET_KEY as string,
-      });
-      const result = await fetch(url, {
-        method: 'GET',
-        headers: signedReq.headers,
-      });
+  const { data, error } = await supabase.auth.getUser();
+
+  if (error || !data?.user) {
+    logger.error(
+      'Unauthorized access attempt',
+      error || new Error('No user data'),
+      { context }
+    );
+    return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
+  }
+
+  try {
+    const userId = data.user.id;
+
+    if (process.env.ENABLE_API_USERS_FOR_BACKEND === 'true') {
+      const result = await fetchUserAws(userId);
 
       if (!result.ok) {
+        logger.error(
+          'Failed to fetch user data from AWS',
+          new Error('error-aws'),
+          {
+            context,
+            userId,
+            status: result.status,
+          }
+        );
         return NextResponse.json(
           { error: 'Failed to fetch user data' },
           { status: result.status }
@@ -29,6 +44,10 @@ export async function GET() {
       }
 
       const user = await result.json();
+      logger.info('Successfully fetched user data from AWS', {
+        context,
+        userId,
+      });
 
       return NextResponse.json(
         {
@@ -44,13 +63,23 @@ export async function GET() {
         },
         { status: result.status }
       );
-    } catch (error) {
-      return NextResponse.json(
-        { error: 'Error fetching user data' },
-        { status: 500 }
-      );
+    } else {
+      const user = await fetchUserSupabase(data.user);
+      logger.info('Successfully fetched user data from Supabase', {
+        context,
+        userId,
+      });
+      return NextResponse.json(user, { status: 200 });
     }
-  } else {
-    return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
+  } catch (error) {
+    logger.error(
+      'Error fetching user data',
+      new Error('Error fetching user data'),
+      { context }
+    );
+    return NextResponse.json(
+      { error: 'Error fetching user data' },
+      { status: 500 }
+    );
   }
 }

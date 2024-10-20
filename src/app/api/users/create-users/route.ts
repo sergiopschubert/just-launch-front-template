@@ -1,32 +1,46 @@
-import { signAwsRequest } from '@/app/shared/utils/signAwsRequest';
 import { NextResponse } from 'next/server';
+import { createUserAws } from './_providers/_aws';
+import { createUserSupabase } from './_providers/_supabase';
+import { logger } from '@/app/shared/@JustLaunch/services/logger/client';
 
 export async function POST(req: Request) {
+  const context = 'CreateUser.POST';
+
   try {
     const body = await req.json();
-    const url = `${process.env.API_USERS_URL}/${process.env.ENVIRONMENT}/users`;
+    logger.info('Received request to create user', { context, body });
 
-    const signedReq = await signAwsRequest({
-      url: url,
-      method: 'POST',
-      body: JSON.stringify(body),
-      region: process.env.REGION as string,
-      accessKeyId: process.env.AWS_KEY_ID as string,
-      secretAccessKey: process.env.AWS_ACCESS_SECRET_KEY as string,
-    });
+    if (process.env.ENABLE_API_USERS_FOR_BACKEND === 'true') {
+      const awsResult = await createUserAws(body);
 
-    const result = await fetch(url, {
-      method: 'POST',
-      headers: signedReq.headers,
-      body: JSON.stringify(body),
-    });
-
-    if (!result.ok) {
-      return NextResponse.json({ error: 'error' }, { status: result.status });
+      if (!awsResult.ok) {
+        logger.error('Failed to create user in AWS', new Error(), {
+          context,
+          status: awsResult.status,
+          body,
+        });
+        return NextResponse.json(
+          { error: 'error - aws' },
+          { status: awsResult.status }
+        );
+      }
+      logger.info('User created successfully in AWS', { context, body });
     }
 
-    return NextResponse.json({ message: 'success' }, { status: result.status });
-  } catch (error) {
+    const supabaseResult = await createUserSupabase(body);
+
+    if (supabaseResult.error) {
+      logger.error('Failed to create user in Supabase', supabaseResult.error, {
+        context,
+        body,
+      });
+      return NextResponse.json({ error: 'error - supabase' }, { status: 500 });
+    }
+
+    logger.info('User created successfully in Supabase', { context, body });
+    return NextResponse.json({ message: 'success' }, { status: 200 });
+  } catch (error: any) {
+    logger.error('Error during user creation', error.message, { context });
     return NextResponse.json({ error: 'error' }, { status: 500 });
   }
 }

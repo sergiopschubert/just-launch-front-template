@@ -2,14 +2,13 @@ import {
   SignInSchema,
   schema,
 } from '@/app/shared/@JustLaunch/domain/schemas/SignIn';
-import { supabase } from '@/app/api/auth/supabase/client';
 import { zodResolver } from '@hookform/resolvers/zod';
-import { signIn } from 'next-auth/react';
 import { useRouter } from 'next/navigation';
 import { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { toast } from 'react-toastify';
 import { ISignInIntl } from '../domain/interfaces/ISignInIntl';
+import { Auth } from '@/app/api/auth/actions';
 
 export const useSignin = ({ intl }: { intl: ISignInIntl }) => {
   const {
@@ -34,14 +33,11 @@ export const useSignin = ({ intl }: { intl: ISignInIntl }) => {
   const router = useRouter();
 
   const onSubmit = async (data: SignInSchema) => {
-    const { email, password, stayConnected } = data;
+    const { email, password } = data;
     setLoading(true);
-    const result = await signIn('credentials', {
-      email,
-      password,
-      stayConnected,
-      redirect: false,
-    });
+
+    const result = await Auth.signIn(email, password);
+
     setLoading(false);
     if (result?.error) {
       setError({
@@ -65,12 +61,11 @@ export const useSignin = ({ intl }: { intl: ISignInIntl }) => {
     }
 
     setLoading(true);
-    const { error } = await supabase.auth.resetPasswordForEmail(emailValue, {
-      redirectTo: process.env.NEXT_PUBLIC_RESET_PASSWORD_URL,
-    });
+    const result = await Auth.resetPassword(emailValue);
+
     setLoading(false);
 
-    if (error) {
+    if (result?.error) {
       setError({
         title: intl?.errors.resetPassword.title,
         message: intl?.errors.resetPassword.message,

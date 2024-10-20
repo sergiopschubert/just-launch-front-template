@@ -1,7 +1,6 @@
-export const runtime = 'edge';
-
-import { signAwsRequest } from '@/app/shared/utils/signAwsRequest';
 import { headers } from 'next/headers';
+import { updateConfirmationUserAws } from './_providers/_aws';
+import { updateConfirmationUserSupabase } from './_providers/_supabase';
 
 export async function PUT() {
   try {
@@ -13,22 +12,11 @@ export async function PUT() {
     }
 
     const body = JSON.stringify({ is_confirmed: true });
-    const url = `${process.env.API_USERS_URL}/${process.env.ENVIRONMENT}/users`;
-
-    const signedReq = await signAwsRequest({
-      url: url,
-      method: 'PUT',
-      region: process.env.REGION as string,
-      accessKeyId: process.env.AWS_KEY_ID as string,
-      secretAccessKey: process.env.AWS_ACCESS_SECRET_KEY as string,
-      tenantId: tenantId,
-      body,
-    });
-    await fetch(url, {
-      method: 'PUT',
-      headers: signedReq.headers,
-      body,
-    });
+    if (process.env.ENABLE_API_USERS_FOR_BACKEND === 'true') {
+      await updateConfirmationUserAws(tenantId, body);
+    } else {
+      await updateConfirmationUserSupabase(tenantId);
+    }
 
     return Response.json(true);
   } catch (error) {
