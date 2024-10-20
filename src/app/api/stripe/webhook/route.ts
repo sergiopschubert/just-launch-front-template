@@ -1,5 +1,4 @@
 import { SubscriptionStatus } from '@/app/shared/@JustLaunch/domain/enums/SubscriptionStatus';
-import { logger } from '@/app/shared/@JustLaunch/services/logger/client';
 import { stripe } from '@/app/shared/@JustLaunch/services/stripe/client';
 import { NextResponse } from 'next/server';
 import Stripe from 'stripe';
@@ -28,13 +27,13 @@ export async function POST(req: Request, res: Response) {
       signature,
       process.env.STRIPE_WEBHOOK_SECRET!
     );
-    logger.info('Stripe webhook event constructed successfully', {
+    console.info('Stripe webhook event constructed successfully', {
       context,
       eventId: event.id,
       eventType: event.type,
     });
   } catch (err: any) {
-    logger.error('Webhook Error: StripeWebhook.POST', err.message, {
+    console.error('Webhook Error: StripeWebhook.POST', err.message, {
       context,
       error: err,
     });
@@ -52,7 +51,7 @@ export async function POST(req: Request, res: Response) {
       await handleSubscriptionEvent(subscription);
       break;
     default:
-      logger.warn(`Unhandled event type ${event.type}`, {
+      console.warn(`Unhandled event type ${event.type}`, {
         context,
         eventId: event.id,
       });
@@ -70,7 +69,7 @@ async function handleSubscriptionEvent(subscription: Stripe.Subscription) {
 
   const mappedStatus = subscriptionStatusMap[subscriptionStatus] || 'UNKNOWN';
 
-  logger.info(`Processing subscription event for customer ${customerId}`, {
+  console.info(`Processing subscription event for customer ${customerId}`, {
     context,
     subscriptionId,
     status: subscriptionStatus,
@@ -87,14 +86,14 @@ async function handleSubscriptionEvent(subscription: Stripe.Subscription) {
   });
 
   if (error) {
-    logger.error(`Failed to update user ${userId}`, error, {
+    console.error(`Failed to update user ${userId}`, error, {
       context,
       customerId,
       subscriptionId,
       mappedStatus,
     });
   } else {
-    logger.info(
+    console.info(
       `Successfully updated user ${userId} subscription status to ${mappedStatus}`,
       {
         context,

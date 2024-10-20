@@ -1,9 +1,6 @@
-export const runtime = 'edge';
-
 import { NextResponse } from 'next/server';
 import { createClient } from '../../auth/supabase/server';
 import { fetchUserAws } from './_providers/_aws';
-import { logger } from '@/app/shared/@JustLaunch/services/logger/client';
 import { fetchUserSupabase } from './_providers/_supabase';
 
 export async function GET() {
@@ -13,7 +10,7 @@ export async function GET() {
   const { data, error } = await supabase.auth.getUser();
 
   if (error || !data?.user) {
-    logger.error(
+    console.error(
       'Unauthorized access attempt',
       error || new Error('No user data'),
       { context }
@@ -28,7 +25,7 @@ export async function GET() {
       const result = await fetchUserAws(userId);
 
       if (!result.ok) {
-        logger.error(
+        console.error(
           'Failed to fetch user data from AWS',
           new Error('error-aws'),
           {
@@ -44,7 +41,7 @@ export async function GET() {
       }
 
       const user = await result.json();
-      logger.info('Successfully fetched user data from AWS', {
+      console.info('Successfully fetched user data from AWS', {
         context,
         userId,
       });
@@ -65,14 +62,14 @@ export async function GET() {
       );
     } else {
       const user = await fetchUserSupabase(data.user);
-      logger.info('Successfully fetched user data from Supabase', {
+      console.info('Successfully fetched user data from Supabase', {
         context,
         userId,
       });
       return NextResponse.json(user, { status: 200 });
     }
   } catch (error) {
-    logger.error(
+    console.error(
       'Error fetching user data',
       new Error('Error fetching user data'),
       { context }

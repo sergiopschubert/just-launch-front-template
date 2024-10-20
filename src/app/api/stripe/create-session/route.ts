@@ -1,13 +1,12 @@
 import { stripe } from '@/app/shared/@JustLaunch/services/stripe/client';
 import { NextResponse } from 'next/server';
-import { logger } from '@/app/shared/@JustLaunch/services/logger/client';
 
 export async function POST(req: Request) {
   const context = 'CreateCheckoutSession.POST';
 
   try {
     const { plan, customer, locale } = await req.json();
-    logger.info('Received request to create checkout session', {
+    console.info('Received request to create checkout session', {
       context,
       plan,
       customer,
@@ -27,7 +26,7 @@ export async function POST(req: Request) {
     );
 
     if (!price) {
-      logger.error(
+      console.error(
         'Price not found for the given plan and locale',
         new Error(),
         {
@@ -53,7 +52,7 @@ export async function POST(req: Request) {
       allow_promotion_codes: true,
     });
 
-    logger.info('Checkout session created successfully', {
+    console.info('Checkout session created successfully', {
       context,
       customer,
       sessionUrl: stripeSession.url,
@@ -61,7 +60,9 @@ export async function POST(req: Request) {
 
     return NextResponse.json({ url: stripeSession.url }, { status: 200 });
   } catch (error: any) {
-    logger.error('Error creating checkout session', error.message, { context });
+    console.error('Error creating checkout session', error.message, {
+      context,
+    });
     return NextResponse.json(
       { error: 'Error creating checkout session' },
       { status: 500 }
