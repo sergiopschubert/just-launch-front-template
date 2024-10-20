@@ -9,7 +9,7 @@ export class Auth {
       SUPABASE: new SupabaseAuthProvider(),
     };
 
-    const authType = process.env.AUTH_TYPE;
+    const authType = process.env.NEXT_PUBLIC_AUTH_TYPE;
 
     if (!authType || !authProviders[authType]) {
       throw new Error('Invalid auth type');
