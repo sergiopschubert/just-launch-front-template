@@ -16,7 +16,7 @@ import { User } from '@supabase/supabase-js';
 
 interface HeaderProps {
   intl: IHeaderIntl;
-  user: User | null;
+  session: User | null;
   withoutMenu?: boolean;
   callToActionToSaveLeads?: ReactNode;
 }
@@ -64,7 +64,7 @@ function MobileNavIcon({ open }: { open: boolean }) {
 
 function MobileNavigation({
   intl,
-  user,
+  session,
   callToActionToSaveLeads,
 }: HeaderProps) {
   return (
@@ -107,7 +107,7 @@ function MobileNavigation({
             <MobileNavLink href='#doubts'>{intl?.menu.option3}</MobileNavLink>
             <MobileNavLink href='#pricing'>{intl?.menu.option4}</MobileNavLink>
             <hr className='m-2 border-gray-500/40' />
-            {user ? (
+            {session ? (
               <>
                 <MobileNavLink href='/home'>
                   {intl?.buttons.option3}
@@ -129,7 +129,7 @@ function MobileNavigation({
 
 export function Header({
   intl,
-  user,
+  session,
   withoutMenu,
   callToActionToSaveLeads,
 }: HeaderProps) {
@@ -153,7 +153,7 @@ export function Header({
                 </div>
               )}
             </div>
-            {user && user.email && user.user_metadata.name ? (
+            {session && session.email && session.user_metadata.name ? (
               <div className='flex items-center gap-x-5 md:gap-x-8'>
                 <div className='hidden lg:block'>
                   <Link href={'/home'}>
@@ -164,8 +164,8 @@ export function Header({
                 </div>
                 <div className='hidden md:block'>
                   <Profile
-                    email={user.email}
-                    name={user.user_metadata.name}
+                    email={session.email}
+                    name={session.user_metadata.name}
                     dark={true}
                   />
                 </div>
@@ -175,7 +175,7 @@ export function Header({
                   <div className='-mr-1 lg:hidden'>
                     <MobileNavigation
                       intl={intl}
-                      user={user}
+                      session={session}
                       callToActionToSaveLeads={callToActionToSaveLeads}
                     />
                   </div>
@@ -204,7 +204,7 @@ export function Header({
                   <></>
                 ) : (
                   <div className='-mr-1 lg:hidden'>
-                    <MobileNavigation intl={intl} user={user} />
+                    <MobileNavigation intl={intl} session={session} />
                   </div>
                 )}
               </div>
