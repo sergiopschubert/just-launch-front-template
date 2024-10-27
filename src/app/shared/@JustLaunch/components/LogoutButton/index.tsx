@@ -1,7 +1,7 @@
 'use client';
+import { Auth } from '@/app/api/auth/actions';
 import { Button } from '@/app/shared/@JustLaunch/components';
 import { LogOut } from 'lucide-react';
-import { signOut } from 'next-auth/react';
 import { useRouter } from 'next/navigation';
 interface LogoutButtonProps {
   dark?: boolean;
@@ -11,9 +11,7 @@ export function LogoutButton({ dark }: LogoutButtonProps) {
   const router = useRouter();
 
   async function logout() {
-    await signOut({
-      redirect: false,
-    });
+    await Auth.signOut();
 
     router.replace('/signin');
   }

@@ -57,11 +57,6 @@ export function SignInForm({ intl }: ISignInFormProps) {
               />
             </Input.Wrapper>
           </Input.Root>
-          <Checkbox.Root>
-            <Checkbox.Input {...register('stayConnected')}></Checkbox.Input>
-            <Checkbox.Icon></Checkbox.Icon>
-            <Checkbox.Label>{intl?.form.stayConnected}</Checkbox.Label>
-          </Checkbox.Root>
         </div>
 
         <div className='w-full space-y-4 py-2'>

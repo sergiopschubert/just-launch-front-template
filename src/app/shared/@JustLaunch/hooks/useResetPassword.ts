@@ -1,4 +1,3 @@
-import { supabase } from '@/app/api/auth/supabase/client';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { useRouter } from 'next/navigation';
 import { useCallback, useState } from 'react';
@@ -6,6 +5,7 @@ import { useForm } from 'react-hook-form';
 import { toast } from 'react-toastify';
 import { IResetPasswordIntl } from '../domain/interfaces/IResetPasswordIntl';
 import { ResetPasswordSchema, schema } from '../domain/schemas/resetPassword';
+import { createClient } from '@/app/api/auth/supabase/client';
 
 export const useResetPassword = ({ intl }: { intl: IResetPasswordIntl }) => {
   const {
@@ -23,16 +23,18 @@ export const useResetPassword = ({ intl }: { intl: IResetPasswordIntl }) => {
 
   const router = useRouter();
 
-  const checkSession = useCallback(async () => {
-    const { data } = await supabase.auth.getSession();
+  const supabase = createClient();
 
-    if (!data.session) {
-      router.replace('/signin');
-    }
-  }, [router]);
+  // const checkSession = useCallback(async () => {
+  //   const { data } = await supabase.auth.getSession();
+
+  //   if (!data.session) {
+  //     router.replace('/signin');
+  //   }
+  // }, [router]);
 
   const onSubmit = async (body: ResetPasswordSchema) => {
-    await checkSession();
+    // await checkSession();
     setLoading(true);
     const { error } = await supabase.auth.updateUser({
       password: body.password,
@@ -58,7 +60,6 @@ export const useResetPassword = ({ intl }: { intl: IResetPasswordIntl }) => {
     loading,
     error,
     onSubmit,
-    checkSession,
     setError,
   };
 };

@@ -1,6 +1,5 @@
-import { nextAuthOptions } from '@/app/api/auth/[...nextauth]/auth';
+import { createClient } from '@/app/api/auth/supabase/server';
 import { LogoV1 } from '@/app/shared/@JustLaunch/components';
-import { getServerSession } from 'next-auth';
 import { Inter } from 'next/font/google';
 import { redirect } from 'next/navigation';
 import { ReactNode } from 'react';
@@ -12,10 +11,13 @@ interface AuthLayoutProps {
 }
 
 export default async function AuthLayout({ children }: AuthLayoutProps) {
-  const session = await getServerSession(nextAuthOptions);
-  if (session) {
+  const supabase = await createClient();
+
+  const { data } = await supabase.auth.getUser();
+  if (data?.user) {
     redirect('/home');
   }
+
   return (
     <html lang='pt-br' className='antialiased'>
       <body className={inter.className}>

@@ -1,6 +1,6 @@
 'use client';
 import { ArrowLeft, FormInput } from 'lucide-react';
-import { useEffect } from 'react';
+// import { useEffect } from 'react';
 import { useResetPassword } from '../../../hooks/useResetPassword';
 import {
   Button,
@@ -23,13 +23,13 @@ export function ResetPasswordForm({ intl }: IResetPasswordProps) {
     loading,
     error,
     onSubmit,
-    checkSession,
+
     setError,
   } = useResetPassword({ intl });
 
-  useEffect(() => {
-    checkSession();
-  }, [checkSession]);
+  // useEffect(() => {
+  //   checkSession();
+  // }, [checkSession]);
 
   return (
     <>

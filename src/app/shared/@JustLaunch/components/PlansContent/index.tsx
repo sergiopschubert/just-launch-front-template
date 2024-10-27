@@ -14,6 +14,8 @@ interface PlansContentProps {
 export function PlansContent({ intl }: PlansContentProps) {
   const user = useContextSelector(UsersContext, (context) => context.user);
 
+  console.log(user);
+
   const { urls, billingPortal, userWithoutPlan } = usePlans(
     user,
     intl.language

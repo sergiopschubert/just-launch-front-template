@@ -12,8 +12,6 @@ export const schema = z.object({
     .nonempty('A senha é obrigatória')
     .min(8, { message: 'A senha deve ter pelo menos 8 caracteres' })
     .trim(),
-
-  stayConnected: z.boolean(),
 });
 
 export type SignInSchema = z.infer<typeof schema>;

@@ -1,11 +1,10 @@
-import { nextAuthOptions } from '@/app/api/auth/[...nextauth]/auth';
+import { createClient } from '@/app/api/auth/supabase/server';
 import { SelectOfLanguages } from '@/app/shared/@JustLaunch/components';
 import { Sidebar } from '@/app/shared/@JustLaunch/components';
 import { BottomNavigation } from '@/app/shared/@JustLaunch/components';
 import { MainNavigation } from '@/app/shared/@JustLaunch/components';
 import { useSharedInternationalization } from '@/app/shared/@JustLaunch/hooks/contents/useSharedInternationalization';
 import Providers from '@/providers/Providers';
-import { getServerSession } from 'next-auth';
 import { Inter } from 'next/font/google';
 import { redirect } from 'next/navigation';
 import { ReactNode } from 'react';
@@ -17,19 +16,18 @@ interface PrivateLayoutProps {
 }
 
 export default async function PrivateLayout({ children }: PrivateLayoutProps) {
-  const session = await getServerSession(nextAuthOptions);
+  const supabase = await createClient();
 
-  if (
-    !session ||
-    !session.user ||
-    !session.user?.email ||
-    !session.user?.name
-  ) {
+  const { data, error } = await supabase.auth.getUser();
+  if (error || !data?.user) {
     redirect('/signin');
   }
 
   const { language } = await useSharedInternationalization();
-  const { email, name } = session.user;
+  const {
+    email,
+    user_metadata: { name },
+  } = data.user;
 
   return (
     <html lang='pt-br' className='antialiased'>
@@ -40,7 +38,7 @@ export default async function PrivateLayout({ children }: PrivateLayoutProps) {
               mainNavigation={<MainNavigation />}
               bottomNavigation={<BottomNavigation />}
               name={name}
-              email={email}
+              email={email!}
             />
 
             <main className='max-w-screen rounded-tl-3xl bg-gray-50 pb-12 pt-24 lg:col-start-2 lg:mt-5 lg:w-auto lg:px-8 lg:pt-8'>

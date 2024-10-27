@@ -1,7 +1,7 @@
 'use client';
 
 import { Popover, Transition } from '@headlessui/react';
-import { Session } from 'next-auth';
+
 import Link from 'next/link';
 import { Fragment, ReactNode } from 'react';
 import { twMerge } from 'tailwind-merge';
@@ -12,10 +12,11 @@ import { NavLink } from './NavLink';
 import { Button } from '../Button';
 import { Profile } from '../Profile';
 import { SelectOfLanguages } from '../SelectOfLanguages';
+import { User } from '@supabase/supabase-js';
 
 interface HeaderProps {
   intl: IHeaderIntl;
-  session: Session | null;
+  session: User | null;
   withoutMenu?: boolean;
   callToActionToSaveLeads?: ReactNode;
 }
@@ -152,7 +153,7 @@ export function Header({
                 </div>
               )}
             </div>
-            {session && session.user?.email && session.user?.name ? (
+            {session && session.email && session.user_metadata.name ? (
               <div className='flex items-center gap-x-5 md:gap-x-8'>
                 <div className='hidden lg:block'>
                   <Link href={'/home'}>
@@ -163,8 +164,8 @@ export function Header({
                 </div>
                 <div className='hidden md:block'>
                   <Profile
-                    email={session.user?.email}
-                    name={session.user?.name}
+                    email={session.email}
+                    name={session.user_metadata.name}
                     dark={true}
                   />
                 </div>
