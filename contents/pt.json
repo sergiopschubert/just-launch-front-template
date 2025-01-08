@@ -692,12 +692,42 @@
 
     "support": {
       "metadata": {
-        "title": "Suporte - (Página de Demonstração)"
+        "title": "Suporte"
       },
       "emptyState": {
-        "title": "Nenhum Ticket",
-        "description": "Comece criando um novo ticket de suporte",
+        "title": "Nenhum ticket encontrado",
+        "description": "Crie um novo ticket para receber suporte",
         "newTicketButton": "Novo Ticket"
+      },
+      "form": {
+        "title": "Novo Ticket",
+        "labels": {
+          "title": "Título",
+          "category": "Categoria",
+          "description": "Descrição"
+        },
+        "buttons": {
+          "cancel": "Cancelar",
+          "create": "Criar Ticket"
+        },
+        "categories": {
+          "general": "Geral",
+          "technical": "Técnico",
+          "billing": "Faturamento",
+          "feature": "Sugestão de Funcionalidade"
+        }
+      },
+      "table": {
+        "columns": {
+          "title": "Título",
+          "category": "Categoria",
+          "status": "Status",
+          "createdAt": "Criado em"
+        },
+        "status": {
+          "open": "Aberto",
+          "closed": "Fechado"
+        }
       }
     },
     "home": {

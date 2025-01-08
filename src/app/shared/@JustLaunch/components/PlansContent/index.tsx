@@ -69,7 +69,7 @@ export function PlansContent({ intl }: PlansContentProps) {
                     delay: 0.1 * index,
                   },
                 }}
-                data-mostPopular={item.mostPopular}
+                data-mostpopular={item.mostPopular}
                 className='flex flex-col justify-between rounded-lg border border-gray-200 bg-white p-6 shadow-sm'
               >
                 <div>

@@ -690,12 +690,42 @@
     },
     "support": {
       "metadata": {
-        "title": "Support - (Demo Page)"
+        "title": "Support"
       },
       "emptyState": {
-        "title": "No Tickets",
-        "description": "Start by creating a new support ticket",
+        "title": "No tickets found",
+        "description": "Create a new ticket to get support",
         "newTicketButton": "New Ticket"
+      },
+      "form": {
+        "title": "New Ticket",
+        "labels": {
+          "title": "Title",
+          "category": "Category",
+          "description": "Description"
+        },
+        "buttons": {
+          "cancel": "Cancel",
+          "create": "Create Ticket"
+        },
+        "categories": {
+          "general": "General",
+          "technical": "Technical",
+          "billing": "Billing",
+          "feature": "Feature Request"
+        }
+      },
+      "table": {
+        "columns": {
+          "title": "Title",
+          "category": "Category",
+          "status": "Status",
+          "createdAt": "Created at"
+        },
+        "status": {
+          "open": "Open",
+          "closed": "Closed"
+        }
       }
     },
     "home": {
