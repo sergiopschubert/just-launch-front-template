@@ -1,7 +1,6 @@
 'use client';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
-import { twMerge } from 'tailwind-merge';
 import { ITestimonialsIntl } from '../../domain/interfaces/LandingPage/ITestimonials';
 
 interface TestimonialsProps {
@@ -41,106 +40,90 @@ export function Testimonials({ intl }: TestimonialsProps) {
           </h2>
         </motion.div>
 
-        <div className='mx-auto mt-16 grid max-w-2xl grid-cols-1 grid-rows-1 gap-8 text-sm leading-6 text-gray-900 sm:mt-20 sm:grid-cols-2 xl:mx-0 xl:max-w-none xl:grid-flow-col xl:grid-cols-4'>
+        <div className='mx-auto mt-16 grid max-w-7xl gap-8 sm:mt-20'>
           <motion.figure
             initial={{ scale: 0.9, opacity: 0 }}
             whileInView={{ scale: 1, opacity: 1 }}
             transition={{ duration: 0.5 }}
             whileHover={{ scale: 1.02 }}
-            className='group relative rounded-2xl bg-white p-6 shadow-xl ring-1 ring-gray-900/5 sm:col-span-2 xl:col-start-2 xl:row-end-1'
+            className='group relative mx-auto flex max-w-3xl rounded-2xl bg-white p-8 shadow-xl ring-1 ring-gray-900/5'
           >
             <div className='absolute -left-4 -top-4 flex h-8 w-8 items-center justify-center rounded-full bg-primary/600'>
               <span className='text-2xl text-white'>&ldquo;</span>
             </div>
-            <blockquote className='relative p-6 text-lg font-medium leading-8 tracking-tight text-gray-900 sm:p-12 sm:text-xl'>
-              <p className='relative'>
-                <span className='text-primary/600'>&ldquo;</span>
-                {intl?.principalTestimonial.body}
-                <span className='text-primary/600'>&rdquo;</span>
-              </p>
-            </blockquote>
-            <div className='relative mt-8 flex items-center gap-x-4 border-t border-gray-900/10 pt-4'>
-              <div className='ring-primary/20 group-hover:ring-primary/60 relative h-12 w-12 overflow-hidden rounded-full ring-2 transition'>
-                <Image
-                  className='h-full w-full object-cover'
-                  src={intl?.principalTestimonial.author.imageUrl}
-                  alt={intl?.principalTestimonial.author.name}
-                  fill
-                />
-              </div>
-              <div className='flex-auto'>
-                <div className='font-semibold text-gray-900'>
-                  {intl?.principalTestimonial.author.name}
+            <div className='flex w-full flex-col items-center gap-8 text-center'>
+              <blockquote className='relative flex-1 text-lg font-medium leading-8 tracking-tight text-gray-900'>
+                <p className='relative'>
+                  <span className='text-primary/600'>&ldquo;</span>
+                  {intl?.principalTestimonial.body}
+                  <span className='text-primary/600'>&rdquo;</span>
+                </p>
+              </blockquote>
+              <div className='flex flex-col items-center gap-4 border-t border-gray-900/10 pt-4'>
+                <div className='ring-primary/20 group-hover:ring-primary/60 relative h-16 w-16 overflow-hidden rounded-full ring-2 transition'>
+                  <Image
+                    className='h-full w-full object-cover'
+                    src={intl?.principalTestimonial.author.imageUrl}
+                    alt={intl?.principalTestimonial.author.name}
+                    fill
+                  />
                 </div>
-                <div className='text-sm text-gray-600'>
-                  {intl?.principalTestimonial.author.handle}
+                <div className='text-center'>
+                  <div className='text-base font-semibold text-gray-900'>
+                    {intl?.principalTestimonial.author.name}
+                  </div>
+                  <div className='text-sm text-gray-600'>
+                    {intl?.principalTestimonial.author.handle}
+                  </div>
                 </div>
               </div>
             </div>
           </motion.figure>
 
-          {intl?.testimonials.map((columnGroup, columnGroupIdx) => (
-            <div
-              key={columnGroupIdx}
-              className='space-y-8 xl:contents xl:space-y-0'
-            >
-              {columnGroup.map((column, columnIdx) => (
-                <motion.div
+          <div className='grid gap-8 sm:grid-cols-2 lg:grid-cols-3'>
+            {intl?.testimonials
+              .flatMap((columnGroup) =>
+                columnGroup.flatMap((testimonial) => testimonial)
+              )
+              .map((testimonial) => (
+                <motion.figure
+                  key={testimonial.author.handle}
+                  className='group relative flex flex-col rounded-2xl bg-white p-6 shadow-lg ring-1 ring-gray-900/5 transition-all hover:shadow-xl'
+                  whileHover={{ scale: 1.02 }}
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ delay: columnIdx * 0.1 }}
-                  key={columnIdx}
-                  className={twMerge(
-                    (columnGroupIdx === 0 && columnIdx === 0) ||
-                      (columnGroupIdx === intl?.testimonials.length - 1 &&
-                        columnIdx === columnGroup.length - 1)
-                      ? 'xl:row-span-2'
-                      : 'xl:row-start-1',
-                    'space-y-8'
-                  )}
                 >
-                  {column.map((testimonial) => (
-                    <motion.figure
-                      key={testimonial.author.handle}
-                      className='group relative rounded-2xl bg-white p-6 shadow-lg ring-1 ring-gray-900/5 transition-all hover:shadow-xl'
-                      whileHover={{ scale: 1.02 }}
-                    >
-                      <div className='bg-primary/10 absolute -right-2 -top-2 flex h-6 w-6 items-center justify-center rounded-full opacity-0 transition-opacity group-hover:opacity-100'>
-                        <span className='text-lg text-primary/600'>
-                          &ldquo;
-                        </span>
+                  <div className='bg-primary/10 absolute -right-2 -top-2 flex h-6 w-6 items-center justify-center rounded-full opacity-0 transition-opacity group-hover:opacity-100'>
+                    <span className='text-lg text-primary/600'>&ldquo;</span>
+                  </div>
+                  <blockquote className='flex-1 text-gray-900'>
+                    <p className='text-base font-medium leading-relaxed'>
+                      <span className='text-primary/600'>&ldquo;</span>
+                      {testimonial.body}
+                      <span className='text-primary/600'>&rdquo;</span>
+                    </p>
+                  </blockquote>
+                  <figcaption className='relative mt-6 flex items-center gap-x-4 border-t border-gray-900/10 pt-4'>
+                    <div className='ring-primary/10 group-hover:ring-primary/30 relative h-12 w-12 overflow-hidden rounded-full ring-2 transition'>
+                      <Image
+                        className='h-full w-full object-cover'
+                        src={testimonial.author.imageUrl}
+                        alt={testimonial.author.name}
+                        fill
+                      />
+                    </div>
+                    <div>
+                      <div className='font-semibold text-gray-900'>
+                        {testimonial.author.name}
                       </div>
-                      <blockquote className='text-gray-900'>
-                        <p className='text-sm font-medium'>
-                          <span className='text-primary/600'>&ldquo;</span>
-                          {testimonial.body}
-                          <span className='text-primary/600'>&rdquo;</span>
-                        </p>
-                      </blockquote>
-                      <figcaption className='relative mt-6 flex items-center gap-x-4'>
-                        <div className='ring-primary/10 group-hover:ring-primary/30 relative h-10 w-10 overflow-hidden rounded-full ring-2 transition'>
-                          <Image
-                            className='h-full w-full object-cover'
-                            src={testimonial.author.imageUrl}
-                            alt={testimonial.author.name}
-                            fill
-                          />
-                        </div>
-                        <div>
-                          <div className='font-semibold text-gray-900'>
-                            {testimonial.author.name}
-                          </div>
-                          <div className='text-sm text-gray-600'>
-                            {testimonial.author.handle}
-                          </div>
-                        </div>
-                      </figcaption>
-                    </motion.figure>
-                  ))}
-                </motion.div>
+                      <div className='text-sm text-gray-600'>
+                        {testimonial.author.handle}
+                      </div>
+                    </div>
+                  </figcaption>
+                </motion.figure>
               ))}
-            </div>
-          ))}
+          </div>
         </div>
       </div>
     </div>
