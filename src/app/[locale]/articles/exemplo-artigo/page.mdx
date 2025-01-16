@@ -1,13 +1,6 @@
 import { ArticleLayout } from '@/app/shared/@JustLaunch/components/Blog/ArticleLayout';
-import { getAllArticles } from '@/app/shared/@JustLaunch/lib/articles';
-
-export const article = {
-  author: 'Joédyson',
-  date: '2024-01-04',
-  title: 'Exemplo de Artigo',
-  description:
-    'Este é um exemplo de artigo para demonstrar como criar conteúdo usando MDX.',
-};
+import { getAllArticles } from '@/app/shared/@JustLaunch/services/blog/articles';
+import { article } from './metadata.ts';
 
 export default async function MDXPage(props) {
   const allArticles = await getAllArticles();

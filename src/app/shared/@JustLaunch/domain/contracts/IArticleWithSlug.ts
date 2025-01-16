@@ -1,4 +1,4 @@
-export interface ArticleWithSlug {
+export interface IArticleWithSlug {
   title: string;
   description: string;
   author: string;

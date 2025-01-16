@@ -1,21 +1,11 @@
 import glob from 'fast-glob';
-
-interface Article {
-  title: string;
-  description: string;
-  author: string;
-  date: string;
-}
-
-export interface ArticleWithSlug extends Article {
-  slug: string;
-}
+import { IArticleWithSlug } from '../../domain/contracts/IArticleWithSlug';
 
 async function importArticle(
   articleFilename: string
-): Promise<ArticleWithSlug> {
+): Promise<IArticleWithSlug> {
   const { article } = await import(
-    `../../../[locale]/articles/${articleFilename.replace('page.mdx', 'metadata')}`
+    `../../../../[locale]/articles/${articleFilename.replace('page.mdx', 'metadata')}`
   );
 
   return {

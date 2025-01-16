@@ -1,9 +1,9 @@
 'use client';
-import { formatDate } from '../../lib/formatDate';
+import { formatDate } from '../../../utils/formatDate';
 import Link from 'next/link';
-import { ArticleWithSlug } from '../../lib/types';
+import { IArticleWithSlug } from '../../domain/contracts/IArticleWithSlug';
 
-function Article({ article }: { article: ArticleWithSlug }) {
+function Article({ article }: { article: IArticleWithSlug }) {
   return (
     <article className='md:grid md:grid-cols-4 md:items-baseline'>
       <div className='group relative flex flex-col items-start md:col-span-3'>
@@ -59,7 +59,7 @@ function Article({ article }: { article: ArticleWithSlug }) {
   );
 }
 
-export function ArticlesList({ articles }: { articles: ArticleWithSlug[] }) {
+export function ArticlesList({ articles }: { articles: IArticleWithSlug[] }) {
   return (
     <div className='md:border-l md:border-zinc-100 md:pl-6 md:dark:border-zinc-700/40'>
       <div className='flex max-w-3xl flex-col space-y-16'>

@@ -1,6 +1,6 @@
 import { Article } from '@/app/shared/@JustLaunch/components/Blog/Article';
 import { Container } from '@/app/shared/@JustLaunch/components/LandingPage/Container';
-import { getAllArticles } from '@/app/shared/@JustLaunch/lib/articles';
+import { getAllArticles } from '@/app/shared/@JustLaunch/services/blog/articles';
 
 export const metadata = {
   title: 'Blog',

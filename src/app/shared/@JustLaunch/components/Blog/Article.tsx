@@ -1,8 +1,8 @@
 import Link from 'next/link';
-import { formatDate } from '../../lib/formatDate';
-import { ArticleWithSlug } from './ArticleLayout';
+import { formatDate } from '../../../utils/formatDate';
+import { IArticleWithSlug } from '../../domain/contracts/IArticleWithSlug';
 
-export function Article({ article }: { article: ArticleWithSlug }) {
+export function Article({ article }: { article: IArticleWithSlug }) {
   return (
     <article className='group relative flex flex-col items-start rounded-2xl p-6 transition-all hover:bg-white hover:shadow-lg'>
       <h2 className='text-base font-semibold tracking-tight text-primary/600'>

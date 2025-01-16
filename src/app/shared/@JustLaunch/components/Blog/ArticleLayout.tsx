@@ -2,8 +2,9 @@
 
 import { useRouter } from 'next/navigation';
 import { Container } from '../LandingPage/Container';
-import { formatDate } from '../../lib/formatDate';
+import { formatDate } from '../../../utils/formatDate';
 import Link from 'next/link';
+import { IArticleWithSlug } from '../../domain/contracts/IArticleWithSlug';
 
 function ArrowLeftIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
   return (
@@ -18,15 +19,7 @@ function ArrowLeftIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
   );
 }
 
-export interface ArticleWithSlug {
-  title: string;
-  description: string;
-  author: string;
-  date: string;
-  slug: string;
-}
-
-function ArticleCard({ article }: { article: ArticleWithSlug }) {
+function ArticleCard({ article }: { article: IArticleWithSlug }) {
   return (
     <article className='group relative flex flex-col items-start'>
       <h3 className='text-base font-semibold tracking-tight text-primary/600'>
@@ -53,8 +46,8 @@ export function ArticleLayout({
   allArticles = [],
   children,
 }: {
-  article: ArticleWithSlug;
-  allArticles?: ArticleWithSlug[];
+  article: IArticleWithSlug;
+  allArticles?: IArticleWithSlug[];
   children: React.ReactNode;
 }) {
   const router = useRouter();
