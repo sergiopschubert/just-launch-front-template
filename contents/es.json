@@ -5,7 +5,8 @@
         "option1": "Características",
         "option2": "Testimonios",
         "option3": "¿Preguntas?",
-        "option4": "Planes"
+        "option4": "Planes",
+        "option5": "Blog"
       },
       "buttons": {
         "option1": "Iniciar sesión",

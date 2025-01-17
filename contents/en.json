@@ -5,7 +5,8 @@
         "option1": "Features",
         "option2": "Testimonials",
         "option3": "Questions?",
-        "option4": "Plans"
+        "option4": "Plans",
+        "option5": "Blog"
       },
       "buttons": {
         "option1": "Log in",

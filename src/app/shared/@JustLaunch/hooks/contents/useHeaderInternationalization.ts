@@ -10,6 +10,7 @@ export const useHeaderInternationalization = async () => {
   const menuOption2 = internationalization('header.menu.option2');
   const menuOption3 = internationalization('header.menu.option3');
   const menuOption4 = internationalization('header.menu.option4');
+  const menuOption5 = internationalization('header.menu.option5');
 
   const buttonsOption1 = internationalization('header.buttons.option1');
   const buttonsOption2 = internationalization('header.buttons.option2');
@@ -21,6 +22,7 @@ export const useHeaderInternationalization = async () => {
       option2: menuOption2,
       option3: menuOption3,
       option4: menuOption4,
+      option5: menuOption5,
     },
     buttons: {
       option1: buttonsOption1,
