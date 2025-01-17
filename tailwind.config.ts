@@ -1,7 +1,7 @@
 import type { Config } from 'tailwindcss';
 
 const config: Config = {
-  content: ['./src/**/*.tsx'],
+  content: ['./src/**/*.{tsx,mdx}'],
   theme: {
     extend: {
       gridTemplateColumns: {
@@ -34,8 +34,9 @@ const config: Config = {
       },
     },
   },
-  plugins: [],
+  plugins: [require('@tailwindcss/typography')],
 };
+
 export default config;
 
 // 'primary/50': '#fafafa',
