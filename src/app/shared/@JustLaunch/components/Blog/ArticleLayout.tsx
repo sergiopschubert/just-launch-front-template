@@ -62,7 +62,7 @@ export function ArticleLayout({
 
   return (
     <Container>
-      <div className='relative mb-16 px-4 sm:mb-24 sm:px-8 lg:px-12'>
+      <div className='relative mb-16 mt-16 px-4 sm:mb-24 sm:px-8 lg:px-12'>
         <div className='mx-auto max-w-2xl lg:max-w-5xl'>
           <div className='xl:relative'>
             <div className='mx-auto max-w-2xl'>
