@@ -5,7 +5,7 @@ async function importArticle(
   articleFilename: string
 ): Promise<IArticleWithSlug> {
   const { article } = await import(
-    `../../../../../app/[locale]/articles/${articleFilename.replace('page.mdx', 'metadata')}`
+    `../../../../../app/articles/${articleFilename.replace('page.mdx', 'metadata')}`
   );
 
   return {
@@ -16,7 +16,7 @@ async function importArticle(
 
 export async function getAllArticles() {
   let articleFilenames = await glob('*/page.mdx', {
-    cwd: './src/app/[locale]/articles',
+    cwd: './src/app/articles',
   });
   console.log(articleFilenames[0]);
 
