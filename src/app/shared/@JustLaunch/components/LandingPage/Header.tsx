@@ -106,7 +106,7 @@ function MobileNavigation({
             </MobileNavLink>
             <MobileNavLink href='#doubts'>{intl?.menu.option3}</MobileNavLink>
             <MobileNavLink href='#pricing'>{intl?.menu.option4}</MobileNavLink>
-            <MobileNavLink href='/articles'>{intl?.menu.option5}</MobileNavLink>
+            <MobileNavLink href='/blog'>{intl?.menu.option5}</MobileNavLink>
             <hr className='m-2 border-gray-500/40' />
             {session ? (
               <>
@@ -151,7 +151,7 @@ export function Header({
                   <NavLink href='#testimonials'>{intl?.menu.option2}</NavLink>
                   <NavLink href='#doubts'>{intl?.menu.option3}</NavLink>
                   <NavLink href='#pricing'>{intl?.menu.option4}</NavLink>
-                  <NavLink href='/articles'>{intl?.menu.option5}</NavLink>
+                  <NavLink href='/blog'>{intl?.menu.option5}</NavLink>
                 </div>
               )}
             </div>
