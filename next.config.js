@@ -13,7 +13,7 @@ const nextConfig = {
   pageExtensions: ['js', 'jsx', 'mdx', 'ts', 'tsx'],
   experimental: {
     outputFileTracingIncludes: {
-      '/articles/*': ['./src/app/articles/**/*.mdx'],
+      '/articles/*': ['./src/app/[locale]/articles/**/*.mdx'],
     },
   },
   images: {
