@@ -1,0 +1,48 @@
+import { ArticleLayout } from '@/app/shared/@JustLaunch/components/Blog/ArticleLayout';
+import { getAllArticles } from '@/app/shared/@JustLaunch/services/blog/articles';
+import { article } from './metadata.ts';
+
+export default async function MDXPage(props) {
+  const allArticles = await getAllArticles();
+  return (
+    <ArticleLayout article={article} allArticles={allArticles} {...props} />
+  );
+}
+
+## Títulos
+
+### Subtítulos
+
+- Listas
+- Com itens
+- Múltiplos
+
+1. Listas numeradas
+2. Também funcionam
+3. Perfeitamente
+
+**Texto em negrito** e _texto em itálico_ são suportados.
+
+## Código
+
+Você pode incluir blocos de código:
+
+```javascript
+function exemplo() {
+  return 'Olá, mundo!';
+}
+```
+
+## Imagens
+
+Imagens também são suportadas:
+
+![Exemplo de imagem](https://via.placeholder.com/800x400)
+
+## Links
+
+[Links para outros sites](https://exemplo.com) funcionam normalmente.
+
+## Conclusão
+
+Este é apenas um exemplo básico do que você pode fazer com MDX. Sinta-se à vontade para personalizar e expandir conforme suas necessidades!

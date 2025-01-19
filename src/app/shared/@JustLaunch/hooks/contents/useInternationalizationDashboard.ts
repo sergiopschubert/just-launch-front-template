@@ -90,6 +90,54 @@ export const useInternationalizationDashboard = async () => {
     'support.emptyState.newTicketButton'
   );
 
+  const supportFormTitle = internationalization('support.form.title');
+  const supportFormLabelTitle = internationalization(
+    'support.form.labels.title'
+  );
+  const supportFormLabelCategory = internationalization(
+    'support.form.labels.category'
+  );
+  const supportFormLabelDescription = internationalization(
+    'support.form.labels.description'
+  );
+  const supportFormButtonCancel = internationalization(
+    'support.form.buttons.cancel'
+  );
+  const supportFormButtonCreate = internationalization(
+    'support.form.buttons.create'
+  );
+  const supportFormCategoryGeneral = internationalization(
+    'support.form.categories.general'
+  );
+  const supportFormCategoryTechnical = internationalization(
+    'support.form.categories.technical'
+  );
+  const supportFormCategoryBilling = internationalization(
+    'support.form.categories.billing'
+  );
+  const supportFormCategoryFeature = internationalization(
+    'support.form.categories.feature'
+  );
+
+  const supportTableColumnTitle = internationalization(
+    'support.table.columns.title'
+  );
+  const supportTableColumnCategory = internationalization(
+    'support.table.columns.category'
+  );
+  const supportTableColumnStatus = internationalization(
+    'support.table.columns.status'
+  );
+  const supportTableColumnCreatedAt = internationalization(
+    'support.table.columns.createdAt'
+  );
+  const supportTableStatusOpen = internationalization(
+    'support.table.status.open'
+  );
+  const supportTableStatusClosed = internationalization(
+    'support.table.status.closed'
+  );
+
   //### PAGE HOME ###
   const homeMetadataTitle = internationalization('home.metadata.title');
   const homeHeadingOverview = internationalization('home.headings.overview');
@@ -220,6 +268,36 @@ export const useInternationalizationDashboard = async () => {
       title: supportEmptyStateTitle,
       description: supportEmptyStateDescription,
       newTicketButton: supportNewTicketButton,
+    },
+    form: {
+      title: supportFormTitle,
+      labels: {
+        title: supportFormLabelTitle,
+        category: supportFormLabelCategory,
+        description: supportFormLabelDescription,
+      },
+      buttons: {
+        cancel: supportFormButtonCancel,
+        create: supportFormButtonCreate,
+      },
+      categories: {
+        general: supportFormCategoryGeneral,
+        technical: supportFormCategoryTechnical,
+        billing: supportFormCategoryBilling,
+        feature: supportFormCategoryFeature,
+      },
+    },
+    table: {
+      columns: {
+        title: supportTableColumnTitle,
+        category: supportTableColumnCategory,
+        status: supportTableColumnStatus,
+        createdAt: supportTableColumnCreatedAt,
+      },
+      status: {
+        open: supportTableStatusOpen,
+        closed: supportTableStatusClosed,
+      },
     },
   };
 

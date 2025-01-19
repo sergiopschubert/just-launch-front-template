@@ -90,7 +90,7 @@ export function Pricing({ intl, callToActionToSaveLeads }: PricingProps) {
                       delay: 0.1 * index,
                     },
                   }}
-                  data-mostPopular={item.mostPopular}
+                  data-mostpopular={item.mostPopular}
                   className='flex flex-col justify-between rounded-3xl bg-white p-8 shadow-xl ring-1 ring-gray-900/10 data-[mostPopular=true]:border-4 data-[mostPopular=true]:border-solid data-[mostPopular=true]:border-primary/800 sm:p-10'
                 >
                   <div>
