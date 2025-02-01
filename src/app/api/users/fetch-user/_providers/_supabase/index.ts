@@ -24,7 +24,7 @@ export async function fetchUserSupabase(user: User): Promise<Object> {
     customer_id: userMetadata.customer_id,
     is_confirmed: userMetadata.is_confirmed,
     first_name: userMetadata.name.split(' ')[0],
-    email: userMetadata.email,
+    email: user.email,
     tenant_id: user.id,
   };
 }
