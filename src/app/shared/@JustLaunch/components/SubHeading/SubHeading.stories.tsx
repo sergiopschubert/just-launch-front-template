@@ -24,7 +24,7 @@ export const WithChildren: Story = {
     title: 'SubHeading with children',
     level: 3,
     children: (
-      <button className="rounded-md bg-blue-600 px-4 py-2 text-white hover:bg-blue-700">
+      <button className='rounded-md bg-blue-600 px-4 py-2 text-white hover:bg-blue-700'>
         Action Button
       </button>
     ),

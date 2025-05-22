@@ -1,9 +1,9 @@
 export interface ISignInIntl {
   metadata: {
-    title: string,
-  },
-  title: string,
-  subtitle: string,
+    title: string;
+  };
+  title: string;
+  subtitle: string;
   errors: {
     auth: {
       title: string;

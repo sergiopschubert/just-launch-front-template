@@ -1,11 +1,11 @@
 export interface ISignUpIntl {
   metadata: {
-    title: string,
-  },
-  title: string,
-  headerSubtitle: string,
-  subtitleWithColor: string,
-  subtitle: string,
+    title: string;
+  };
+  title: string;
+  headerSubtitle: string;
+  subtitleWithColor: string;
+  subtitle: string;
   registerSuccessMessage: string;
   errors: {
     register: {

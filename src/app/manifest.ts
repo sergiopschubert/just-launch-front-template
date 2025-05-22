@@ -5,7 +5,7 @@ export default function manifest(): MetadataRoute.Manifest {
   return {
     name: SEO.title,
     short_name: SEO.title,
-    description: SEO.description  ,
+    description: SEO.description,
     start_url: '/',
     display: 'standalone',
     background_color: '#fff',
