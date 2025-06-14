@@ -18,14 +18,14 @@ export default async function LandingPage() {
   const {
     headerIntl,
     heroIntl,
-    problemsIntl,
+    // problemsIntl,
     footerIntl,
-    callToActionIntl,
-    statsIntl,
-    testimonialsIntl,
-    faqsIntl,
-    pricingIntl,
-    featuresIntl,
+    // callToActionIntl,
+    // statsIntl,
+    // testimonialsIntl,
+    // faqsIntl,
+    // pricingIntl,
+    // featuresIntl,
     cookieBannerIntl,
   } = await useLandingPageInternationalization();
 
@@ -34,13 +34,13 @@ export default async function LandingPage() {
       <Providers>
         <Header intl={headerIntl} session={null} />
         <Hero intl={heroIntl} url={'/signup'} />
-        <Problems intl={problemsIntl} />
-        <Features intl={featuresIntl} />
-        <Testimonials intl={testimonialsIntl} />
-        <Stats intl={statsIntl} />
-        <Pricing intl={pricingIntl} />
-        <Faq intl={faqsIntl} />
-        <CallToAction intl={callToActionIntl} />
+        {/* <Problems intl={problemsIntl} /> */}
+        {/* <Features intl={featuresIntl} /> */}
+        {/* <Testimonials intl={testimonialsIntl} /> */}
+        {/* <Stats intl={statsIntl} /> */}
+        {/* <Pricing intl={pricingIntl} /> */}
+        {/* <Faq intl={faqsIntl} /> */}
+        {/* <CallToAction intl={callToActionIntl} /> */}
         <Footer intl={footerIntl} />
         <CookieBanner intl={cookieBannerIntl} />
       </Providers>
