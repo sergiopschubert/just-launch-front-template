@@ -1,3 +1,4 @@
+
 import { Meta, StoryObj } from '@storybook/react';
 import { PopupToConfirmationOfAccount } from './';
 import { IPopupToConfirmationOfAccountIntl } from '@/app/shared/@JustLaunch/domain/interfaces/IPopupToConfirmationOfAccountIntl';
@@ -15,7 +16,7 @@ const intl: IPopupToConfirmationOfAccountIntl = {
   awaitMessage2: ' seconds before retrying.',
 };
 
-const intlEmail = {} as IEmailToConfirmationOfAccountIntl;
+const intlEmail  = {} as IEmailToConfirmationOfAccountIntl;
 
 const meta: Meta<typeof PopupToConfirmationOfAccount> = {
   title: 'Components/PopupToConfirmationOfAccount',

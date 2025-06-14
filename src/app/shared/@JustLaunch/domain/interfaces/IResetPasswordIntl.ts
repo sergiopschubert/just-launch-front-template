@@ -1,11 +1,11 @@
 export interface IResetPasswordIntl {
   metadata: {
-    title: string;
-  };
-  title: string;
-  headerSubtitle: string;
-  subtitleWithColor: string;
-  subtitle: string;
+    title: string,
+  },
+  title: string,
+  headerSubtitle: string,
+  subtitleWithColor: string,
+  subtitle: string,
   form: {
     password: string;
     confirmPassword: string;
